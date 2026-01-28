@@ -36,9 +36,7 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Logs (large files)
-logs/*.out
-logs/*.err
+# Keep SLURM logs (they document experiments)
 
 # Checkpoints
 data/checkpoints/

@@ -1,0 +1,151 @@
+============================================================
+Activation Extraction for Linear Probing
+============================================================
+Job ID: 6228918
+Node: babel-w9-20
+Start time: Tue Jan 27 21:16:53 EST 2026
+Working directory: /home/anshulk/Housing
+============================================================
+Activating conda environment...
+
+Running pre-flight checks...
+  Checking GPU...
+index, name, memory.total [MiB]
+0, NVIDIA RTX A6000, 49140 MiB
+  Checking TransformerLens...
+  Checking Python packages...
+  Installing missing package: scikit-learn
+  All required packages available
+  Checking data file...
+  Found 5130 samples
+  Checking models...
+  Both models found
+
+Pre-flight checks passed!
+
+============================================================
+Extracting Llama-3.2-3B-Instruct activations
+Method: TransformerLens
+Condition: 2_fewshot_cot_temp0 (few-shot CoT, greedy, deterministic)
+Accuracy: 59.3%
+============================================================
+Loading data from /home/anshulk/Housing/data/pairs_20pct_price_diff.csv
+Loaded 5130 samples
+============================================================
+ Extracting Activations: llama-3.2-3b / 2_fewshot_cot_temp0
+============================================================
+Samples: 5130
+Layers: 28, d_model: 3072
+Batch size: 50
+Method: TransformerLens
+Prompt builder: build_prompt_few_shot_cot
+============================================================
+ Loading llama-3.2-3b
+============================================================
+Model name: meta-llama/Llama-3.2-3B-Instruct
+Device: cuda
+Method: TransformerLens
+Loading via TransformerLens...
+Loaded pretrained model meta-llama/Llama-3.2-3B-Instruct into HookedTransformer
+Model loaded: 28 layers, d_model=3072
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_211900.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212020.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212142.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212304.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212426.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212548.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212710.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212833.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_212955.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_213117.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_llama-3.2-3b_2_fewshot_cot_temp0_20260127_213141.pkl
+
+Cleaning up model and GPU memory...
+Saved activations to /home/anshulk/Housing/data/activations/llama-3.2-3b_2_fewshot_cot_temp0_activations.npz (987.7 MB)
+============================================================
+ Extraction Complete!
+============================================================
+Activations saved to: /home/anshulk/Housing/data/activations/llama-3.2-3b_2_fewshot_cot_temp0_activations.npz
+Shape: (5130, 28, 3072)
+SUCCESS: Llama extraction completed
+
+============================================================
+Extracting Qwen3-4B-Instruct activations
+Method: HuggingFace manual hooks (not supported by TransformerLens)
+Condition: 2_fewshot_cot_temp0 (few-shot CoT, greedy, deterministic)
+Accuracy: 59.2%
+============================================================
+Loading data from /home/anshulk/Housing/data/pairs_20pct_price_diff.csv
+Loaded 5130 samples
+============================================================
+ Extracting Activations: qwen3-4b / 2_fewshot_cot_temp0
+============================================================
+Samples: 5130
+Layers: 36, d_model: 2560
+Batch size: 50
+Method: HuggingFace (manual)
+Prompt builder: build_prompt_few_shot_cot
+============================================================
+ Loading qwen3-4b
+============================================================
+Model name: Qwen/Qwen3-4B-Instruct-2507
+Device: cuda
+Method: HuggingFace (manual hooks)
+Loading via HuggingFace (manual extraction)...
+Model loaded: 36 layers, d_model=2560
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_213939.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214057.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214216.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214334.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214453.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214613.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214732.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_214852.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_215012.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_215132.pkl
+Checkpoint saved: /home/anshulk/Housing/data/checkpoints/extraction_qwen3-4b_2_fewshot_cot_temp0_20260127_215156.pkl
+
+Cleaning up model and GPU memory...
+Saved activations to /home/anshulk/Housing/data/activations/qwen3-4b_2_fewshot_cot_temp0_activations.npz (1064.0 MB)
+============================================================
+ Extraction Complete!
+============================================================
+Activations saved to: /home/anshulk/Housing/data/activations/qwen3-4b_2_fewshot_cot_temp0_activations.npz
+Shape: (5130, 36, 2560)
+SUCCESS: Qwen extraction completed
+
+============================================================
+Validating Extracted Activations
+============================================================
+✓ Llama file exists: llama-3.2-3b_2_fewshot_cot_temp0_activations.npz
+  Size: 987.7 MB
+  Shape: (5130, 28, 3072)
+  No NaNs: True
+
+✓ Qwen file exists: qwen3-4b_2_fewshot_cot_temp0_activations.npz
+  Size: 1064.0 MB
+  Shape: (5130, 36, 2560)
+  No NaNs: True
+
+============================================================
+Extraction Complete
+============================================================
+End time: Tue Jan 27 21:59:39 EST 2026
+Llama exit code: 0
+Qwen exit code: 0
+
+Final GPU memory state:
+index, memory.used [MiB], memory.total [MiB]
+0, 1 MiB, 49140 MiB
+
+Generated activation files:
+  No files found
+
+Cleaning up checkpoints...
+Old checkpoints removed
+
+============================================================
+Job Ended: Tue Jan 27 21:59:39 EST 2026
+Total Runtime: 2566 seconds (42 minutes)
+============================================================
+✓ Both extractions successful!

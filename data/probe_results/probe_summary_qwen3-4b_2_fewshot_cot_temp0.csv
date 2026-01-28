@@ -1,0 +1,7 @@
+feature,test_accuracy_mean,test_accuracy_std,test_accuracy_max,test_auc_mean,test_auc_std,test_auc_max,is_significant_sum,p_value_min
+bathrooms_p1_more,0.8027,0.0774,0.8967,0.8049,0.1483,0.9478,36,0.0
+bedrooms_p1_more,0.8124,0.0988,0.925,0.8165,0.1551,0.9648,36,0.0
+lot_p1_larger,0.7618,0.1132,0.8879,0.8152,0.1099,0.9414,36,0.0
+price_p1_higher,0.5544,0.0231,0.5858,0.5668,0.0317,0.606,31,0.0
+sqft_p1_larger,0.7603,0.1133,0.8879,0.815,0.1097,0.9427,36,0.0
+year_p1_newer,0.7921,0.1416,0.9474,0.834,0.1437,0.9704,36,0.0

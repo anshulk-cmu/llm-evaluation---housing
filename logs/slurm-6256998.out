@@ -1,0 +1,430 @@
+============================================================
+Logistic Regression Price Predictor on LLM Activations
+============================================================
+Job ID: 6256998
+Node: babel-w9-28
+Start time: Tue Feb  3 00:41:20 EST 2026
+Working directory: /home/anshulk/Housing
+============================================================
+Activating conda environment...
+
+Running pre-flight checks...
+  Checking for activation files...
+    Llama activations found: 988M
+    Qwen activations found: 1.1G
+  Checking Python packages...
+  Installing missing package: scikit-learn
+  All required packages available
+  Checking GPU acceleration (cuML)...
+    cuML already installed - GPU acceleration ENABLED
+
+Pre-flight checks passed!
+
+============================================================
+Training Price Predictor on Llama-3.2-3B Activations
+Condition: 2_fewshot_cot_temp0
+Split: 70/10/20 (train/val/test)
+Target: price_p1_higher (binary)
+Layers: 28
+GPU acceleration: ENABLED (cuML)
+============================================================
+[W] [00:41:59.856424] L-BFGS: max iterations reached
+[W] [00:41:59.856491] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:00.589129] L-BFGS: max iterations reached
+[W] [00:42:00.589168] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:01.315305] L-BFGS line search failed (code 3); stopping at the last valid step
+[W] [00:42:03.116098] L-BFGS: max iterations reached
+[W] [00:42:03.116155] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:03.844990] L-BFGS: max iterations reached
+[W] [00:42:03.845025] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:06.218603] L-BFGS: max iterations reached
+[W] [00:42:06.218645] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:06.950708] L-BFGS: max iterations reached
+[W] [00:42:06.950743] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:09.779447] L-BFGS: max iterations reached
+[W] [00:42:09.779497] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:10.509904] L-BFGS: max iterations reached
+[W] [00:42:10.510001] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:12.004540] L-BFGS: max iterations reached
+[W] [00:42:12.004583] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:13.780777] L-BFGS: max iterations reached
+[W] [00:42:13.780815] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:14.510228] L-BFGS: max iterations reached
+[W] [00:42:14.510279] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:16.091197] L-BFGS: max iterations reached
+[W] [00:42:16.091242] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:17.979559] L-BFGS: max iterations reached
+[W] [00:42:17.981007] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:18.711446] L-BFGS: max iterations reached
+[W] [00:42:18.721598] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:20.170141] L-BFGS: max iterations reached
+[W] [00:42:20.180241] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:21.969828] L-BFGS: max iterations reached
+[W] [00:42:21.969878] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:22.694593] L-BFGS: max iterations reached
+[W] [00:42:22.694632] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:24.152559] L-BFGS: max iterations reached
+[W] [00:42:24.152683] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:25.914595] L-BFGS: max iterations reached
+[W] [00:42:25.914633] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:26.633368] L-BFGS: max iterations reached
+[W] [00:42:26.633407] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:29.332543] L-BFGS: max iterations reached
+[W] [00:42:29.332587] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:30.057065] L-BFGS: max iterations reached
+[W] [00:42:30.057110] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:31.493393] L-BFGS: max iterations reached
+[W] [00:42:31.493437] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:33.383473] L-BFGS: max iterations reached
+[W] [00:42:33.383518] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:34.113365] L-BFGS: max iterations reached
+[W] [00:42:34.113421] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:36.204402] L-BFGS: max iterations reached
+[W] [00:42:36.204440] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:36.939682] L-BFGS: max iterations reached
+[W] [00:42:36.939804] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:38.379596] L-BFGS: max iterations reached
+[W] [00:42:38.379647] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:40.165109] L-BFGS: max iterations reached
+[W] [00:42:40.165148] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:40.883622] L-BFGS: max iterations reached
+[W] [00:42:40.883659] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:42.323815] L-BFGS: max iterations reached
+[W] [00:42:42.323884] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:44.196957] L-BFGS: max iterations reached
+[W] [00:42:44.196995] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:44.917265] L-BFGS: max iterations reached
+[W] [00:42:44.917358] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:46.360508] L-BFGS: max iterations reached
+[W] [00:42:46.360548] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:48.105585] L-BFGS: max iterations reached
+[W] [00:42:48.105624] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:48.822025] L-BFGS: max iterations reached
+[W] [00:42:48.822066] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:50.277260] L-BFGS: max iterations reached
+[W] [00:42:50.277297] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:52.035994] L-BFGS: max iterations reached
+[W] [00:42:52.036032] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:52.767638] L-BFGS: max iterations reached
+[W] [00:42:52.767673] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:53.615113] L-BFGS line search failed (code 3); stopping at the last valid step
+[W] [00:42:55.445635] L-BFGS: max iterations reached
+[W] [00:42:55.445678] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:56.161633] L-BFGS: max iterations reached
+[W] [00:42:56.161676] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:58.815498] L-BFGS: max iterations reached
+[W] [00:42:58.815541] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:42:59.534088] L-BFGS: max iterations reached
+[W] [00:42:59.534126] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:01.643159] L-BFGS: max iterations reached
+[W] [00:43:01.643201] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:02.370642] L-BFGS: max iterations reached
+[W] [00:43:02.370684] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:04.444475] L-BFGS: max iterations reached
+[W] [00:43:04.444514] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:05.195000] L-BFGS: max iterations reached
+[W] [00:43:05.195040] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:06.628607] L-BFGS: max iterations reached
+[W] [00:43:06.628645] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:08.303636] L-BFGS: max iterations reached
+[W] [00:43:08.303675] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:09.022495] L-BFGS: max iterations reached
+[W] [00:43:09.022620] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:10.454100] L-BFGS: max iterations reached
+[W] [00:43:10.454139] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:12.289211] L-BFGS: max iterations reached
+[W] [00:43:12.289249] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:13.011355] L-BFGS: max iterations reached
+[W] [00:43:13.011392] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:13.724084] L-BFGS line search failed (code 3); stopping at the last valid step
+[W] [00:43:15.591852] L-BFGS: max iterations reached
+[W] [00:43:15.591890] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:16.309102] L-BFGS: max iterations reached
+[W] [00:43:16.309143] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:18.916998] L-BFGS: max iterations reached
+[W] [00:43:18.917037] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:19.641732] L-BFGS: max iterations reached
+[W] [00:43:19.641772] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:22.182770] L-BFGS: max iterations reached
+[W] [00:43:22.182823] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:22.902128] L-BFGS: max iterations reached
+[W] [00:43:22.902167] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:25.625086] L-BFGS: max iterations reached
+[W] [00:43:25.625146] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:26.350573] L-BFGS: max iterations reached
+[W] [00:43:26.350609] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:29.050409] L-BFGS: max iterations reached
+[W] [00:43:29.050449] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:29.777443] L-BFGS: max iterations reached
+[W] [00:43:29.777478] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:31.220900] L-BFGS: max iterations reached
+[W] [00:43:31.221032] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:33.074843] L-BFGS: max iterations reached
+[W] [00:43:33.074880] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:33.817421] L-BFGS: max iterations reached
+[W] [00:43:33.817455] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:35.264745] L-BFGS: max iterations reached
+[W] [00:43:35.264784] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:37.346982] L-BFGS: max iterations reached
+[W] [00:43:37.347022] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:38.081297] L-BFGS: max iterations reached
+[W] [00:43:38.081334] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:39.553155] L-BFGS: max iterations reached
+[W] [00:43:39.553195] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+SUCCESS: Llama price predictor completed
+
+============================================================
+Training Price Predictor on Qwen3-4B Activations
+Condition: 2_fewshot_cot_temp0
+Split: 70/10/20 (train/val/test)
+Target: price_p1_higher (binary)
+Layers: 36
+GPU acceleration: ENABLED (cuML)
+============================================================
+[W] [00:43:55.883501] L-BFGS: max iterations reached
+[W] [00:43:55.883567] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:56.569633] L-BFGS: max iterations reached
+[W] [00:43:56.569714] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:58.550668] L-BFGS: max iterations reached
+[W] [00:43:58.550706] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:43:59.240570] L-BFGS: max iterations reached
+[W] [00:43:59.240610] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:00.603365] L-BFGS: max iterations reached
+[W] [00:44:00.603405] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:02.546078] L-BFGS: max iterations reached
+[W] [00:44:02.546122] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:03.226206] L-BFGS: max iterations reached
+[W] [00:44:03.226253] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:04.610740] L-BFGS: max iterations reached
+[W] [00:44:04.610786] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:05.982887] L-BFGS: max iterations reached
+[W] [00:44:05.982956] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:06.928477] L-BFGS: max iterations reached
+[W] [00:44:06.928531] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:09.736542] L-BFGS: max iterations reached
+[W] [00:44:09.736606] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:10.416937] L-BFGS: max iterations reached
+[W] [00:44:10.416979] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:11.764635] L-BFGS: max iterations reached
+[W] [00:44:11.764677] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:13.169845] L-BFGS: max iterations reached
+[W] [00:44:13.169885] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:13.845685] L-BFGS: max iterations reached
+[W] [00:44:13.845724] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:16.298606] L-BFGS: max iterations reached
+[W] [00:44:16.298649] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:17.031604] L-BFGS: max iterations reached
+[W] [00:44:17.040182] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:19.997596] L-BFGS: max iterations reached
+[W] [00:44:20.001699] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:20.672131] L-BFGS: max iterations reached
+[W] [00:44:20.672170] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:21.776161] L-BFGS line search failed (code 3); stopping at the last valid step
+[W] [00:44:23.154979] L-BFGS: max iterations reached
+[W] [00:44:23.155081] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:23.863478] L-BFGS: max iterations reached
+[W] [00:44:23.863519] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:26.435574] L-BFGS: max iterations reached
+[W] [00:44:26.435618] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:27.332275] L-BFGS: max iterations reached
+[W] [00:44:27.332318] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:30.084386] L-BFGS: max iterations reached
+[W] [00:44:30.084422] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:30.778581] L-BFGS: max iterations reached
+[W] [00:44:30.778615] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:32.397848] L-BFGS: max iterations reached
+[W] [00:44:32.397885] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:33.970255] L-BFGS: max iterations reached
+[W] [00:44:33.970293] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:34.644219] L-BFGS: max iterations reached
+[W] [00:44:34.644257] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:35.991475] L-BFGS: max iterations reached
+[W] [00:44:35.991513] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:37.764716] L-BFGS: max iterations reached
+[W] [00:44:37.764752] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:38.444786] L-BFGS: max iterations reached
+[W] [00:44:38.444864] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:39.996443] L-BFGS: max iterations reached
+[W] [00:44:39.996495] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:41.710011] L-BFGS: max iterations reached
+[W] [00:44:41.710102] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:42.377364] L-BFGS: max iterations reached
+[W] [00:44:42.377400] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:43.736402] L-BFGS: max iterations reached
+[W] [00:44:43.736455] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:45.206543] L-BFGS: max iterations reached
+[W] [00:44:45.206582] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:45.927442] L-BFGS: max iterations reached
+[W] [00:44:45.927476] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:48.818898] L-BFGS: max iterations reached
+[W] [00:44:48.818934] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:49.491736] L-BFGS: max iterations reached
+[W] [00:44:49.491788] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:50.950554] L-BFGS: max iterations reached
+[W] [00:44:50.950598] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:52.568123] L-BFGS: max iterations reached
+[W] [00:44:52.568161] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:53.236611] L-BFGS: max iterations reached
+[W] [00:44:53.236648] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:54.684554] L-BFGS stopped, because the line search failed to advance (step delta = 0.000000)
+[W] [00:44:55.371098] L-BFGS: max iterations reached
+[W] [00:44:55.371143] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:56.041377] L-BFGS: max iterations reached
+[W] [00:44:56.041419] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:58.299676] L-BFGS: max iterations reached
+[W] [00:44:58.299714] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:44:58.978321] L-BFGS: max iterations reached
+[W] [00:44:58.978361] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:00.339257] L-BFGS: max iterations reached
+[W] [00:45:00.339387] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:01.937683] L-BFGS: max iterations reached
+[W] [00:45:01.937720] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:02.605351] L-BFGS: max iterations reached
+[W] [00:45:02.605400] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:04.319026] L-BFGS: max iterations reached
+[W] [00:45:04.319069] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:04.993832] L-BFGS: max iterations reached
+[W] [00:45:04.993866] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:07.917126] L-BFGS: max iterations reached
+[W] [00:45:07.917163] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:08.588528] L-BFGS: max iterations reached
+[W] [00:45:08.588565] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:10.686378] L-BFGS: max iterations reached
+[W] [00:45:10.686415] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:11.359263] L-BFGS: max iterations reached
+[W] [00:45:11.359305] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:13.067229] L-BFGS: max iterations reached
+[W] [00:45:13.067273] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:13.743359] L-BFGS: max iterations reached
+[W] [00:45:13.743399] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:15.551412] L-BFGS: max iterations reached
+[W] [00:45:15.551455] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:16.223798] L-BFGS: max iterations reached
+[W] [00:45:16.223841] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:17.878694] L-BFGS: max iterations reached
+[W] [00:45:17.878736] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:18.554089] L-BFGS: max iterations reached
+[W] [00:45:18.554133] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:20.862068] L-BFGS: max iterations reached
+[W] [00:45:20.862109] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:21.539778] L-BFGS: max iterations reached
+[W] [00:45:21.539822] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:23.636722] L-BFGS: max iterations reached
+[W] [00:45:23.636758] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:24.309633] L-BFGS: max iterations reached
+[W] [00:45:24.309716] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:26.427714] L-BFGS: max iterations reached
+[W] [00:45:26.427756] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:27.103976] L-BFGS: max iterations reached
+[W] [00:45:27.104015] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:28.927111] L-BFGS: max iterations reached
+[W] [00:45:28.927173] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:29.602478] L-BFGS: max iterations reached
+[W] [00:45:29.602520] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:29.841691] L-BFGS line search failed (code 3); stopping at the last valid step
+[W] [00:45:31.286782] L-BFGS: max iterations reached
+[W] [00:45:31.286864] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:31.993730] L-BFGS: max iterations reached
+[W] [00:45:31.993770] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:34.618386] L-BFGS: max iterations reached
+[W] [00:45:34.618453] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:35.292111] L-BFGS: max iterations reached
+[W] [00:45:35.292154] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:37.518846] L-BFGS: max iterations reached
+[W] [00:45:37.518887] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:38.194812] L-BFGS: max iterations reached
+[W] [00:45:38.194853] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:39.542733] L-BFGS: max iterations reached
+[W] [00:45:39.542772] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:41.082688] L-BFGS: max iterations reached
+[W] [00:45:41.082725] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:41.764586] L-BFGS: max iterations reached
+[W] [00:45:41.764622] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:41.943447] L-BFGS line search failed (code 3); stopping at the last valid step
+[W] [00:45:43.627575] L-BFGS: max iterations reached
+[W] [00:45:43.627611] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:44.331314] L-BFGS: max iterations reached
+[W] [00:45:44.331352] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:46.379213] L-BFGS: max iterations reached
+[W] [00:45:46.379252] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+[W] [00:45:47.055172] L-BFGS: max iterations reached
+[W] [00:45:47.055208] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+SUCCESS: Qwen price predictor completed
+
+============================================================
+Generating Plots
+============================================================
+Loaded results for llama-3.2-3b
+Loaded results for qwen3-4b
+Saved: /home/anshulk/Housing/data/logit_results/plots/accuracy_vs_layer_2_fewshot_cot_temp0.png
+Saved: /home/anshulk/Housing/data/logit_results/plots/method_comparison_2_fewshot_cot_temp0.png
+
+============================================================
+SUMMARY: LOGISTIC REGRESSION PRICE PREDICTOR
+============================================================
+
+llama-3.2-3b:
+  Best Layer: 27
+  Test Accuracy: 0.6131
+  95% CI: [0.5829, 0.6424]
+  AUC: 0.6287
+  Mean Accuracy (all layers): 0.5751
+
+qwen3-4b:
+  Best Layer: 34
+  Test Accuracy: 0.5867
+  95% CI: [0.5563, 0.6165]
+  AUC: 0.6040
+  Mean Accuracy (all layers): 0.5537
+
+------------------------------------------------------------
+BASELINES:
+  Chance: 50.0%
+  LLM Output: 60.0%
+  Zestimate: 77.6%
+============================================================
+
+============================================================
+Validating Results
+============================================================
+✓ Llama results: 28 layers probed
+  Best layer: 27
+  Best accuracy: 0.6131
+  95% CI: [0.5829, 0.6424]
+
+✓ Qwen results: 36 layers probed
+  Best layer: 34
+  Best accuracy: 0.5867
+  95% CI: [0.5563, 0.6165]
+
+Baselines for comparison:
+  Chance: 50.0%
+  LLM Output: ~60%
+  Zestimate: 77.6%
+
+============================================================
+Logit Model Training Complete
+============================================================
+End time: Tue Feb  3 00:45:51 EST 2026
+Llama exit code: 0
+Qwen exit code: 0
+
+Output files saved to: data/logit_results/
+
+CSV files:
+-rw-r----- 1 anshulk anshulk 4.6K Feb  3 00:43 data/logit_results/logit_results_llama-3.2-3b_2_fewshot_cot_temp0.csv
+-rw-r----- 1 anshulk anshulk 5.9K Feb  3 00:45 data/logit_results/logit_results_qwen3-4b_2_fewshot_cot_temp0.csv
+
+Plots:
+-rw-r----- 1 anshulk anshulk 182K Feb  3 00:45 data/logit_results/plots/accuracy_vs_layer_2_fewshot_cot_temp0.png
+-rw-r----- 1 anshulk anshulk  51K Feb  3 00:45 data/logit_results/plots/method_comparison_2_fewshot_cot_temp0.png
+
+Logs:
+-rw-r----- 1 anshulk anshulk 2.9K Feb  3 00:43 data/logit_results/logs/logit_llama-3.2-3b_2_fewshot_cot_temp0_20260203_004149.log
+-rw-r----- 1 anshulk anshulk 3.5K Feb  3 00:45 data/logit_results/logs/logit_qwen3-4b_2_fewshot_cot_temp0_20260203_004343.log
+
+============================================================
+Job Ended: Tue Feb  3 00:45:51 EST 2026
+Total Runtime: 271 seconds (4 minutes)
+============================================================
+✓ All training completed successfully!

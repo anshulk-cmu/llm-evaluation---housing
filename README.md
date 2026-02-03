@@ -13,10 +13,11 @@
 5. [Stage 1: Model Accuracy Evaluation](#stage-1-model-accuracy-evaluation)
 6. [Stage 2: Activation Extraction](#stage-2-activation-extraction)
 7. [Stage 3: Linear Probing Analysis](#stage-3-linear-probing-analysis)
-8. [Key Findings](#key-findings)
-9. [Generated Visualizations](#generated-visualizations)
-10. [Next Steps: Causal Tracing](#next-steps-causal-tracing)
-11. [Repository Structure](#repository-structure)
+8. [Stage 3b: Logistic Regression Price Predictor](#stage-3b-logistic-regression-price-predictor)
+9. [Key Findings](#key-findings)
+10. [Generated Visualizations](#generated-visualizations)
+11. [Next Steps: Causal Tracing](#next-steps-causal-tracing)
+12. [Repository Structure](#repository-structure)
 
 ---
 
@@ -274,6 +275,118 @@ For **price_p1_higher**, accuracy stays flat at ~55-61% across ALL layers — th
 
 ---
 
+## Stage 3b: Logistic Regression Price Predictor
+
+### Motivation
+
+Stage 3 probed for multiple features (bedrooms, bathrooms, etc.) to understand what information models encode. This follow-up experiment asks a different question: **Can a simple classifier trained on activations outperform the LLM's own price prediction?**
+
+If a logistic regression model trained on the LLM's internal representations achieves higher accuracy than the LLM's direct output, it would prove the information exists but the model's final computation layers are broken.
+
+### Methodology
+
+We train a logistic regression classifier on activations from **each layer** to predict the target task directly (which property costs more):
+
+```
+For each layer L in [0, ..., N_layers-1]:
+    1. Extract activations: X = activations[:, L, :]  # (5130, D_model)
+    2. Get price labels: y = price_p1_higher  # (5130,)
+    3. Split: 70% train, 10% validation, 20% test (stratified)
+    4. Hyperparameter search: C ∈ [0.001, 0.01, 0.1, 1.0, 10.0, 100.0]
+    5. Select best C via validation accuracy
+    6. Train final model, evaluate on held-out test set
+```
+
+### Configuration
+
+| Parameter | Value |
+|-----------|-------|
+| Target | `price_p1_higher` (binary) |
+| Train/Val/Test Split | 70% / 10% / 20% (stratified) |
+| Regularization values (C) | [0.001, 0.01, 0.1, 1.0, 10.0, 100.0] |
+| Max iterations | 2,000 (4,000 for final model) |
+| Solver | cuML QN (GPU-accelerated) |
+| Runtime | ~4 minutes total (both models) |
+
+### Results
+
+| Model | Best Layer | Test Accuracy | 95% CI | AUC | Mean Acc (all layers) |
+|-------|-----------|---------------|--------|-----|----------------------|
+| **Llama-3.2-3B** | L27 (96% depth) | **61.3%** | [58.3%, 64.2%] | 0.629 | 57.5% |
+| **Qwen3-4B** | L34 (94% depth) | **58.7%** | [55.6%, 61.6%] | 0.604 | 55.4% |
+
+### Layer-wise Accuracy Progression
+
+```
+Llama-3.2-3B (28 layers):
+Layer 0-10:  ~52-57%  │ Early layers: Weak price signal
+Layer 11-20: ~57-60%  │ Mid layers: Signal builds gradually
+Layer 21-27: ~59-61%  │ Late layers: Peak at L27 (61.3%)
+
+Qwen3-4B (36 layers):
+Layer 0-15:  ~51-57%  │ Early layers: Near chance
+Layer 16-30: ~55-58%  │ Mid layers: Gradual improvement
+Layer 31-35: ~57-59%  │ Late layers: Peak at L34 (58.7%)
+```
+
+### Comparison with Baselines
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    METHOD COMPARISON                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│   Chance        LLM Output      Best Probe      Zestimate   │
+│   ┌─────┐       ┌─────┐        ┌─────┐         ┌─────┐     │
+│   │     │       │     │        │     │         │     │     │
+│   │ 50% │       │ 60% │        │ 61% │         │ 78% │     │
+│   │     │       │     │        │     │         │     │     │
+│   │ ██  │       │ ███ │        │ ███ │         │████ │     │
+│   │ ██  │       │ ███ │        │ ███ │         │████ │     │
+│   │ ██  │       │ ███ │        │ ███ │         │████ │     │
+│   └─────┘       └─────┘        └─────┘         └─────┘     │
+│                                                              │
+│   The probe matches but doesn't beat the LLM output.        │
+│   Price information is NOT linearly accessible.             │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Key Insight
+
+**The probe achieves ~61% accuracy — matching the LLM's own output (~60%).**
+
+This confirms that price comparison information is **not linearly encoded** in the model's representations. Unlike input features (bedrooms, bathrooms, etc.) which are linearly accessible at 87-96%, the price comparison result simply doesn't exist in a form that a linear classifier can extract.
+
+### Interpretation
+
+| Finding | Interpretation |
+|---------|---------------|
+| Probe ≈ LLM output (~60%) | No hidden linear signal for price comparison |
+| Best layer at 94-96% depth | Late layers have slightly more price-relevant info |
+| Still 17pp below Zestimate | Fundamental gap in numerical reasoning capability |
+| Accuracy flat across layers | Price signal never builds (unlike input features) |
+
+### What This Means
+
+1. **Not a "reading" problem**: The models encode input features excellently
+2. **Not a "hidden knowledge" problem**: There's no linear price signal we're missing
+3. **A computation problem**: The failure is in combining features → price estimate
+4. **Confirms Last Mile hypothesis**: Information exists, but computation fails
+
+### Output Files
+
+| File | Location |
+|------|----------|
+| Detailed results (Llama) | `data/logit_results/logit_results_llama-3.2-3b_2_fewshot_cot_temp0.csv` |
+| Detailed results (Qwen) | `data/logit_results/logit_results_qwen3-4b_2_fewshot_cot_temp0.csv` |
+| Summary (Llama) | `data/logit_results/logit_summary_llama-3.2-3b_2_fewshot_cot_temp0.json` |
+| Summary (Qwen) | `data/logit_results/logit_summary_qwen3-4b_2_fewshot_cot_temp0.json` |
+| Accuracy vs Layer plot | `data/logit_results/plots/accuracy_vs_layer_2_fewshot_cot_temp0.png` |
+| Method comparison plot | `data/logit_results/plots/method_comparison_2_fewshot_cot_temp0.png` |
+
+---
+
 ## Key Findings
 
 ### 1. Models Encode All Input Features
@@ -364,11 +477,15 @@ Housing/
 ├── data/
 │   ├── pairs_20pct_price_diff.csv    # Processed dataset
 │   ├── activations/                   # Extracted activations (.npz)
-│   ├── probe_results/                 # Probing results
+│   ├── probe_results/                 # Linear probing results
 │   │   ├── plots/                     # Generated visualizations
 │   │   ├── probe_results_*.csv        # Detailed results
 │   │   ├── probe_matrix_*.csv         # Accuracy/AUC matrices
 │   │   └── probe_best_layers_*.csv    # Peak layer per feature
+│   ├── logit_results/                 # Price predictor results
+│   │   ├── plots/                     # Accuracy curves, comparisons
+│   │   ├── logit_results_*.csv        # Per-layer accuracy
+│   │   └── logit_summary_*.json       # Best layer summary
 │   └── results/                       # Model evaluation results
 ├── linear_probing/
 │   ├── lp_config.py                   # Configuration
@@ -376,9 +493,14 @@ Housing/
 │   ├── extract_activations.py        # Activation extraction
 │   ├── probe.py                       # Main probing script
 │   └── analyze_lp_results.py         # Visualization generation
+├── logit_model/
+│   ├── logit_config.py               # Configuration
+│   ├── train_price_probe.py          # Train price predictor (cuML GPU)
+│   └── analyze_results.py            # Generate plots
 ├── models/                            # Local model weights
 ├── logs/                              # SLURM job logs
-├── run_linear_probing.sh             # SLURM job script
+├── run_linear_probing.sh             # Linear probing SLURM script
+├── run_logit_model.sh                # Price predictor SLURM script
 └── prompts.py                         # Prompt strategies
 ```
 
@@ -403,8 +525,12 @@ sbatch run_extract_activations.sh
 # 2. Run linear probing (requires GPU, ~35 minutes with cuML)
 sbatch run_linear_probing.sh
 
-# 3. Generate visualizations
+# 3. Run price predictor (requires GPU, ~4 minutes with cuML)
+sbatch run_logit_model.sh
+
+# 4. Generate visualizations
 python linear_probing/analyze_lp_results.py
+python logit_model/analyze_results.py
 ```
 
 ---
@@ -418,4 +544,4 @@ python linear_probing/analyze_lp_results.py
 
 ---
 
-*Last updated: January 27, 2026*
+*Last updated: February 3, 2026*

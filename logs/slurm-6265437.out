@@ -1,0 +1,609 @@
+============================================================
+Amnesic Probing for Causal Feature Analysis
+============================================================
+Job ID: 6265437
+Node: babel-n5-16
+Start time: Wed Feb  4 02:15:52 EST 2026
+Working directory: /home/anshulk/Housing
+============================================================
+Activating conda environment...
+
+Running pre-flight checks...
+  Checking for activation files...
+    Llama activations found: 988M
+    Qwen activations found: 1.1G
+  Checking for sample selection...
+    Llama sample selection found: 5130 samples
+    Qwen sample selection found: 5130 samples
+  Checking Python packages...
+  Installing missing package: scikit-learn
+  All required packages available
+  Checking GPU acceleration (cuML)...
+    cuML already installed - GPU acceleration ENABLED
+  Checking GPU devices...
+NVIDIA RTX A6000, 49140 MiB, 48540 MiB
+NVIDIA RTX A6000, 49140 MiB, 48540 MiB
+
+Pre-flight checks passed!
+
+============================================================
+Amnesic Probing: Llama-3.2-3B-Instruct
+============================================================
+Condition: 2_fewshot_cot_temp0
+Layer: 15 (best probe layer)
+Samples: 5,130 (all)
+Features: bedrooms, bathrooms, year_built, lot_size, sqft
+INLP iterations: 300 per feature
+GPU acceleration: ENABLED (cuML)
+============================================================
+
+Using GPU: True
+Features to process: ['bedrooms', 'bathrooms', 'year_built', 'lot_size', 'sqft']
+
+============================================================
+LOADING DATA
+============================================================
+Loading activations from: /home/anshulk/Housing/data/activations/llama-3.2-3b_2_fewshot_cot_temp0_activations.npz
+Keys in activation file: ['activations', 'sample_indices', 'labels', 'feature_labels', 'feature_label_columns', 'metadata']
+Activations shape: (5130, 28, 3072)
+Feature columns: ['bathrooms_p1_more' 'bedrooms_p1_more' 'year_p1_newer' 'lot_p1_larger'
+ 'sqft_p1_larger' 'price_p1_higher']
+Loading samples from: /home/anshulk/Housing/data/amnesic_samples/selected_samples_llama-3.2-3b_2_fewshot_cot_temp0.csv
+Loaded 5130 samples
+Using layer 15, activations shape: (5130, 3072)
+
+Feature label class balance:
+  bedrooms: 30.29% positive (p1 has more)
+  bathrooms: 30.18% positive (p1 has more)
+  year_built: 46.63% positive (p1 has more)
+  lot_size: 48.44% positive (p1 has more)
+  sqft: 48.44% positive (p1 has more)
+
+Price prediction labels: 48.03% have property 1 more expensive
+
+============================================================
+INLP TRAINING
+============================================================
+
+############################################################
+# Running INLP for: bedrooms
+############################################################
+
+============================================================
+INLP for feature: bedrooms
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 30.17% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.870
+
+INLP complete: 300 iterations used
+Initial accuracy: 0.844
+Final accuracy: 0.684
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.699 (should be ~0.50)
+WARNING: Erasure incomplete! Post-INLP accuracy 0.699 > 0.60
+  Initial probe accuracy was: 0.870
+  Iterations used: 300
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_bedrooms_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_bedrooms_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: bathrooms
+############################################################
+
+============================================================
+INLP for feature: bathrooms
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 30.03% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.826
+
+INLP complete: 300 iterations used
+Initial accuracy: 0.830
+Final accuracy: 0.678
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.703 (should be ~0.50)
+WARNING: Erasure incomplete! Post-INLP accuracy 0.703 > 0.60
+  Initial probe accuracy was: 0.826
+  Iterations used: 300
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_bathrooms_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_bathrooms_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: year_built
+############################################################
+
+============================================================
+INLP for feature: year_built
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 46.82% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.938
+
+INLP complete: 300 iterations used
+Initial accuracy: 0.922
+Final accuracy: 0.552
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.532 (should be ~0.50)
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_year_built_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_year_built_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: lot_size
+############################################################
+
+============================================================
+INLP for feature: lot_size
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 48.05% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.810
+
+Stopped at iteration 50: accuracy 0.480 < 0.52
+
+INLP complete: 50 iterations used
+Initial accuracy: 0.803
+Final accuracy: 0.480
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.520 (should be ~0.50)
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_lot_size_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_lot_size_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: sqft
+############################################################
+
+============================================================
+INLP for feature: sqft
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 48.05% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.811
+
+Stopped at iteration 50: accuracy 0.480 < 0.52
+
+INLP complete: 50 iterations used
+Initial accuracy: 0.801
+Final accuracy: 0.480
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.520 (should be ~0.50)
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_sqft_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_sqft_2_fewshot_cot_temp0.npz
+
+Saved INLP info to: /home/anshulk/Housing/data/amnesic_results/inlp_info_llama-3.2-3b_2_fewshot_cot_temp0.json
+
+============================================================
+PRICE PREDICTION EVALUATION
+============================================================
+
+Price prediction evaluation:
+Train: 3590, Test: 1540
+
+Condition: BASELINE
+[W] [02:19:33.238551] L-BFGS: max iterations reached
+[W] [02:19:33.238609] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Accuracy: 0.6104, AUC: 0.6373
+
+Condition: ERASE bedrooms
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0974
+
+Condition: ERASE bathrooms
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0974
+
+Condition: ERASE year_built
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0974
+
+Condition: ERASE lot_size
+  Accuracy: 0.5130, AUC: 0.4954, Drop: 0.0974
+
+Condition: ERASE sqft
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0974
+
+Condition: ERASE ALL FEATURES
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0974
+
+Condition: RANDOM CONTROL
+[W] [02:19:35.988145] L-BFGS: max iterations reached
+[W] [02:19:35.988195] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Accuracy: 0.6097, AUC: 0.6359, Drop: 0.0006
+
+Saved results to: /home/anshulk/Housing/data/amnesic_results/amnesic_results_llama-3.2-3b_2_fewshot_cot_temp0.csv
+
+============================================================
+ANALYSIS BY PREDICTION CORRECTNESS
+============================================================
+
+============================================================
+Analyzing: CORRECT predictions (3043 samples)
+============================================================
+[W] [02:19:36.528997] L-BFGS: max iterations reached
+[W] [02:19:36.529042] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Baseline: 0.5904
+  After erasing bedrooms: 0.5170 (drop: 0.0734)
+  After erasing bathrooms: 0.5170 (drop: 0.0734)
+  After erasing year_built: 0.5170 (drop: 0.0734)
+  After erasing lot_size: 0.5170 (drop: 0.0734)
+  After erasing sqft: 0.5170 (drop: 0.0734)
+
+============================================================
+Analyzing: INCORRECT predictions (2087 samples)
+============================================================
+[W] [02:19:37.834643] L-BFGS: max iterations reached
+[W] [02:19:37.834761] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Baseline: 0.5917
+  After erasing bedrooms: 0.5343 (drop: 0.0574)
+  After erasing bathrooms: 0.5343 (drop: 0.0574)
+  After erasing year_built: 0.5343 (drop: 0.0574)
+  After erasing lot_size: 0.5343 (drop: 0.0574)
+  After erasing sqft: 0.5343 (drop: 0.0574)
+
+Saved correctness analysis to: /home/anshulk/Housing/data/amnesic_results/correctness_analysis_llama-3.2-3b_2_fewshot_cot_temp0.csv
+
+============================================================
+SUMMARY
+============================================================
+
+Baseline Accuracy: 0.6104
+
+Feature Importance (by accuracy drop):
+  1. bedrooms: 0.0974 drop
+  2. bathrooms: 0.0974 drop
+  3. year_built: 0.0974 drop
+  4. lot_size: 0.0974 drop
+  5. sqft: 0.0974 drop
+
+Causal Evidence:
+  bedrooms: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8440545808966862
+    - Drop: 0.0974
+    - Model uses bedrooms significantly for pricing
+  bathrooms: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8304093567251462
+    - Drop: 0.0974
+    - Model uses bathrooms significantly for pricing
+  year_built: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.9220272904483431
+    - Drop: 0.0974
+    - Model uses year_built significantly for pricing
+  lot_size: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8031189083820662
+    - Drop: 0.0974
+    - Model uses lot_size significantly for pricing
+  sqft: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8011695906432749
+    - Drop: 0.0974
+    - Model uses sqft significantly for pricing
+
+Control: PASSED: Feature erasure drops > random erasure
+
+Saved summary to: /home/anshulk/Housing/data/amnesic_results/amnesic_summary_llama-3.2-3b_2_fewshot_cot_temp0.json
+
+============================================================
+EXPERIMENT COMPLETE
+============================================================
+
+SUCCESS: Llama amnesic probing completed
+
+============================================================
+Amnesic Probing: Qwen3-4B-Instruct
+============================================================
+Condition: 2_fewshot_cot_temp0
+Layer: 19 (best probe layer)
+Samples: 5,130 (all)
+Features: bedrooms, bathrooms, year_built, lot_size, sqft
+INLP iterations: 300 per feature
+GPU acceleration: ENABLED (cuML)
+============================================================
+
+Using GPU: True
+Features to process: ['bedrooms', 'bathrooms', 'year_built', 'lot_size', 'sqft']
+
+============================================================
+LOADING DATA
+============================================================
+Loading activations from: /home/anshulk/Housing/data/activations/qwen3-4b_2_fewshot_cot_temp0_activations.npz
+Keys in activation file: ['activations', 'sample_indices', 'labels', 'feature_labels', 'feature_label_columns', 'metadata']
+Activations shape: (5130, 36, 2560)
+Feature columns: ['bathrooms_p1_more' 'bedrooms_p1_more' 'year_p1_newer' 'lot_p1_larger'
+ 'sqft_p1_larger' 'price_p1_higher']
+Loading samples from: /home/anshulk/Housing/data/amnesic_samples/selected_samples_qwen3-4b_2_fewshot_cot_temp0.csv
+Loaded 5130 samples
+Using layer 19, activations shape: (5130, 2560)
+
+Feature label class balance:
+  bedrooms: 30.29% positive (p1 has more)
+  bathrooms: 30.18% positive (p1 has more)
+  year_built: 46.63% positive (p1 has more)
+  lot_size: 48.44% positive (p1 has more)
+  sqft: 48.44% positive (p1 has more)
+
+Price prediction labels: 48.03% have property 1 more expensive
+
+============================================================
+INLP TRAINING
+============================================================
+
+############################################################
+# Running INLP for: bedrooms
+############################################################
+
+============================================================
+INLP for feature: bedrooms
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 30.17% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.879
+
+INLP complete: 300 iterations used
+Initial accuracy: 0.897
+Final accuracy: 0.684
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.699 (should be ~0.50)
+WARNING: Erasure incomplete! Post-INLP accuracy 0.699 > 0.60
+  Initial probe accuracy was: 0.879
+  Iterations used: 300
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_bedrooms_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_bedrooms_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: bathrooms
+############################################################
+
+============================================================
+INLP for feature: bathrooms
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 30.03% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.847
+
+INLP complete: 300 iterations used
+Initial accuracy: 0.877
+Final accuracy: 0.678
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.703 (should be ~0.50)
+WARNING: Erasure incomplete! Post-INLP accuracy 0.703 > 0.60
+  Initial probe accuracy was: 0.847
+  Iterations used: 300
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_bathrooms_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_bathrooms_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: year_built
+############################################################
+
+============================================================
+INLP for feature: year_built
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 46.82% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.917
+
+INLP complete: 300 iterations used
+Initial accuracy: 0.897
+Final accuracy: 0.552
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.532 (should be ~0.50)
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_year_built_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_year_built_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: lot_size
+############################################################
+
+============================================================
+INLP for feature: lot_size
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 48.05% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.838
+
+Stopped at iteration 50: accuracy 0.480 < 0.52
+
+INLP complete: 50 iterations used
+Initial accuracy: 0.838
+Final accuracy: 0.480
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.520 (should be ~0.50)
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_lot_size_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_lot_size_2_fewshot_cot_temp0.npz
+
+############################################################
+# Running INLP for: sqft
+############################################################
+
+============================================================
+INLP for feature: sqft
+============================================================
+Samples: 5130 (train: 3590, val: 513, test: 1027)
+Class balance: 48.05% positive
+Using GPU: True
+Applied StandardScaler to activations
+Initial probe accuracy (before INLP, on test set): 0.839
+
+Stopped at iteration 50: accuracy 0.480 < 0.52
+
+INLP complete: 50 iterations used
+Initial accuracy: 0.840
+Final accuracy: 0.480
+
+Verification (on held-out test set): Post-INLP probe accuracy = 0.520 (should be ~0.50)
+Saved projection to: /home/anshulk/Housing/data/amnesic_results/P_sqft_2_fewshot_cot_temp0.npy
+Saved scaler to: /home/anshulk/Housing/data/amnesic_results/scaler_sqft_2_fewshot_cot_temp0.npz
+
+Saved INLP info to: /home/anshulk/Housing/data/amnesic_results/inlp_info_qwen3-4b_2_fewshot_cot_temp0.json
+
+============================================================
+PRICE PREDICTION EVALUATION
+============================================================
+
+Price prediction evaluation:
+Train: 3590, Test: 1540
+
+Condition: BASELINE
+[W] [02:22:19.873978] L-BFGS: max iterations reached
+[W] [02:22:19.874029] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Accuracy: 0.6117, AUC: 0.6402
+
+Condition: ERASE bedrooms
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0987
+
+Condition: ERASE bathrooms
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0987
+
+Condition: ERASE year_built
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0987
+
+Condition: ERASE lot_size
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0987
+
+Condition: ERASE sqft
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0987
+
+Condition: ERASE ALL FEATURES
+  Accuracy: 0.5130, AUC: 0.5000, Drop: 0.0987
+
+Condition: RANDOM CONTROL
+[W] [02:22:22.023707] L-BFGS: max iterations reached
+[W] [02:22:22.023748] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Accuracy: 0.6136, AUC: 0.6376, Drop: -0.0019
+
+Saved results to: /home/anshulk/Housing/data/amnesic_results/amnesic_results_qwen3-4b_2_fewshot_cot_temp0.csv
+
+============================================================
+ANALYSIS BY PREDICTION CORRECTNESS
+============================================================
+
+============================================================
+Analyzing: CORRECT predictions (2912 samples)
+============================================================
+[W] [02:22:22.588260] L-BFGS: max iterations reached
+[W] [02:22:22.588290] Maximum iterations reached before solver is converged. To increase model accuracy you can increase the number of iterations (max_iter) or improve the scaling of the input data.
+  Baseline: 0.6201
+  After erasing bedrooms: 0.5046 (drop: 0.1156)
+  After erasing bathrooms: 0.5046 (drop: 0.1156)
+  After erasing year_built: 0.5046 (drop: 0.1156)
+  After erasing lot_size: 0.5046 (drop: 0.1156)
+  After erasing sqft: 0.5046 (drop: 0.1156)
+
+============================================================
+Analyzing: INCORRECT predictions (2218 samples)
+============================================================
+  Baseline: 0.6111
+  After erasing bedrooms: 0.5511 (drop: 0.0601)
+  After erasing bathrooms: 0.5511 (drop: 0.0601)
+  After erasing year_built: 0.5511 (drop: 0.0601)
+  After erasing lot_size: 0.5511 (drop: 0.0601)
+  After erasing sqft: 0.5511 (drop: 0.0601)
+
+Saved correctness analysis to: /home/anshulk/Housing/data/amnesic_results/correctness_analysis_qwen3-4b_2_fewshot_cot_temp0.csv
+
+============================================================
+SUMMARY
+============================================================
+
+Baseline Accuracy: 0.6117
+
+Feature Importance (by accuracy drop):
+  1. bedrooms: 0.0987 drop
+  2. bathrooms: 0.0987 drop
+  3. year_built: 0.0987 drop
+  4. lot_size: 0.0987 drop
+  5. sqft: 0.0987 drop
+
+Causal Evidence:
+  bedrooms: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8966861598440545
+    - Drop: 0.0987
+    - Model uses bedrooms significantly for pricing
+  bathrooms: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8771929824561403
+    - Drop: 0.0987
+    - Model uses bathrooms significantly for pricing
+  year_built: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8966861598440545
+    - Drop: 0.0987
+    - Model uses year_built significantly for pricing
+  lot_size: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8382066276803118
+    - Drop: 0.0987
+    - Model uses lot_size significantly for pricing
+  sqft: SIGNIFICANT_CONTRIBUTOR
+    - Probe acc: 0.8401559454191033
+    - Drop: 0.0987
+    - Model uses sqft significantly for pricing
+
+Control: PASSED: Feature erasure drops > random erasure
+
+Saved summary to: /home/anshulk/Housing/data/amnesic_results/amnesic_summary_qwen3-4b_2_fewshot_cot_temp0.json
+
+============================================================
+EXPERIMENT COMPLETE
+============================================================
+
+SUCCESS: Qwen amnesic probing completed
+
+============================================================
+Validating Amnesic Probing Results
+============================================================
+✓ Llama results: 8 conditions tested
+  Baseline accuracy: 0.6104
+  Feature importance (by accuracy drop):
+    bedrooms: 0.0974 drop
+    bathrooms: 0.0974 drop
+    year_built: 0.0974 drop
+    lot_size: 0.0974 drop
+    sqft: 0.0974 drop
+  Random control drop: 0.0006
+
+✓ Qwen results: 8 conditions tested
+  Baseline accuracy: 0.6117
+
+============================================================
+Amnesic Probing Complete
+============================================================
+End time: Wed Feb  4 02:22:25 EST 2026
+Llama exit code: 0
+Qwen exit code: 0
+
+Output files saved to: data/amnesic_results/
+
+Key output files:
+-rw-r----- 1 anshulk anshulk 571 Feb  4 02:19 data/amnesic_results/amnesic_results_llama-3.2-3b_2_fewshot_cot_temp0.csv
+-rw-r----- 1 anshulk anshulk 556 Feb  4 02:22 data/amnesic_results/amnesic_results_qwen3-4b_2_fewshot_cot_temp0.csv
+-rw-r----- 1 anshulk anshulk 861 Feb  4 02:19 data/amnesic_results/correctness_analysis_llama-3.2-3b_2_fewshot_cot_temp0.csv
+-rw-r----- 1 anshulk anshulk 825 Feb  4 02:22 data/amnesic_results/correctness_analysis_qwen3-4b_2_fewshot_cot_temp0.csv
+
+Projection matrices (for future use):
+-rw-r----- 1 anshulk anshulk 26M Feb  4 02:21 data/amnesic_results/P_bathrooms_2_fewshot_cot_temp0.npy
+-rw-r----- 1 anshulk anshulk 26M Feb  4 02:20 data/amnesic_results/P_bedrooms_2_fewshot_cot_temp0.npy
+-rw-r----- 1 anshulk anshulk 26M Feb  4 02:22 data/amnesic_results/P_lot_size_2_fewshot_cot_temp0.npy
+-rw-r----- 1 anshulk anshulk 26M Feb  4 02:22 data/amnesic_results/P_sqft_2_fewshot_cot_temp0.npy
+-rw-r----- 1 anshulk anshulk 26M Feb  4 02:21 data/amnesic_results/P_year_built_2_fewshot_cot_temp0.npy
+
+Summary files:
+-rw-r----- 1 anshulk anshulk 2.1K Feb  4 02:19 data/amnesic_results/amnesic_summary_llama-3.2-3b_2_fewshot_cot_temp0.json
+-rw-r----- 1 anshulk anshulk 2.1K Feb  4 02:22 data/amnesic_results/amnesic_summary_qwen3-4b_2_fewshot_cot_temp0.json
+
+============================================================
+Job Ended: Wed Feb  4 02:22:25 EST 2026
+Total Runtime: 393 seconds (6 minutes)
+============================================================
+✓ All amnesic probing completed successfully!

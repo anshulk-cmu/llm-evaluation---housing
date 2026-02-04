@@ -1,0 +1,22 @@
+{
+  "experiment": "raw_feature_logit",
+  "timestamp": "2026-02-04T01:19:59.698661",
+  "data_split": {
+    "train": 3590,
+    "val": 514,
+    "test": 1026,
+    "seed": 42
+  },
+  "best_c": 0.01,
+  "test_accuracy": 0.6296296296296297,
+  "test_auc": 0.6810394983515418,
+  "ci_lower": 0.6003898635477583,
+  "ci_upper": 0.6598440545808967,
+  "coefficients": {
+    "bedrooms_diff": 0.254348425896419,
+    "bathrooms_diff": 0.4929175210107424,
+    "sqft_diff": -0.03908844863189444,
+    "year_diff": -0.10106547045044598
+  },
+  "intercept": -0.09998116524079201
+}

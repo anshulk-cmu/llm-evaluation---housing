@@ -1,0 +1,80 @@
+{
+  "experiment": "raw_feature_logit_v2",
+  "timestamp": "2026-02-04T01:24:47.697851",
+  "best_variant": "v2_pct_diff",
+  "test_accuracy": 0.6335282651072125,
+  "test_auc": 0.6796172991143576,
+  "ci_95": [
+    0.6033138401559455,
+    0.6637670565302144
+  ],
+  "coefficients": {
+    "bedrooms_diff": 0.276180267533697,
+    "bathrooms_diff": 0.5536558688530443,
+    "sqft_pct_diff": -0.053917830460932924,
+    "year_diff": -0.10093760743113595
+  },
+  "best_c": 0.1,
+  "comparison": [
+    {
+      "variant": "v2_pct_diff",
+      "n_features": 4,
+      "val_acc": 0.632295719844358,
+      "test_acc": 0.6335282651072125,
+      "test_auc": 0.6796172991143576,
+      "ci_lower": 0.6033138401559455,
+      "ci_upper": 0.6637670565302144,
+      "best_c": 0.1
+    },
+    {
+      "variant": "v3_log_sqft",
+      "n_features": 4,
+      "val_acc": 0.6303501945525292,
+      "test_acc": 0.6306042884990254,
+      "test_auc": 0.6797903206793093,
+      "ci_lower": 0.6023148148148149,
+      "ci_upper": 0.6608187134502924,
+      "best_c": 0.01
+    },
+    {
+      "variant": "v1_basic_diff",
+      "n_features": 4,
+      "val_acc": 0.6284046692607004,
+      "test_acc": 0.6296296296296297,
+      "test_auc": 0.6810394983515418,
+      "ci_lower": 0.6003898635477583,
+      "ci_upper": 0.6598440545808967,
+      "best_c": 0.01
+    },
+    {
+      "variant": "v5_interactions",
+      "n_features": 7,
+      "val_acc": 0.6264591439688716,
+      "test_acc": 0.6296296296296297,
+      "test_auc": 0.6808873914812547,
+      "ci_lower": 0.6003898635477583,
+      "ci_upper": 0.6608187134502924,
+      "best_c": 0.01
+    },
+    {
+      "variant": "v6_separate",
+      "n_features": 8,
+      "val_acc": 0.6381322957198443,
+      "test_acc": 0.6296296296296297,
+      "test_auc": 0.6816175044586326,
+      "ci_lower": 0.6003898635477583,
+      "ci_upper": 0.6608187134502924,
+      "best_c": 0.1
+    },
+    {
+      "variant": "v4_binary",
+      "n_features": 4,
+      "val_acc": 0.6264591439688716,
+      "test_acc": 0.6081871345029239,
+      "test_auc": 0.6363904279146528,
+      "ci_lower": 0.5799220272904484,
+      "ci_upper": 0.6393762183235867,
+      "best_c": 0.001
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "mp": {
+    "bedrooms": {
+      "feature": "bedrooms",
+      "method": "mp",
+      "n_train": 3590,
+      "n_val": 513,
+      "n_test": 1027,
+      "initial_probe_accuracy": 0.8831548198636806,
+      "verification_accuracy": 0.6991236611489776,
+      "rank_removed": 1,
+      "cosine_similarity": 0.9835332632064819
+    },
+    "bathrooms": {
+      "feature": "bathrooms",
+      "method": "mp",
+      "n_train": 3590,
+      "n_val": 513,
+      "n_test": 1027,
+      "initial_probe_accuracy": 0.8325219084712756,
+      "verification_accuracy": 0.7030185004868549,
+      "rank_removed": 1,
+      "cosine_similarity": 0.9812328815460205
+    },
+    "year_built": {
+      "feature": "year_built",
+      "method": "mp",
+      "n_train": 3590,
+      "n_val": 513,
+      "n_test": 1027,
+      "initial_probe_accuracy": 0.9113924050632911,
+      "verification_accuracy": 0.5316455696202531,
+      "rank_removed": 1,
+      "cosine_similarity": 0.9841402769088745
+    },
+    "lot_size": {
+      "feature": "lot_size",
+      "method": "mp",
+      "n_train": 3590,
+      "n_val": 513,
+      "n_test": 1027,
+      "initial_probe_accuracy": 0.818889970788705,
+      "verification_accuracy": 0.5199610516066212,
+      "rank_removed": 1,
+      "cosine_similarity": 0.9852549433708191
+    },
+    "sqft": {
+      "feature": "sqft",
+      "method": "mp",
+      "n_train": 3590,
+      "n_val": 513,
+      "n_test": 1027,
+      "initial_probe_accuracy": 0.8276533592989289,
+      "verification_accuracy": 0.5199610516066212,
+      "rank_removed": 1,
+      "cosine_similarity": 0.9852549433708191
+    }
+  }
+}

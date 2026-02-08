@@ -1,0 +1,66 @@
+{
+  "experiment": "2_fewshot_cot_temp0",
+  "methods": {
+    "mp": {
+      "baseline_accuracy": 0.6019480519480519,
+      "random_control_drop": 0.0006493506493506218,
+      "features": {
+        "bedrooms": {
+          "initial_probe_accuracy": 0.8967867575462513,
+          "verification_accuracy": 0.6991236611489776,
+          "cosine_similarity": 0.9838519096374512,
+          "price_drop": 0.013636363636363558,
+          "information_control": "PASS",
+          "selectivity_test": "PASS",
+          "recovery_pct": 30.000000000000426,
+          "verdict": "MINOR",
+          "description": "bedrooms has minor causal contribution to pricing"
+        },
+        "bathrooms": {
+          "initial_probe_accuracy": 0.8296007789678675,
+          "verification_accuracy": 0.7030185004868549,
+          "cosine_similarity": 0.9821894764900208,
+          "price_drop": 0.012337662337662314,
+          "information_control": "PASS",
+          "selectivity_test": "PASS",
+          "recovery_pct": 200.0,
+          "verdict": "MINOR",
+          "description": "bathrooms has minor causal contribution to pricing"
+        },
+        "year_built": {
+          "initial_probe_accuracy": 0.8851022395326192,
+          "verification_accuracy": 0.5316455696202531,
+          "cosine_similarity": 0.9838517904281616,
+          "price_drop": 0.0071428571428571175,
+          "information_control": "PASS",
+          "selectivity_test": "PASS",
+          "recovery_pct": 42.85714285714251,
+          "verdict": "NOT_USED",
+          "description": "year_built encoded but not used for pricing"
+        },
+        "lot_size": {
+          "initial_probe_accuracy": 0.807205452775073,
+          "verification_accuracy": 0.5199610516066212,
+          "cosine_similarity": 0.9908506870269775,
+          "price_drop": 0.009740259740259716,
+          "information_control": "PASS",
+          "selectivity_test": "PASS",
+          "recovery_pct": 0.0,
+          "verdict": "NOT_USED",
+          "description": "lot_size encoded but not used for pricing"
+        },
+        "sqft": {
+          "initial_probe_accuracy": 0.8111002921129503,
+          "verification_accuracy": 0.5199610516066212,
+          "cosine_similarity": 0.9908506870269775,
+          "price_drop": 0.008441558441558361,
+          "information_control": "PASS",
+          "selectivity_test": "PASS",
+          "recovery_pct": 0.0,
+          "verdict": "NOT_USED",
+          "description": "sqft encoded but not used for pricing"
+        }
+      }
+    }
+  }
+}

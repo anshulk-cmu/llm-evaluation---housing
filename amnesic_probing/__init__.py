@@ -1,14 +1,29 @@
 """
 Amnesic Probing Module
 
-Implements the amnesic probing methodology from:
-- Elazar et al. (2021) "Amnesic Probing: Behavioral Explanation with Amnesic Counterfactuals" (TACL)
-- Ravfogel et al. (2020) "Null It Out: Guarding Protected Attributes by Iterative Nullspace Projection" (ACL)
+Tests whether the model USES the features it encodes for price prediction,
+establishing causal (not just correlational) links between encoded information
+and behavior.
 
-This module tests whether the model USES the features it encodes for price prediction,
-establishing causal (not just correlational) links between encoded information and behavior.
+Method:
+  - Mean Projection (MP): Dobrzeniecka et al. (2025) rank-1 orthogonal erasure
+
+Three-step causal framework from Dobrzeniecka et al. (2025):
+  Step 1: Erasure + Verification
+  Step 2: Information Control (target vs random erasure)
+  Step 3: Selectivity Control (gold label recovery)
 """
 
-from .inlp_cuml import INLPProjector, run_inlp_for_feature, CUML_AVAILABLE
+from .mp_erasure import (
+    run_erasure_for_feature,
+    fit_mean_projection,
+    fit_random_erasure,
+    ErasureResult,
+)
 
-__all__ = ['INLPProjector', 'run_inlp_for_feature', 'CUML_AVAILABLE']
+__all__ = [
+    'run_erasure_for_feature',
+    'fit_mean_projection',
+    'fit_random_erasure',
+    'ErasureResult',
+]

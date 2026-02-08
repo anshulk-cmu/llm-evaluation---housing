@@ -1,6 +1,7 @@
 # Large files to exclude
 data/activations/
 *.npz
+*.npy
 models/
 
 # Python

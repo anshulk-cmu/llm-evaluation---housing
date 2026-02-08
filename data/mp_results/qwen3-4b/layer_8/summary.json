@@ -1,0 +1,66 @@
+{
+  "experiment": "2_fewshot_cot_temp0",
+  "methods": {
+    "mp": {
+      "baseline_accuracy": 0.5253246753246753,
+      "random_control_drop": 0.002207792207792214,
+      "features": {
+        "bedrooms": {
+          "initial_probe_accuracy": 0.6991236611489776,
+          "verification_accuracy": 0.6991236611489776,
+          "cosine_similarity": 0.9785009026527405,
+          "price_drop": 0.005844155844155874,
+          "information_control": "PASS",
+          "selectivity_test": "PASS",
+          "recovery_pct": 100.0,
+          "verdict": "NOT_USED",
+          "description": "bedrooms encoded but not used for pricing"
+        },
+        "bathrooms": {
+          "initial_probe_accuracy": 0.6991236611489776,
+          "verification_accuracy": 0.7030185004868549,
+          "cosine_similarity": 0.9868967533111572,
+          "price_drop": 0.0032467532467532756,
+          "information_control": "FAIL",
+          "selectivity_test": "PASS",
+          "recovery_pct": 100.0,
+          "verdict": "NOT_CAUSAL",
+          "description": "Erasure of bathrooms does not hurt more than random"
+        },
+        "year_built": {
+          "initial_probe_accuracy": 0.5501460564751705,
+          "verification_accuracy": 0.5316455696202531,
+          "cosine_similarity": 0.9804995059967041,
+          "price_drop": -0.0012987012987013546,
+          "information_control": "FAIL",
+          "selectivity_test": "PASS",
+          "recovery_pct": 100.0,
+          "verdict": "NOT_CAUSAL",
+          "description": "Erasure of year_built does not hurt more than random"
+        },
+        "lot_size": {
+          "initial_probe_accuracy": 0.5520934761441091,
+          "verification_accuracy": 0.5199610516066212,
+          "cosine_similarity": 0.9855433702468872,
+          "price_drop": -0.0012987012987013546,
+          "information_control": "FAIL",
+          "selectivity_test": "PASS",
+          "recovery_pct": 43.74999999999973,
+          "verdict": "NOT_CAUSAL",
+          "description": "Erasure of lot_size does not hurt more than random"
+        },
+        "sqft": {
+          "initial_probe_accuracy": 0.5540408958130477,
+          "verification_accuracy": 0.5199610516066212,
+          "cosine_similarity": 0.9855433702468872,
+          "price_drop": -0.0025974025974025983,
+          "information_control": "FAIL",
+          "selectivity_test": "PASS",
+          "recovery_pct": 100.0,
+          "verdict": "NOT_CAUSAL",
+          "description": "Erasure of sqft does not hurt more than random"
+        }
+      }
+    }
+  }
+}

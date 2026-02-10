@@ -2,25 +2,25 @@
   "experiment": "2_fewshot_cot_temp0",
   "methods": {
     "mp": {
-      "baseline_accuracy": 0.5668831168831169,
-      "random_control_drop": 0.0017532467532467289,
+      "baseline_accuracy": 0.564935064935065,
+      "random_control_drop": 0.0003246753246753498,
       "features": {
         "bedrooms": {
-          "initial_probe_accuracy": 0.7195715676728335,
+          "initial_probe_accuracy": 0.7185978578383642,
           "verification_accuracy": 0.6991236611489776,
           "cosine_similarity": 0.9720525145530701,
-          "price_drop": 0.0025974025974025983,
-          "information_control": "FAIL",
+          "price_drop": 0.001948051948051921,
+          "information_control": "PASS",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of bedrooms does not hurt more than random"
+          "verdict": "NOT_USED",
+          "description": "bedrooms encoded but not used for pricing"
         },
         "bathrooms": {
-          "initial_probe_accuracy": 0.7361246348588121,
+          "initial_probe_accuracy": 0.7351509250243428,
           "verification_accuracy": 0.7030185004868549,
           "cosine_similarity": 0.981397271156311,
-          "price_drop": 0.016883116883116833,
+          "price_drop": 0.014935064935064912,
           "information_control": "PASS",
           "selectivity_test": "PASS",
           "recovery_pct": 200.0,
@@ -31,34 +31,23 @@
           "initial_probe_accuracy": 0.7049659201557936,
           "verification_accuracy": 0.5316455696202531,
           "cosine_similarity": 0.97926265001297,
-          "price_drop": 0.011688311688311637,
+          "price_drop": 0.005844155844155874,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 175.00000000000034,
-          "verdict": "MINOR",
-          "description": "year_built has minor causal contribution to pricing"
+          "recovery_pct": 150.0,
+          "verdict": "NOT_USED",
+          "description": "year_built encoded but not used for pricing"
         },
         "lot_size": {
           "initial_probe_accuracy": 0.620253164556962,
           "verification_accuracy": 0.5199610516066212,
           "cosine_similarity": 0.9720466136932373,
-          "price_drop": 0.0,
+          "price_drop": -0.0032467532467532756,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
           "verdict": "NOT_CAUSAL",
           "description": "Erasure of lot_size does not hurt more than random"
-        },
-        "sqft": {
-          "initial_probe_accuracy": 0.6231742940603701,
-          "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.9720466136932373,
-          "price_drop": 0.0,
-          "information_control": "FAIL",
-          "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of sqft does not hurt more than random"
         }
       }
     }

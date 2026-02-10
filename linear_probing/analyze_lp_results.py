@@ -32,7 +32,6 @@ sns.set_palette("husl")
 FEATURE_LABELS = {
     "bathrooms_p1_more": "Bathrooms",
     "bedrooms_p1_more": "Bedrooms",
-    "sqft_p1_larger": "Square Feet",
     "lot_p1_larger": "Lot Size",
     "year_p1_newer": "Year Built",
     "price_p1_higher": "Price (Target)"
@@ -41,7 +40,6 @@ FEATURE_LABELS = {
 FEATURE_ORDER = [
     "bathrooms_p1_more",
     "bedrooms_p1_more",
-    "sqft_p1_larger",
     "lot_p1_larger",
     "year_p1_newer",
     "price_p1_higher"

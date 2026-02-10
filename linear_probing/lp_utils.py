@@ -123,10 +123,6 @@ def create_feature_labels(df: pd.DataFrame) -> pd.DataFrame:
     lot_2 = df.apply(lambda r: parse_lot(r, "_2"), axis=1)
     labels["lot_p1_larger"] = (lot_1 > lot_2).astype(int)
 
-    # Square footage comparison (lot size is used as proxy for sqft)
-    # Note: In this dataset, "lot" represents the land area, which we use as sqft comparison
-    labels["sqft_p1_larger"] = labels["lot_p1_larger"].copy()  # Using lot as proxy for sqft
-
     # Ground truth: which property has higher price
     # This is what we're ultimately trying to predict
     # Calculate from price columns if label doesn't exist

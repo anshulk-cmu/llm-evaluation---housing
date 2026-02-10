@@ -9,6 +9,7 @@ Improvements over V1:
 - Enhanced analysis of counterintuitive coefficients
 """
 
+import sys
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -49,8 +50,8 @@ def load_and_prepare_data(data_path: Path) -> tuple:
         'bedrooms_2': df['bedrooms_2'],
         'bathrooms_1': df['bathrooms_1'],
         'bathrooms_2': df['bathrooms_2'],
-        'sqft_1': df['lot_1'],
-        'sqft_2': df['lot_2'],
+        'lot_1': df['lot_1'],
+        'lot_2': df['lot_2'],
         'year_1': df['yearBuilt_1'],
         'year_2': df['yearBuilt_2'],
         'price_1': df['price.y_1'],
@@ -74,64 +75,64 @@ def create_feature_sets(raw_data: dict) -> dict:
     feature_sets['v1_basic_diff'] = pd.DataFrame({
         'bedrooms_diff': raw_data['bedrooms_1'] - raw_data['bedrooms_2'],
         'bathrooms_diff': raw_data['bathrooms_1'] - raw_data['bathrooms_2'],
-        'sqft_diff': raw_data['sqft_1'] - raw_data['sqft_2'],
+        'lot_diff': raw_data['lot_1'] - raw_data['lot_2'],
         'year_diff': raw_data['year_1'] - raw_data['year_2'],
     })
-    
+
     # V2: Percentage/ratio differences (better for different scales)
-    avg_sqft = (raw_data['sqft_1'] + raw_data['sqft_2']) / 2
+    avg_lot = (raw_data['lot_1'] + raw_data['lot_2']) / 2
     avg_year = (raw_data['year_1'] + raw_data['year_2']) / 2
-    
+
     feature_sets['v2_pct_diff'] = pd.DataFrame({
         'bedrooms_diff': raw_data['bedrooms_1'] - raw_data['bedrooms_2'],
         'bathrooms_diff': raw_data['bathrooms_1'] - raw_data['bathrooms_2'],
-        'sqft_pct_diff': (raw_data['sqft_1'] - raw_data['sqft_2']) / avg_sqft.replace(0, 1),
+        'lot_pct_diff': (raw_data['lot_1'] - raw_data['lot_2']) / avg_lot.replace(0, 1),
         'year_diff': raw_data['year_1'] - raw_data['year_2'],
     })
-    
-    # V3: Log-transformed sqft (common in real estate)
-    log_sqft_1 = np.log1p(raw_data['sqft_1'].clip(lower=1))
-    log_sqft_2 = np.log1p(raw_data['sqft_2'].clip(lower=1))
-    
-    feature_sets['v3_log_sqft'] = pd.DataFrame({
+
+    # V3: Log-transformed lot size (common in real estate)
+    log_lot_1 = np.log1p(raw_data['lot_1'].clip(lower=1))
+    log_lot_2 = np.log1p(raw_data['lot_2'].clip(lower=1))
+
+    feature_sets['v3_log_lot'] = pd.DataFrame({
         'bedrooms_diff': raw_data['bedrooms_1'] - raw_data['bedrooms_2'],
         'bathrooms_diff': raw_data['bathrooms_1'] - raw_data['bathrooms_2'],
-        'log_sqft_diff': log_sqft_1 - log_sqft_2,
+        'log_lot_diff': log_lot_1 - log_lot_2,
         'year_diff': raw_data['year_1'] - raw_data['year_2'],
     })
-    
+
     # V4: Binary indicators (simpler, more robust)
     feature_sets['v4_binary'] = pd.DataFrame({
         'bed_1_more': (raw_data['bedrooms_1'] > raw_data['bedrooms_2']).astype(int),
         'bath_1_more': (raw_data['bathrooms_1'] > raw_data['bathrooms_2']).astype(int),
-        'sqft_1_larger': (raw_data['sqft_1'] > raw_data['sqft_2']).astype(int),
+        'lot_1_larger': (raw_data['lot_1'] > raw_data['lot_2']).astype(int),
         'year_1_newer': (raw_data['year_1'] > raw_data['year_2']).astype(int),
     })
-    
+
     # V5: With interaction terms
     beds_diff = raw_data['bedrooms_1'] - raw_data['bedrooms_2']
     baths_diff = raw_data['bathrooms_1'] - raw_data['bathrooms_2']
-    sqft_diff = raw_data['sqft_1'] - raw_data['sqft_2']
+    lot_diff = raw_data['lot_1'] - raw_data['lot_2']
     year_diff = raw_data['year_1'] - raw_data['year_2']
-    
+
     feature_sets['v5_interactions'] = pd.DataFrame({
         'bedrooms_diff': beds_diff,
         'bathrooms_diff': baths_diff,
-        'sqft_diff': sqft_diff,
+        'lot_diff': lot_diff,
         'year_diff': year_diff,
         'beds_x_baths': beds_diff * baths_diff,
-        'sqft_x_year': sqft_diff * year_diff / 1000,  # scaled
-        'baths_x_sqft': baths_diff * sqft_diff / 1000,
+        'lot_x_year': lot_diff * year_diff / 1000,  # scaled
+        'baths_x_lot': baths_diff * lot_diff / 1000,
     })
-    
+
     # V6: Separate features (not differences)
     feature_sets['v6_separate'] = pd.DataFrame({
         'bedrooms_1': raw_data['bedrooms_1'],
         'bedrooms_2': raw_data['bedrooms_2'],
         'bathrooms_1': raw_data['bathrooms_1'],
         'bathrooms_2': raw_data['bathrooms_2'],
-        'sqft_1': raw_data['sqft_1'] / 1000,  # scale to thousands
-        'sqft_2': raw_data['sqft_2'] / 1000,
+        'lot_1': raw_data['lot_1'] / 1000,  # scale to thousands
+        'lot_2': raw_data['lot_2'] / 1000,
         'year_1': (raw_data['year_1'] - 1900) / 100,  # normalize years
         'year_2': (raw_data['year_2'] - 1900) / 100,
     })
@@ -255,7 +256,7 @@ def plot_feature_distributions(raw_data: dict, target: pd.Series, output_dir: Pa
     features_to_plot = [
         ('bedrooms_diff', raw_data['bedrooms_1'] - raw_data['bedrooms_2']),
         ('bathrooms_diff', raw_data['bathrooms_1'] - raw_data['bathrooms_2']),
-        ('sqft_diff', (raw_data['sqft_1'] - raw_data['sqft_2']) / 1000),  # in thousands
+        ('lot_diff', (raw_data['lot_1'] - raw_data['lot_2']) / 1000),  # in thousands
         ('year_diff', raw_data['year_1'] - raw_data['year_2']),
     ]
     
@@ -267,7 +268,7 @@ def plot_feature_distributions(raw_data: dict, target: pd.Series, output_dir: Pa
         ax.hist(vals_0, bins=30, alpha=0.6, label='P2 more expensive', color=COLORS['negative'])
         ax.hist(vals_1, bins=30, alpha=0.6, label='P1 more expensive', color=COLORS['positive'])
         ax.axvline(0, color='black', linestyle='--', alpha=0.5)
-        ax.set_xlabel(name + (' (thousands)' if 'sqft' in name else ''))
+        ax.set_xlabel(name + (' (thousands)' if 'lot' in name else ''))
         ax.set_ylabel('Count')
         ax.set_title(f'Distribution of {name}')
         ax.legend()
@@ -284,11 +285,11 @@ def plot_correlation_matrix(raw_data: dict, target: pd.Series, output_dir: Path)
     df = pd.DataFrame({
         'bedrooms_diff': raw_data['bedrooms_1'] - raw_data['bedrooms_2'],
         'bathrooms_diff': raw_data['bathrooms_1'] - raw_data['bathrooms_2'],
-        'sqft_diff': raw_data['sqft_1'] - raw_data['sqft_2'],
+        'lot_diff': raw_data['lot_1'] - raw_data['lot_2'],
         'year_diff': raw_data['year_1'] - raw_data['year_2'],
         'price_1_higher': target
     })
-    
+
     fig, ax = plt.subplots(figsize=(8, 6))
     corr = df.corr()
     mask = np.triu(np.ones_like(corr, dtype=bool), k=1)
@@ -385,10 +386,10 @@ def plot_feature_importance_by_accuracy(raw_data: dict, target: pd.Series, outpu
     features = {
         'bedrooms_diff': raw_data['bedrooms_1'] - raw_data['bedrooms_2'],
         'bathrooms_diff': raw_data['bathrooms_1'] - raw_data['bathrooms_2'],
-        'sqft_diff': raw_data['sqft_1'] - raw_data['sqft_2'],
+        'lot_diff': raw_data['lot_1'] - raw_data['lot_2'],
         'year_diff': raw_data['year_1'] - raw_data['year_2'],
     }
-    
+
     for name, values in features.items():
         df = pd.DataFrame({name: values})
         splits = split_data(df, target, TRAIN_RATIO, VAL_RATIO, RANDOM_SEED)
@@ -429,42 +430,42 @@ def plot_feature_importance_by_accuracy(raw_data: dict, target: pd.Series, outpu
 
 
 def analyze_counterintuitive_coefficients(raw_data: dict, target: pd.Series):
-    """Analyze why year and sqft have negative coefficients."""
-    
+    """Analyze why year and lot size have negative coefficients."""
+
     print("\n" + "=" * 70)
     print("ANALYZING COUNTERINTUITIVE COEFFICIENTS")
     print("=" * 70)
-    
+
     # Create dataframe for analysis
     df = pd.DataFrame({
         'year_diff': raw_data['year_1'] - raw_data['year_2'],
-        'sqft_diff': raw_data['sqft_1'] - raw_data['sqft_2'],
+        'lot_diff': raw_data['lot_1'] - raw_data['lot_2'],
         'baths_diff': raw_data['bathrooms_1'] - raw_data['bathrooms_2'],
         'beds_diff': raw_data['bedrooms_1'] - raw_data['bedrooms_2'],
         'price_1_higher': target
     })
-    
+
     # Check: When P1 is newer, is it more expensive?
     newer = df[df['year_diff'] > 0]
     older = df[df['year_diff'] < 0]
-    
+
     print(f"\nYear analysis:")
     print(f"  When P1 is NEWER: {newer['price_1_higher'].mean():.1%} of time P1 is more expensive (n={len(newer)})")
     print(f"  When P1 is OLDER: {older['price_1_higher'].mean():.1%} of time P1 is more expensive (n={len(older)})")
-    
-    # Check: When P1 is larger sqft, is it more expensive?
-    larger = df[df['sqft_diff'] > 100]
-    smaller = df[df['sqft_diff'] < -100]
-    
-    print(f"\nSqft analysis:")
+
+    # Check: When P1 has larger lot, is it more expensive?
+    larger = df[df['lot_diff'] > 100]
+    smaller = df[df['lot_diff'] < -100]
+
+    print(f"\nLot size analysis:")
     print(f"  When P1 is LARGER: {larger['price_1_higher'].mean():.1%} of time P1 is more expensive (n={len(larger)})")
     print(f"  When P1 is SMALLER: {smaller['price_1_higher'].mean():.1%} of time P1 is more expensive (n={len(smaller)})")
-    
+
     # Check correlations between features
     print(f"\nFeature correlations (explain confounding):")
     print(f"  year_diff vs baths_diff: {df['year_diff'].corr(df['baths_diff']):.3f}")
     print(f"  year_diff vs beds_diff:  {df['year_diff'].corr(df['beds_diff']):.3f}")
-    print(f"  sqft_diff vs baths_diff: {df['sqft_diff'].corr(df['baths_diff']):.3f}")
+    print(f"  lot_diff vs baths_diff: {df['lot_diff'].corr(df['baths_diff']):.3f}")
 
 
 def save_all_results(comparison_df: pd.DataFrame, best_result: dict, 
@@ -566,5 +567,23 @@ def main():
     return comparison_df, best_result
 
 
+class Tee:
+    """Write to both stdout and a log file."""
+    def __init__(self, log_path):
+        self.terminal = sys.stdout
+        self.log = open(log_path, 'w')
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+
 if __name__ == "__main__":
+    log_dir = Path("logs")
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir / f"raw_feature_logit_v2_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+    sys.stdout = Tee(log_path)
+    print(f"Logging to {log_path}")
     main()

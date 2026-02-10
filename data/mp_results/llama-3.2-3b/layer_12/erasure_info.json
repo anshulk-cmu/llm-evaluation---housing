@@ -6,7 +6,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.6991236611489776,
+      "initial_probe_accuracy": 0.7010710808179162,
       "verification_accuracy": 0.6991236611489776,
       "rank_removed": 1,
       "cosine_similarity": 0.9866257905960083
@@ -28,7 +28,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.6241480038948394,
+      "initial_probe_accuracy": 0.6280428432327166,
       "verification_accuracy": 0.5316455696202531,
       "rank_removed": 1,
       "cosine_similarity": 0.9230349063873291
@@ -39,18 +39,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.5764362220058422,
-      "verification_accuracy": 0.5199610516066212,
-      "rank_removed": 1,
-      "cosine_similarity": 0.9536288380622864
-    },
-    "sqft": {
-      "feature": "sqft",
-      "method": "mp",
-      "n_train": 3590,
-      "n_val": 513,
-      "n_test": 1027,
-      "initial_probe_accuracy": 0.5793573515092503,
+      "initial_probe_accuracy": 0.5803310613437196,
       "verification_accuracy": 0.5199610516066212,
       "rank_removed": 1,
       "cosine_similarity": 0.9536288380622864

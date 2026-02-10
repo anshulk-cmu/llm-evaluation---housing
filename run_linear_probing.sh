@@ -16,9 +16,9 @@
 # This script runs linear probing on extracted activations to analyze
 # what features are encoded in each layer of the model.
 #
-# Probes for 6 features across all layers:
-#   - bathrooms_p1_more, bedrooms_p1_more, sqft_p1_larger
-#   - lot_p1_larger, year_p1_newer, price_p1_higher (ground truth)
+# Probes for 5 features across all layers:
+#   - bathrooms_p1_more, bedrooms_p1_more, lot_p1_larger
+#   - year_p1_newer, price_p1_higher (ground truth)
 #
 # Uses 70/10/20 train/val/test split with statistical guarantees
 # GPU acceleration via cuML (RAPIDS) - utilizes ~70% of A6000 48GB
@@ -139,7 +139,7 @@ if [ "$LLAMA_READY" = true ]; then
     echo "Probing Llama-3.2-3B-Instruct activations"
     echo "Condition: $CONDITION"
     echo "Split: 70/10/20 (train/val/test)"
-    echo "Features: 6 binary features"
+    echo "Features: 5 binary features"
     echo "Layers: 28"
     echo "GPU acceleration: $GPU_STATUS"
     echo "============================================================"
@@ -170,7 +170,7 @@ if [ "$QWEN_READY" = true ]; then
     echo "Probing Qwen3-4B-Instruct activations"
     echo "Condition: $CONDITION"
     echo "Split: 70/10/20 (train/val/test)"
-    echo "Features: 6 binary features"
+    echo "Features: 5 binary features"
     echo "Layers: 36"
     echo "GPU acceleration: $GPU_STATUS"
     echo "============================================================"

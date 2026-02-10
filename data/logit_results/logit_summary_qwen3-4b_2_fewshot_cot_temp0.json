@@ -2,11 +2,11 @@
   "model": "qwen3-4b",
   "condition": "2_fewshot_cot_temp0",
   "best_layer": 34,
-  "best_accuracy": 0.5867446393762183,
-  "best_auc": 0.6039715491553418,
-  "ci_lower": 0.5563449461641724,
-  "ci_upper": 0.6164971922789951,
-  "mean_accuracy": 0.553714533246697,
+  "best_accuracy": 0.5857699805068226,
+  "best_auc": 0.6039791604032438,
+  "ci_lower": 0.5553635367662908,
+  "ci_upper": 0.6155365551775152,
+  "mean_accuracy": 0.5537416071041802,
   "n_layers": 36,
-  "timestamp": "2026-02-03T00:45:48.562566"
+  "timestamp": "2026-02-09T20:35:16.701909"
 }

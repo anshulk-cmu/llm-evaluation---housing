@@ -6,7 +6,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.8967867575462513,
+      "initial_probe_accuracy": 0.8938656280428432,
       "verification_accuracy": 0.6991236611489776,
       "rank_removed": 1,
       "cosine_similarity": 0.9838519096374512
@@ -17,10 +17,10 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.8296007789678675,
+      "initial_probe_accuracy": 0.815968841285297,
       "verification_accuracy": 0.7030185004868549,
       "rank_removed": 1,
-      "cosine_similarity": 0.9821894764900208
+      "cosine_similarity": 0.982189416885376
     },
     "year_built": {
       "feature": "year_built",
@@ -28,7 +28,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.8851022395326192,
+      "initial_probe_accuracy": 0.8841285296981499,
       "verification_accuracy": 0.5316455696202531,
       "rank_removed": 1,
       "cosine_similarity": 0.9838517904281616
@@ -39,18 +39,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.807205452775073,
-      "verification_accuracy": 0.5199610516066212,
-      "rank_removed": 1,
-      "cosine_similarity": 0.9908506870269775
-    },
-    "sqft": {
-      "feature": "sqft",
-      "method": "mp",
-      "n_train": 3590,
-      "n_val": 513,
-      "n_test": 1027,
-      "initial_probe_accuracy": 0.8111002921129503,
+      "initial_probe_accuracy": 0.8091528724440117,
       "verification_accuracy": 0.5199610516066212,
       "rank_removed": 1,
       "cosine_similarity": 0.9908506870269775

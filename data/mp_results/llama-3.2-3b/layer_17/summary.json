@@ -2,17 +2,17 @@
   "experiment": "2_fewshot_cot_temp0",
   "methods": {
     "mp": {
-      "baseline_accuracy": 0.6064935064935065,
-      "random_control_drop": 0.001428571428571479,
+      "baseline_accuracy": 0.6058441558441559,
+      "random_control_drop": 0.00032467532467533866,
       "features": {
         "bedrooms": {
           "initial_probe_accuracy": 0.7127555988315482,
           "verification_accuracy": 0.6991236611489776,
           "cosine_similarity": 0.9849728941917419,
-          "price_drop": 0.003896103896103953,
+          "price_drop": 0.006493506493506551,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 130.00000000000153,
+          "recovery_pct": 122.22222222222116,
           "verdict": "NOT_USED",
           "description": "bedrooms encoded but not used for pricing"
         },
@@ -20,45 +20,34 @@
           "initial_probe_accuracy": 0.7020447906523856,
           "verification_accuracy": 0.7030185004868549,
           "cosine_similarity": 0.9797107577323914,
-          "price_drop": 0.018181818181818188,
+          "price_drop": 0.019480519480519543,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 146.4285714285716,
+          "recovery_pct": 143.33333333333277,
           "verdict": "MINOR",
           "description": "bathrooms has minor causal contribution to pricing"
         },
         "year_built": {
-          "initial_probe_accuracy": 0.7283349561830574,
+          "initial_probe_accuracy": 0.7341772151898734,
           "verification_accuracy": 0.5316455696202531,
           "cosine_similarity": 0.9571710228919983,
-          "price_drop": 0.014285714285714346,
+          "price_drop": 0.014935064935064912,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 73.9130434782612,
+          "recovery_pct": 72.72727272727244,
           "verdict": "MINOR",
           "description": "year_built has minor causal contribution to pricing"
         },
         "lot_size": {
-          "initial_probe_accuracy": 0.6280428432327166,
+          "initial_probe_accuracy": 0.6309639727361246,
           "verification_accuracy": 0.5199610516066212,
           "cosine_similarity": 0.9656503796577454,
-          "price_drop": 0.001948051948052032,
-          "information_control": "FAIL",
+          "price_drop": 0.0025974025974025983,
+          "information_control": "PASS",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of lot_size does not hurt more than random"
-        },
-        "sqft": {
-          "initial_probe_accuracy": 0.6280428432327166,
-          "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.9656503796577454,
-          "price_drop": 0.0006493506493506773,
-          "information_control": "FAIL",
-          "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of sqft does not hurt more than random"
+          "verdict": "NOT_USED",
+          "description": "lot_size encoded but not used for pricing"
         }
       }
     }

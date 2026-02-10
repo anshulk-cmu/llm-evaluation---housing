@@ -28,10 +28,10 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.5316455696202531,
+      "initial_probe_accuracy": 0.5296981499513145,
       "verification_accuracy": 0.5316455696202531,
       "rank_removed": 1,
-      "cosine_similarity": 0.9249714016914368
+      "cosine_similarity": 0.924971342086792
     },
     "lot_size": {
       "feature": "lot_size",
@@ -39,18 +39,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.5228821811100293,
-      "verification_accuracy": 0.5199610516066212,
-      "rank_removed": 1,
-      "cosine_similarity": 0.9657264351844788
-    },
-    "sqft": {
-      "feature": "sqft",
-      "method": "mp",
-      "n_train": 3590,
-      "n_val": 513,
-      "n_test": 1027,
-      "initial_probe_accuracy": 0.5228821811100293,
+      "initial_probe_accuracy": 0.5267770204479065,
       "verification_accuracy": 0.5199610516066212,
       "rank_removed": 1,
       "cosine_similarity": 0.9657264351844788

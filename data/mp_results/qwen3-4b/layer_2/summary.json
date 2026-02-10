@@ -2,63 +2,52 @@
   "experiment": "2_fewshot_cot_temp0",
   "methods": {
     "mp": {
-      "baseline_accuracy": 0.5246753246753246,
-      "random_control_drop": -0.001428571428571479,
+      "baseline_accuracy": 0.525974025974026,
+      "random_control_drop": -0.00038961038961036196,
       "features": {
         "bedrooms": {
           "initial_probe_accuracy": 0.7000973709834469,
           "verification_accuracy": 0.6991236611489776,
           "cosine_similarity": 0.9884698987007141,
-          "price_drop": -0.005844155844155874,
+          "price_drop": -0.0025974025974025983,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
+          "recovery_pct": 0.0,
           "verdict": "NOT_CAUSAL",
           "description": "Erasure of bedrooms does not hurt more than random"
         },
         "bathrooms": {
-          "initial_probe_accuracy": 0.7020447906523856,
+          "initial_probe_accuracy": 0.7010710808179162,
           "verification_accuracy": 0.7030185004868549,
           "cosine_similarity": 0.9876291751861572,
-          "price_drop": -0.006493506493506551,
+          "price_drop": -0.004545454545454519,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
+          "recovery_pct": 0.0,
           "verdict": "NOT_CAUSAL",
           "description": "Erasure of bathrooms does not hurt more than random"
         },
         "year_built": {
-          "initial_probe_accuracy": 0.5355404089581305,
+          "initial_probe_accuracy": 0.5335929892891919,
           "verification_accuracy": 0.5316455696202531,
           "cosine_similarity": 0.9883606433868408,
-          "price_drop": -0.00909090909090915,
+          "price_drop": -0.0025974025974025983,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
+          "recovery_pct": 0.0,
           "verdict": "NOT_CAUSAL",
           "description": "Erasure of year_built does not hurt more than random"
         },
         "lot_size": {
-          "initial_probe_accuracy": 0.5306718597857838,
+          "initial_probe_accuracy": 0.5296981499513145,
           "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.9612674713134766,
-          "price_drop": -0.0025974025974025983,
+          "cosine_similarity": 0.9612674117088318,
+          "price_drop": -0.001948051948051921,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
           "verdict": "NOT_CAUSAL",
           "description": "Erasure of lot_size does not hurt more than random"
-        },
-        "sqft": {
-          "initial_probe_accuracy": 0.5306718597857838,
-          "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.9612674713134766,
-          "price_drop": -0.00454545454545463,
-          "information_control": "FAIL",
-          "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of sqft does not hurt more than random"
         }
       }
     }

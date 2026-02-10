@@ -1,12 +1,12 @@
 {
   "model": "llama-3.2-3b",
   "condition": "2_fewshot_cot_temp0",
-  "best_layer": 27,
-  "best_accuracy": 0.6130604288499025,
-  "best_auc": 0.6286662429738668,
-  "ci_lower": 0.582889190636241,
-  "ci_upper": 0.642388203289685,
-  "mean_accuracy": 0.5751183514341409,
+  "best_layer": 19,
+  "best_accuracy": 0.6081871345029239,
+  "best_auc": 0.6276349188831255,
+  "ci_lower": 0.5779668071705387,
+  "ci_upper": 0.6376003542585803,
+  "mean_accuracy": 0.5766499582289055,
   "n_layers": 28,
-  "timestamp": "2026-02-03T00:43:39.572942"
+  "timestamp": "2026-02-09T20:33:11.231962"
 }

@@ -3,24 +3,24 @@
   "methods": {
     "mp": {
       "baseline_accuracy": 0.5324675324675324,
-      "random_control_drop": 0.000584415584415543,
+      "random_control_drop": -0.000519480519480564,
       "features": {
         "bedrooms": {
           "initial_probe_accuracy": 0.6991236611489776,
           "verification_accuracy": 0.6991236611489776,
           "cosine_similarity": 0.979622483253479,
-          "price_drop": 0.0006493506493505663,
-          "information_control": "FAIL",
+          "price_drop": 0.001948051948051921,
+          "information_control": "PASS",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of bedrooms does not hurt more than random"
+          "verdict": "NOT_USED",
+          "description": "bedrooms encoded but not used for pricing"
         },
         "bathrooms": {
           "initial_probe_accuracy": 0.6991236611489776,
           "verification_accuracy": 0.7030185004868549,
           "cosine_similarity": 0.9900605082511902,
-          "price_drop": 0.009090909090909038,
+          "price_drop": 0.007792207792207795,
           "information_control": "PASS",
           "selectivity_test": "PASS",
           "recovery_pct": 200.0,
@@ -28,10 +28,10 @@
           "description": "bathrooms encoded but not used for pricing"
         },
         "year_built": {
-          "initial_probe_accuracy": 0.5423563777994158,
+          "initial_probe_accuracy": 0.5413826679649465,
           "verification_accuracy": 0.5316455696202531,
-          "cosine_similarity": 0.9846591949462891,
-          "price_drop": -0.0006493506493506773,
+          "cosine_similarity": 0.9846592545509338,
+          "price_drop": 0.0006493506493505663,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
@@ -39,26 +39,15 @@
           "description": "Erasure of year_built does not hurt more than random"
         },
         "lot_size": {
-          "initial_probe_accuracy": 0.555014605647517,
+          "initial_probe_accuracy": 0.557935735150925,
           "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.984636664390564,
-          "price_drop": -0.0012987012987013546,
-          "information_control": "FAIL",
-          "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
-          "verdict": "NOT_CAUSAL",
-          "description": "Erasure of lot_size does not hurt more than random"
-        },
-        "sqft": {
-          "initial_probe_accuracy": 0.5589094449853943,
-          "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.984636664390564,
+          "cosine_similarity": 0.9846366047859192,
           "price_drop": 0.0,
           "information_control": "FAIL",
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
           "verdict": "NOT_CAUSAL",
-          "description": "Erasure of sqft does not hurt more than random"
+          "description": "Erasure of lot_size does not hurt more than random"
         }
       }
     }

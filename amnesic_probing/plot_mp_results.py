@@ -39,7 +39,6 @@ COLORS = {
         'bathrooms': '#377eb8',
         'year_built': '#4daf4a',
         'lot_size': '#984ea3',
-        'sqft': '#ff7f00',
     }
 }
 
@@ -48,10 +47,9 @@ FEATURE_LABELS = {
     'bathrooms': 'Bathrooms',
     'year_built': 'Year Built',
     'lot_size': 'Lot Size',
-    'sqft': 'Square Feet',
 }
 
-FEATURES = ['bedrooms', 'bathrooms', 'year_built', 'lot_size', 'sqft']
+FEATURES = ['bedrooms', 'bathrooms', 'year_built', 'lot_size']
 
 MODEL_LABELS = {
     'llama-3.2-3b': 'Llama-3.2-3B',

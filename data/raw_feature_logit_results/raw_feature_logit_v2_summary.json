@@ -1,6 +1,6 @@
 {
   "experiment": "raw_feature_logit_v2",
-  "timestamp": "2026-02-04T01:24:47.697851",
+  "timestamp": "2026-02-09T20:35:22.983405",
   "best_variant": "v2_pct_diff",
   "test_accuracy": 0.6335282651072125,
   "test_auc": 0.6796172991143576,
@@ -11,7 +11,7 @@
   "coefficients": {
     "bedrooms_diff": 0.276180267533697,
     "bathrooms_diff": 0.5536558688530443,
-    "sqft_pct_diff": -0.053917830460932924,
+    "lot_pct_diff": -0.053917830460932924,
     "year_diff": -0.10093760743113595
   },
   "best_c": 0.1,
@@ -27,7 +27,7 @@
       "best_c": 0.1
     },
     {
-      "variant": "v3_log_sqft",
+      "variant": "v3_log_lot",
       "n_features": 4,
       "val_acc": 0.6303501945525292,
       "test_acc": 0.6306042884990254,

@@ -6,7 +6,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.7010710808179162,
+      "initial_probe_accuracy": 0.7000973709834469,
       "verification_accuracy": 0.6991236611489776,
       "rank_removed": 1,
       "cosine_similarity": 0.9744924306869507
@@ -20,7 +20,7 @@
       "initial_probe_accuracy": 0.7020447906523856,
       "verification_accuracy": 0.7030185004868549,
       "rank_removed": 1,
-      "cosine_similarity": 0.986015796661377
+      "cosine_similarity": 0.9860157370567322
     },
     "year_built": {
       "feature": "year_built",
@@ -28,24 +28,13 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.5803310613437196,
+      "initial_probe_accuracy": 0.5744888023369036,
       "verification_accuracy": 0.5316455696202531,
       "rank_removed": 1,
       "cosine_similarity": 0.9796555042266846
     },
     "lot_size": {
       "feature": "lot_size",
-      "method": "mp",
-      "n_train": 3590,
-      "n_val": 513,
-      "n_test": 1027,
-      "initial_probe_accuracy": 0.572541382667965,
-      "verification_accuracy": 0.5199610516066212,
-      "rank_removed": 1,
-      "cosine_similarity": 0.9844427704811096
-    },
-    "sqft": {
-      "feature": "sqft",
       "method": "mp",
       "n_train": 3590,
       "n_val": 513,

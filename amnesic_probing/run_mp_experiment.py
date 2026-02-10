@@ -59,7 +59,6 @@ class Config:
         'bathrooms': 'bathrooms_p1_more',
         'year_built': 'year_p1_newer',
         'lot_size': 'lot_p1_larger',
-        'sqft': 'sqft_p1_larger',
     }
 
     RANDOM_SEED = 42
@@ -110,7 +109,6 @@ def prepare_feature_labels(activation_data: Dict) -> Dict[str, np.ndarray]:
         'bathrooms': 'bathrooms_p1_more',
         'year_built': 'year_p1_newer',
         'lot_size': 'lot_p1_larger',
-        'sqft': 'sqft_p1_larger',
     }
 
     labels = {}

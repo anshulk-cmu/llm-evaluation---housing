@@ -6,13 +6,14 @@ This script trains a logistic regression model to predict which property
 in a pair is more expensive, using only the raw input features:
 - bedrooms difference
 - bathrooms difference  
-- sqft (lot) difference
+- lot size difference
 - year built difference
 
 This establishes a baseline for whether the features themselves are
 linearly predictive of price.
 """
 
+import sys
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -44,7 +45,7 @@ def load_and_prepare_data(data_path: Path) -> tuple:
     features = pd.DataFrame({
         'bedrooms_diff': df['bedrooms_1'] - df['bedrooms_2'],
         'bathrooms_diff': df['bathrooms_1'] - df['bathrooms_2'],
-        'sqft_diff': df['lot_1'] - df['lot_2'],
+        'lot_diff': df['lot_1'] - df['lot_2'],
         'year_diff': df['yearBuilt_1'] - df['yearBuilt_2'],
     })
     
@@ -284,5 +285,23 @@ def main():
     return results
 
 
+class Tee:
+    """Write to both stdout and a log file."""
+    def __init__(self, log_path):
+        self.terminal = sys.stdout
+        self.log = open(log_path, 'w')
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+
 if __name__ == "__main__":
+    log_dir = Path("logs")
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir / f"raw_feature_logit_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+    sys.stdout = Tee(log_path)
+    print(f"Logging to {log_path}")
     main()

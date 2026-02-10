@@ -2,17 +2,17 @@
   "experiment": "2_fewshot_cot_temp0",
   "methods": {
     "mp": {
-      "baseline_accuracy": 0.6019480519480519,
-      "random_control_drop": 0.00038961038961036196,
+      "baseline_accuracy": 0.6032467532467533,
+      "random_control_drop": 0.0025974025974026204,
       "features": {
         "bedrooms": {
-          "initial_probe_accuracy": 0.7585199610516066,
+          "initial_probe_accuracy": 0.759493670886076,
           "verification_accuracy": 0.6991236611489776,
           "cosine_similarity": 0.983734130859375,
           "price_drop": 0.009740259740259716,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 166.66666666666669,
+          "recovery_pct": 121.42857142857248,
           "verdict": "NOT_USED",
           "description": "bedrooms encoded but not used for pricing"
         },
@@ -20,37 +20,26 @@
           "initial_probe_accuracy": 0.7030185004868549,
           "verification_accuracy": 0.7030185004868549,
           "cosine_similarity": 0.9783342480659485,
-          "price_drop": 0.02662337662337655,
+          "price_drop": 0.025974025974025983,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 171.79487179487188,
+          "recovery_pct": 152.3809523809527,
           "verdict": "MINOR",
           "description": "bathrooms has minor causal contribution to pricing"
         },
         "year_built": {
-          "initial_probe_accuracy": 0.7575462512171373,
+          "initial_probe_accuracy": 0.75365141187926,
           "verification_accuracy": 0.5316455696202531,
           "cosine_similarity": 0.9689105749130249,
-          "price_drop": 0.01103896103896096,
+          "price_drop": 0.013636363636363669,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
+          "recovery_pct": 94.11764705882423,
           "verdict": "MINOR",
           "description": "year_built has minor causal contribution to pricing"
         },
         "lot_size": {
-          "initial_probe_accuracy": 0.6407010710808179,
-          "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.9736226201057434,
-          "price_drop": 0.004545454545454519,
-          "information_control": "PASS",
-          "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
-          "verdict": "NOT_USED",
-          "description": "lot_size encoded but not used for pricing"
-        },
-        "sqft": {
-          "initial_probe_accuracy": 0.6416747809152873,
+          "initial_probe_accuracy": 0.6397273612463485,
           "verification_accuracy": 0.5199610516066212,
           "cosine_similarity": 0.9736226201057434,
           "price_drop": 0.0051948051948051965,
@@ -58,7 +47,7 @@
           "selectivity_test": "PASS",
           "recovery_pct": 100.0,
           "verdict": "NOT_USED",
-          "description": "sqft encoded but not used for pricing"
+          "description": "lot_size encoded but not used for pricing"
         }
       }
     }

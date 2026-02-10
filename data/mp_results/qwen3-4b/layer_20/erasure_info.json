@@ -6,10 +6,10 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.875365141187926,
+      "initial_probe_accuracy": 0.8763388510223953,
       "verification_accuracy": 0.6991236611489776,
       "rank_removed": 1,
-      "cosine_similarity": 0.9759206771850586
+      "cosine_similarity": 0.9759206175804138
     },
     "bathrooms": {
       "feature": "bathrooms",
@@ -17,7 +17,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.8364167478091529,
+      "initial_probe_accuracy": 0.8373904576436222,
       "verification_accuracy": 0.7030185004868549,
       "rank_removed": 1,
       "cosine_similarity": 0.9831510782241821
@@ -39,18 +39,7 @@
       "n_train": 3590,
       "n_val": 513,
       "n_test": 1027,
-      "initial_probe_accuracy": 0.807205452775073,
-      "verification_accuracy": 0.5199610516066212,
-      "rank_removed": 1,
-      "cosine_similarity": 0.9841209053993225
-    },
-    "sqft": {
-      "feature": "sqft",
-      "method": "mp",
-      "n_train": 3590,
-      "n_val": 513,
-      "n_test": 1027,
-      "initial_probe_accuracy": 0.807205452775073,
+      "initial_probe_accuracy": 0.8062317429406037,
       "verification_accuracy": 0.5199610516066212,
       "rank_removed": 1,
       "cosine_similarity": 0.9841209053993225

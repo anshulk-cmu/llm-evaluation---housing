@@ -50,8 +50,8 @@ This project investigates **why large language models (LLMs) struggle with numer
 |--------|-------|
 | Total property pairs | 5,130 |
 | Price difference threshold | ≥20% |
-| Features per property | 5 (bedrooms, bathrooms, sqft, lot size, year built) |
-| Binary labels | 6 (5 feature comparisons + 1 price comparison) |
+| Features per property | 4 (bedrooms, bathrooms, lot size, year built) |
+| Binary labels | 5 (4 feature comparisons + 1 price comparison) |
 
 ### Binary Labels Derived
 For each property pair, we compute:
@@ -60,7 +60,6 @@ For each property pair, we compute:
 |-------|-------------|
 | `bathrooms_p1_more` | Property 1 has more bathrooms |
 | `bedrooms_p1_more` | Property 1 has more bedrooms |
-| `sqft_p1_larger` | Property 1 has larger square footage |
 | `lot_p1_larger` | Property 1 has larger lot size |
 | `year_p1_newer` | Property 1 was built more recently |
 | `price_p1_higher` | Property 1 has higher price (**ground truth target**) |
@@ -170,7 +169,7 @@ Linear probing tests whether information is **linearly encoded** in a model's in
 
 ```
 For each layer L in [0, ..., N_layers-1]:
-    For each feature F in [bathrooms, bedrooms, sqft, lot, year, price]:
+    For each feature F in [bathrooms, bedrooms, lot, year, price]:
         1. Extract activations at layer L: X = activations[:, L, :]  # (5130, D_model)
         2. Get binary labels: y = labels[F]  # (5130,)
         3. Split: 70% train, 10% validation, 20% test
@@ -198,7 +197,6 @@ For each layer L in [0, ..., N_layers-1]:
 | Year Built | **L15** | **95.9%** | [94.5%, 97.0%] | 0.990 | <0.0001 |
 | Bedrooms | L15 | 91.0% | [89.1%, 92.6%] | 0.961 | <0.0001 |
 | Bathrooms | L15 | 90.2% | [88.2%, 91.8%] | 0.942 | <0.0001 |
-| Square Feet | L15 | 86.9% | [84.7%, 88.9%] | 0.927 | <0.0001 |
 | Lot Size | L15 | 86.9% | [84.7%, 88.9%] | 0.927 | <0.0001 |
 | **Price (Target)** | L19 | **60.7%** | [57.7%, 63.7%] | 0.628 | <0.0001 |
 
@@ -209,7 +207,6 @@ For each layer L in [0, ..., N_layers-1]:
 | Year Built | **L23** | **94.7%** | [93.2%, 95.9%] | 0.969 | <0.0001 |
 | Bedrooms | L22 | 92.5% | [90.7%, 94.0%] | 0.959 | <0.0001 |
 | Bathrooms | L19 | 89.7% | [87.7%, 91.4%] | 0.944 | <0.0001 |
-| Square Feet | L19 | 88.8% | [86.7%, 90.6%] | 0.943 | <0.0001 |
 | Lot Size | L23 | 88.8% | [86.7%, 90.6%] | 0.927 | <0.0001 |
 | **Price (Target)** | L34 | **58.6%** | [55.5%, 61.6%] | 0.604 | <0.0001 |
 

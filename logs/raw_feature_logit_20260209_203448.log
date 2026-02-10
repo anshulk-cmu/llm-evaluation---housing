@@ -1,0 +1,70 @@
+Logging to logs/raw_feature_logit_20260209_203448.log
+============================================================
+Raw Feature Logistic Regression Experiment
+============================================================
+Loading data from data/pairs_20pct_price_diff.csv...
+Loaded 5130 property pairs
+
+Feature statistics:
+       bedrooms_diff  bathrooms_diff      lot_diff    year_diff
+count    5130.000000     5130.000000   5130.000000  5130.000000
+mean       -0.002729       -0.002924     30.448441    -1.059064
+std         1.075975        0.985264   4494.959804    31.761624
+min        -4.000000       -4.000000 -42254.000000  -198.000000
+25%        -1.000000       -1.000000  -2004.000000   -17.000000
+50%         0.000000        0.000000     -0.030000     0.000000
+75%         1.000000        1.000000   1902.000000    17.000000
+max         8.000000        5.000000  42675.730000   157.000000
+
+Target distribution: 48.0% property 1 more expensive
+
+Data split (seed=42):
+  Train: 3590 (70.0%)
+  Val:   514 (10.0%)
+  Test:  1026 (20.0%)
+
+Tuning regularization (C) on validation set...
+--------------------------------------------------
+  C= 0.001: train_acc=0.6382, val_acc=0.6187, val_auc=0.6885
+  C=  0.01: train_acc=0.6396, val_acc=0.6284, val_auc=0.6883
+  C=   0.1: train_acc=0.6415, val_acc=0.6265, val_auc=0.6876
+  C=   1.0: train_acc=0.6409, val_acc=0.6265, val_auc=0.6874
+  C=  10.0: train_acc=0.6409, val_acc=0.6265, val_auc=0.6874
+  C= 100.0: train_acc=0.6409, val_acc=0.6265, val_auc=0.6874
+
+Best C: 0.01 (val_acc=0.6284)
+
+============================================================
+FINAL RESULTS: Raw Feature Logistic Regression
+============================================================
+
+Test Set Performance (n=1026):
+  Accuracy: 0.6296 (63.0%)
+  AUC-ROC:  0.6810
+  95% CI:   [0.6004, 0.6598]
+
+Feature Coefficients (standardized):
+   bathrooms_diff: +0.4929
+    bedrooms_diff: +0.2543
+        year_diff: -0.1011
+         lot_diff: -0.0391
+        intercept: -0.1000
+
+------------------------------------------------------------
+COMPARISON WITH LLM RESULTS:
+------------------------------------------------------------
+  Raw Feature Logit:     63.0% accuracy
+  Llama-3.2-3B (fewshot): 59.3% accuracy
+  Qwen3-4B (fewshot):     ~59% accuracy
+  Activation Probe:       61.3% accuracy (Llama best layer)
+
+------------------------------------------------------------
+INTERPRETATION:
+------------------------------------------------------------
+  → Features are NOT strongly linearly predictive
+  → Task is inherently hard; LLM does reasonably well
+
+Saved summary to data/raw_feature_logit_results/raw_feature_logit_summary.json
+Saved tuning results to data/raw_feature_logit_results/raw_feature_logit_tuning.csv
+
+Done!

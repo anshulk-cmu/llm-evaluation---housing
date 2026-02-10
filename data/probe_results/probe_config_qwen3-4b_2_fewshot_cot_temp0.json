@@ -1,7 +1,7 @@
 {
   "model_name": "qwen3-4b",
   "condition": "2_fewshot_cot_temp0",
-  "timestamp": "2026-01-27T23:27:23.715130",
+  "timestamp": "2026-02-09T20:49:03.655233",
   "train_ratio": 0.7,
   "val_ratio": 0.1,
   "test_ratio": 0.2,

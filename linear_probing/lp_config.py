@@ -76,7 +76,6 @@ EXTRACTION_CHECKPOINT_INTERVAL = 500
 PROBE_FEATURES = [
     "bathrooms_p1_more",   # Property 1 has more bathrooms
     "bedrooms_p1_more",    # Property 1 has more bedrooms
-    "sqft_p1_larger",      # Property 1 has larger square footage
     "lot_p1_larger",       # Property 1 has larger lot size
     "year_p1_newer",       # Property 1 is newer
     "price_p1_higher",     # Property 1 has higher price (ground truth)

@@ -1,0 +1,101 @@
+Logging to logs/raw_feature_logit_v2_20260209_203517.log
+======================================================================
+Raw Feature Logistic Regression - V2 (Enhanced)
+======================================================================
+Loading data from data/pairs_20pct_price_diff.csv...
+Loaded 5130 property pairs
+
+Target distribution: 48.0% property 1 more expensive
+
+======================================================================
+COMPARING FEATURE SET VARIANTS
+======================================================================
+
+v1_basic_diff:
+  Features: ['bedrooms_diff', 'bathrooms_diff', 'lot_diff', 'year_diff']
+  Val Acc: 0.6284, Test Acc: 0.6296, AUC: 0.6810
+
+v2_pct_diff:
+  Features: ['bedrooms_diff', 'bathrooms_diff', 'lot_pct_diff', 'year_diff']
+  Val Acc: 0.6323, Test Acc: 0.6335, AUC: 0.6796
+
+v3_log_lot:
+  Features: ['bedrooms_diff', 'bathrooms_diff', 'log_lot_diff', 'year_diff']
+  Val Acc: 0.6304, Test Acc: 0.6306, AUC: 0.6798
+
+v4_binary:
+  Features: ['bed_1_more', 'bath_1_more', 'lot_1_larger', 'year_1_newer']
+  Val Acc: 0.6265, Test Acc: 0.6082, AUC: 0.6364
+
+v5_interactions:
+  Features: ['bedrooms_diff', 'bathrooms_diff', 'lot_diff', 'year_diff', 'beds_x_baths', 'lot_x_year', 'baths_x_lot']
+  Val Acc: 0.6265, Test Acc: 0.6296, AUC: 0.6809
+
+v6_separate:
+  Features: ['bedrooms_1', 'bedrooms_2', 'bathrooms_1', 'bathrooms_2', 'lot_1', 'lot_2', 'year_1', 'year_2']
+  Val Acc: 0.6381, Test Acc: 0.6296, AUC: 0.6816
+
+======================================================================
+FEATURE SET RANKING
+======================================================================
+        variant  n_features  val_acc  test_acc  test_auc  ci_lower  ci_upper  best_c
+    v2_pct_diff           4 0.632296  0.633528  0.679617  0.603314  0.663767   0.100
+     v3_log_lot           4 0.630350  0.630604  0.679790  0.602315  0.660819   0.010
+  v1_basic_diff           4 0.628405  0.629630  0.681039  0.600390  0.659844   0.010
+v5_interactions           7 0.626459  0.629630  0.680887  0.600390  0.660819   0.010
+    v6_separate           8 0.638132  0.629630  0.681618  0.600390  0.660819   0.100
+      v4_binary           4 0.626459  0.608187  0.636390  0.579922  0.639376   0.001
+
+======================================================================
+ANALYZING COUNTERINTUITIVE COEFFICIENTS
+======================================================================
+
+Year analysis:
+  When P1 is NEWER: 41.2% of time P1 is more expensive (n=2392)
+  When P1 is OLDER: 53.9% of time P1 is more expensive (n=2544)
+
+Lot size analysis:
+  When P1 is LARGER: 48.6% of time P1 is more expensive (n=2100)
+  When P1 is SMALLER: 47.9% of time P1 is more expensive (n=2218)
+
+Feature correlations (explain confounding):
+  year_diff vs baths_diff: -0.110
+  year_diff vs beds_diff:  -0.377
+  lot_diff vs baths_diff: -0.030
+
+======================================================================
+GENERATING PLOTS
+======================================================================
+Saved: data/raw_feature_logit_results/plots/feature_distributions.png
+Saved: data/raw_feature_logit_results/plots/correlation_matrix.png
+Saved: data/raw_feature_logit_results/plots/model_comparison.png
+Saved: data/raw_feature_logit_results/plots/best_model_coefficients.png
+Saved: data/raw_feature_logit_results/plots/single_feature_accuracy.png
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+
+Best Model: v2_pct_diff
+  Test Accuracy: 0.6335 (63.4%)
+  Test AUC:      0.6796
+  95% CI:        [0.6033, 0.6638]
+
+Single Feature Ranking:
+         lot_diff: 50.8%
+        year_diff: 54.3%
+    bedrooms_diff: 56.2%
+   bathrooms_diff: 59.7%
+
+----------------------------------------------------------------------
+COMPARISON WITH LLM:
+----------------------------------------------------------------------
+  Best Raw Feature Logit: 63.4%
+  Llama-3.2-3B (fewshot): 59.3%
+  Activation Probe:       61.3%
+  Difference:             +4.1 percentage points
+
+Saved comparison to data/raw_feature_logit_results/feature_set_comparison.csv
+Saved summary to data/raw_feature_logit_results/raw_feature_logit_v2_summary.json
+
+Done! Check plots in: data/raw_feature_logit_results/plots

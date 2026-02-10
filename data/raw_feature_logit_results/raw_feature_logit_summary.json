@@ -1,6 +1,6 @@
 {
   "experiment": "raw_feature_logit",
-  "timestamp": "2026-02-04T01:19:59.698661",
+  "timestamp": "2026-02-09T20:34:48.862140",
   "data_split": {
     "train": 3590,
     "val": 514,
@@ -15,7 +15,7 @@
   "coefficients": {
     "bedrooms_diff": 0.254348425896419,
     "bathrooms_diff": 0.4929175210107424,
-    "sqft_diff": -0.03908844863189444,
+    "lot_diff": -0.03908844863189444,
     "year_diff": -0.10106547045044598
   },
   "intercept": -0.09998116524079201

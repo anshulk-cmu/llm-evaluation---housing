@@ -2,63 +2,52 @@
   "experiment": "2_fewshot_cot_temp0",
   "methods": {
     "mp": {
-      "baseline_accuracy": 0.6084415584415584,
-      "random_control_drop": -0.0003896103896103731,
+      "baseline_accuracy": 0.6097402597402597,
+      "random_control_drop": 0.0005194805194804863,
       "features": {
         "bedrooms": {
-          "initial_probe_accuracy": 0.7098344693281402,
+          "initial_probe_accuracy": 0.7088607594936709,
           "verification_accuracy": 0.6991236611489776,
-          "cosine_similarity": 0.9835001826286316,
-          "price_drop": 0.020779220779220786,
+          "cosine_similarity": 0.983500063419342,
+          "price_drop": 0.022727272727272707,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 59.9999999999999,
+          "recovery_pct": 53.571428571429024,
           "verdict": "MINOR",
           "description": "bedrooms has minor causal contribution to pricing"
         },
         "bathrooms": {
-          "initial_probe_accuracy": 0.7020447906523856,
+          "initial_probe_accuracy": 0.7030185004868549,
           "verification_accuracy": 0.7030185004868549,
           "cosine_similarity": 0.9805627465248108,
-          "price_drop": 0.03181818181818186,
+          "price_drop": 0.0331168831168831,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 106.12244897959175,
+          "recovery_pct": 102.00000000000009,
           "verdict": "SIGNIFICANT",
           "description": "bathrooms has significant causal contribution to pricing"
         },
         "year_built": {
-          "initial_probe_accuracy": 0.7078870496592016,
+          "initial_probe_accuracy": 0.7069133398247323,
           "verification_accuracy": 0.5316455696202531,
           "cosine_similarity": 0.9544742107391357,
-          "price_drop": 0.014285714285714346,
+          "price_drop": 0.014285714285714235,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 118.18181818181812,
+          "recovery_pct": 108.00000000000038,
           "verdict": "MINOR",
           "description": "year_built has minor causal contribution to pricing"
         },
         "lot_size": {
-          "initial_probe_accuracy": 0.6280428432327166,
+          "initial_probe_accuracy": 0.6397273612463485,
           "verification_accuracy": 0.5199610516066212,
           "cosine_similarity": 0.9673666954040527,
-          "price_drop": 0.0071428571428571175,
+          "price_drop": 0.008441558441558361,
           "information_control": "PASS",
           "selectivity_test": "PASS",
-          "recovery_pct": 92.85714285714259,
+          "recovery_pct": 93.33333333333417,
           "verdict": "NOT_USED",
           "description": "lot_size encoded but not used for pricing"
-        },
-        "sqft": {
-          "initial_probe_accuracy": 0.6329113924050633,
-          "verification_accuracy": 0.5199610516066212,
-          "cosine_similarity": 0.9673666954040527,
-          "price_drop": 0.008441558441558472,
-          "information_control": "PASS",
-          "selectivity_test": "PASS",
-          "recovery_pct": 100.0,
-          "verdict": "NOT_USED",
-          "description": "sqft encoded but not used for pricing"
         }
       }
     }

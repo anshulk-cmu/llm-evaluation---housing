@@ -1,0 +1,568 @@
+============================================================
+Behavioral Macro Mapping Pipeline (Dual-GPU)
+============================================================
+Job ID: 6335425
+Node: babel-u9-20
+Start time: Wed Feb 11 03:50:03 EST 2026
+Working directory: /home/anshulk/Housing
+GPU Mode: Dual-GPU (2x A6000, 50 samples/GPU)
+============================================================
+Activating conda environment...
+
+Running pre-flight checks...
+  Checking GPUs...
+  Found 2 GPU(s)
+index, name, memory.total [MiB]
+0, NVIDIA RTX A6000, 49140 MiB
+1, NVIDIA RTX A6000, 49140 MiB
+  Checking Python packages...
+  All required packages found
+  Checking data file...
+  Data file found
+  Checking models...
+  All models found
+
+Pre-flight checks passed!
+
+
+============================================================
+Running macro mapping pipeline for: qwen3-4b
+============================================================
+
+[Step 1/10] Selecting 100 stratified samples...
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Step 1: Sample Selection for qwen3-4b
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Target: 60 correct + 40 incorrect = 100
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Loaded 5130 pairs, 5130 predictions
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Merged: 5130 rows
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Correct pool: 2912, Incorrect pool: 2218
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — ============================================================
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   CORRECT: 60 samples
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — ============================================================
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Difficulty distribution:
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     easy    :  13 ( 21.7%)  [pool:  21.2%]
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     medium  :  22 ( 36.7%)  [pool:  36.8%]
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     hard    :  25 ( 41.7%)  [pool:  42.0%]
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Feature profile distribution:
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     bathrooms_dominant    :  13
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     bedrooms_dominant     :  14
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     year_dominant         :  10
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     lot_dominant          :   4
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     mixed                 :  19
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Price ratio: mean=0.422, median=0.335
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — ============================================================
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   INCORRECT: 40 samples
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — ============================================================
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Difficulty distribution:
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     easy    :   8 ( 20.0%)  [pool:  19.4%]
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     medium  :  15 ( 37.5%)  [pool:  36.6%]
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     hard    :  17 ( 42.5%)  [pool:  44.0%]
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Feature profile distribution:
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     bathrooms_dominant    :   8
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     bedrooms_dominant     :   6
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     year_dominant         :   7
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     lot_dominant          :   9
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —     mixed                 :  10
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Price ratio: mean=0.382, median=0.347
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — ============================================================
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   TOTAL SELECTED: 100
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO —   Correct: 60, Incorrect: 40
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — ============================================================
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Saved: /home/anshulk/Housing/macro_mapping/data/selected_samples_qwen3-4b.csv
+[2026-02-11 03:50:12] [Step1_SelectSamples] INFO — Saved metadata: /home/anshulk/Housing/macro_mapping/data/selection_meta_qwen3-4b.json
+
+[Step 2/10] Extracting CoT reasoning (dual-GPU, 2048 tokens)...
+[2026-02-11 03:50:16] [Step2_ExtractCoT] INFO — Step 2: Extract CoT Reasoning for qwen3-4b
+[2026-02-11 03:50:16] [Step2_ExtractCoT] INFO — Using REASON-augmented prompt (full re-inference)
+[2026-02-11 03:50:16] [Step2_ExtractCoT] INFO — Loaded 100 selected samples
+[2026-02-11 03:50:16] [Step2_ExtractCoT] INFO — Building prompts...
+[2026-02-11 03:50:16] [Step2_ExtractCoT] INFO — Built 100 prompts
+[2026-02-11 03:50:16] [Step2_ExtractCoT] INFO — 
+Running dual-GPU inference with Qwen/Qwen3-4B-Instruct-2507...
+[2026-02-11 03:50:17] [Step2_ExtractCoT] INFO —   GPUs available: 2
+[2026-02-11 03:50:17] [Step2_ExtractCoT] INFO —   Loading model on GPU 0...
+Loading Qwen3-4B-Instruct-2507 from models/Qwen3-4B-Instruct-2507 on GPU 0...
+  Using GPU 0
+  Loaded on GPU 0
+  GPU 0 Memory: 8.10 GB
+[2026-02-11 03:50:20] [Step2_ExtractCoT] INFO —   Loading model on GPU 1...
+Loading Qwen3-4B-Instruct-2507 from models/Qwen3-4B-Instruct-2507 on GPU 1...
+  Using GPU 1
+  Loaded on GPU 1
+  GPU 1 Memory: 8.10 GB
+[2026-02-11 03:50:23] [Step2_ExtractCoT] INFO —   Both models loaded. Processing 100 prompts...
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — Inference complete: 259.7s (2.60s per sample)
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — 
+Parsing responses...
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — 
+============================================================
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   BASELINE RE-INFERENCE RESULTS
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — ============================================================
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   Old accuracy: 60/100 (60.0%)
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   New accuracy: 60/100 (60.0%)
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   Predictions flipped by REASON prompt: 12
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   Unparseable responses: 0
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   New split: 60 correct, 40 incorrect
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — 
+  Responses with REASON field: 93/100
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO —   Responses with CoT text (>20 chars): 100/100
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — 
+Saved: /home/anshulk/Housing/macro_mapping/data/cot_responses_qwen3-4b.csv
+[2026-02-11 03:54:36] [Step2_ExtractCoT] INFO — Saved full text: /home/anshulk/Housing/macro_mapping/data/cot_full_text_qwen3-4b.txt
+
+[Step 3/10] Setting up perturbation plan...
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — Step 3: Setup Perturbation Plan for qwen3-4b
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Loaded 100 samples, 100 CoT responses
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Merged: 100 pairs
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Valid pairs for perturbation: 100
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+Building perturbation plan...
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Features: ['bedrooms', 'bathrooms', 'yearBuilt', 'lot']
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Perturbation schedules:
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     bedrooms: [1, 2, 3, 4, 5, 6, 7, 8, 9]  (cap: 10)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     bathrooms: [1, 2, 3, 4, 5, 6, 7, 8, 9]  (cap: 10)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     yearBuilt: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94]  (cap: 2025)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     lot: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400, 4500, 4600, 4700, 4800, 4900, 5000]  (cap: 43560)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+Perturbation plan: 10165 total queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+============================================================
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   PERTURBATION PLAN SUMMARY
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — ============================================================
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Pairs with perturbations: 100
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     - Correct predictions:   60
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     - Incorrect predictions:  40
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —   Total queries to run:      10165
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+  Queries per feature:
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     bedrooms    :  696 queries across 100 pairs (avg 7.0 steps/pair)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     bathrooms   :  785 queries across 100 pairs (avg 7.8 steps/pair)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     yearBuilt   : 3734 queries across 100 pairs (avg 37.3 steps/pair)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     lot         : 4950 queries across  99 pairs (avg 50.0 steps/pair)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+  Queries by correctness x feature:
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     correct:
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       bedrooms    :  418 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       bathrooms   :  477 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       yearBuilt   : 2246 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       lot         : 2950 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     incorrect:
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       bedrooms    :  278 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       bathrooms   :  308 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       yearBuilt   : 1488 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —       lot         : 2000 queries
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+  Loser distribution:
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     Property 1 is loser: 38 pairs
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO —     Property 2 is loser: 62 pairs
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+  Estimated Step 4 runtime: ~339 min (10165 queries x ~2s each)
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — 
+Saved: /home/anshulk/Housing/macro_mapping/data/perturbation_plan_qwen3-4b.csv
+[2026-02-11 03:54:38] [Step3_SetupPerturbations] INFO — Saved summary: /home/anshulk/Housing/macro_mapping/data/perturbation_summary_qwen3-4b.txt
+
+[Step 4/10] Running perturbation queries (dual-GPU, ~1.5 hrs)...
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Step 4: Run Perturbation Queries for qwen3-4b
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Perturbation plan: 10165 queries across 100 pairs
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Samples loaded: 100 rows, columns: ['zpid_1', 'zpid_2', 'zipcode_1', 'year_month.y_1', 'zestimate_linear_1', 'interval_range_linear_1', 'type_1', 'yearBuilt_1']...
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — CoT responses loaded: 100 rows
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Built sample lookup: 100 zpid pairs
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Unique (pair, feature) combos: 399
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Max step index: 49
+[2026-02-11 03:54:42] [Step4_Perturbations] INFO — Features in plan: {'lot': 4950, 'yearBuilt': 3734, 'bathrooms': 785, 'bedrooms': 696}
+[2026-02-11 03:54:44] [Step4_Perturbations] INFO — GPUs available: 2
+[2026-02-11 03:54:44] [Step4_Perturbations] INFO —   GPU 0: NVIDIA RTX A6000 (50.9 GB)
+[2026-02-11 03:54:44] [Step4_Perturbations] INFO —   GPU 1: NVIDIA RTX A6000 (50.9 GB)
+[2026-02-11 03:54:44] [Step4_Perturbations] INFO — Loading model 'Qwen/Qwen3-4B-Instruct-2507' on GPU 0...
+Loading Qwen3-4B-Instruct-2507 from models/Qwen3-4B-Instruct-2507 on GPU 0...
+  Using GPU 0
+  Loaded on GPU 0
+  GPU 0 Memory: 8.10 GB
+[2026-02-11 03:54:47] [Step4_Perturbations] INFO — GPU 0 model loaded successfully
+[2026-02-11 03:54:47] [Step4_Perturbations] INFO — Loading model 'Qwen/Qwen3-4B-Instruct-2507' on GPU 1...
+Loading Qwen3-4B-Instruct-2507 from models/Qwen3-4B-Instruct-2507 on GPU 1...
+  Using GPU 1
+  Loaded on GPU 1
+  GPU 1 Memory: 8.10 GB
+[2026-02-11 03:54:50] [Step4_Perturbations] INFO — GPU 1 model loaded successfully
+[2026-02-11 03:54:50] [Step4_Perturbations] INFO — Models loaded. Starting perturbation rounds...
+[2026-02-11 03:54:50] [Step4_Perturbations] INFO — Round 0/49: 399 queries (399 combos remaining)
+[2026-02-11 04:05:31] [Step4_Perturbations] INFO —   Round 0 done: 86 new flips, 86/399 total flipped (21.6%), round=640.2s, total=640s
+[2026-02-11 04:05:31] [Step4_Perturbations] INFO — Round 1/49: 313 queries (313 combos remaining)
+[2026-02-11 04:12:47] [Step4_Perturbations] INFO —   Round 1 done: 65 new flips, 151/399 total flipped (37.8%), round=435.8s, total=1077s
+[2026-02-11 04:12:48] [Step4_Perturbations] INFO — Round 2/49: 247 queries (248 combos remaining)
+[2026-02-11 04:18:20] [Step4_Perturbations] INFO —   Round 2 done: 38 new flips, 189/399 total flipped (47.4%), round=332.4s, total=1410s
+[2026-02-11 04:18:21] [Step4_Perturbations] INFO — Round 3/49: 209 queries (210 combos remaining)
+[2026-02-11 04:29:18] [Step4_Perturbations] INFO —   Round 3 done: 24 new flips, 213/399 total flipped (53.4%), round=657.3s, total=2068s
+[2026-02-11 04:29:19] [Step4_Perturbations] INFO — Round 4/49: 185 queries (186 combos remaining)
+[2026-02-11 04:32:59] [Step4_Perturbations] INFO —   Round 4 done: 17 new flips, 230/399 total flipped (57.6%), round=220.1s, total=2289s
+[2026-02-11 04:32:59] [Step4_Perturbations] INFO — Round 5/49: 167 queries (169 combos remaining)
+[2026-02-11 04:36:12] [Step4_Perturbations] INFO —   Round 5 done: 3 new flips, 233/399 total flipped (58.4%), round=193.1s, total=2482s
+[2026-02-11 04:36:13] [Step4_Perturbations] INFO — Round 6/49: 164 queries (166 combos remaining)
+[2026-02-11 04:39:28] [Step4_Perturbations] INFO —   Round 6 done: 7 new flips, 240/399 total flipped (60.2%), round=195.1s, total=2678s
+[2026-02-11 04:39:29] [Step4_Perturbations] INFO — Round 7/49: 152 queries (159 combos remaining)
+[2026-02-11 04:43:26] [Step4_Perturbations] INFO —   Round 7 done: 3 new flips, 243/399 total flipped (60.9%), round=237.3s, total=2916s
+[2026-02-11 04:43:27] [Step4_Perturbations] INFO — Round 8/49: 147 queries (156 combos remaining)
+[2026-02-11 04:45:46] [Step4_Perturbations] INFO —   Round 8 done: 2 new flips, 245/399 total flipped (61.4%), round=139.5s, total=3056s
+[2026-02-11 04:45:47] [Step4_Perturbations] INFO — Round 9/49: 144 queries (154 combos remaining)
+[2026-02-11 04:48:12] [Step4_Perturbations] INFO —   Round 9 done: 4 new flips, 249/399 total flipped (62.4%), round=145.3s, total=3202s
+[2026-02-11 04:48:13] [Step4_Perturbations] INFO — Round 10/49: 140 queries (150 combos remaining)
+[2026-02-11 04:50:27] [Step4_Perturbations] INFO —   Round 10 done: 6 new flips, 255/399 total flipped (63.9%), round=134.5s, total=3337s
+[2026-02-11 04:50:28] [Step4_Perturbations] INFO — Round 11/49: 133 queries (144 combos remaining)
+[2026-02-11 04:53:09] [Step4_Perturbations] INFO —   Round 11 done: 0 new flips, 255/399 total flipped (63.9%), round=160.7s, total=3499s
+[2026-02-11 04:53:10] [Step4_Perturbations] INFO — Round 12/49: 133 queries (144 combos remaining)
+[2026-02-11 04:55:50] [Step4_Perturbations] INFO —   Round 12 done: 3 new flips, 258/399 total flipped (64.7%), round=160.5s, total=3660s
+[2026-02-11 04:55:51] [Step4_Perturbations] INFO — Round 13/49: 129 queries (141 combos remaining)
+[2026-02-11 04:58:30] [Step4_Perturbations] INFO —   Round 13 done: 1 new flips, 259/399 total flipped (64.9%), round=159.3s, total=3820s
+[2026-02-11 04:58:31] [Step4_Perturbations] INFO — Round 14/49: 128 queries (140 combos remaining)
+[2026-02-11 05:01:07] [Step4_Perturbations] INFO —   Round 14 done: 2 new flips, 261/399 total flipped (65.4%), round=155.3s, total=3976s
+[2026-02-11 05:01:07] [Step4_Perturbations] INFO — Round 15/49: 125 queries (138 combos remaining)
+[2026-02-11 05:03:08] [Step4_Perturbations] INFO —   Round 15 done: 3 new flips, 264/399 total flipped (66.2%), round=121.0s, total=4098s
+[2026-02-11 05:03:09] [Step4_Perturbations] INFO — Round 16/49: 122 queries (135 combos remaining)
+[2026-02-11 05:05:14] [Step4_Perturbations] INFO —   Round 16 done: 6 new flips, 270/399 total flipped (67.7%), round=125.8s, total=4224s
+[2026-02-11 05:05:15] [Step4_Perturbations] INFO — Round 17/49: 116 queries (129 combos remaining)
+[2026-02-11 05:07:26] [Step4_Perturbations] INFO —   Round 17 done: 0 new flips, 270/399 total flipped (67.7%), round=130.7s, total=4356s
+[2026-02-11 05:07:27] [Step4_Perturbations] INFO — Round 18/49: 116 queries (129 combos remaining)
+[2026-02-11 05:09:54] [Step4_Perturbations] INFO —   Round 18 done: 4 new flips, 274/399 total flipped (68.7%), round=147.3s, total=4504s
+[2026-02-11 05:09:55] [Step4_Perturbations] INFO — Round 19/49: 112 queries (125 combos remaining)
+[2026-02-11 05:12:28] [Step4_Perturbations] INFO —   Round 19 done: 9 new flips, 283/399 total flipped (70.9%), round=153.6s, total=4658s
+[2026-02-11 05:12:29] [Step4_Perturbations] INFO — Round 20/49: 101 queries (116 combos remaining)
+[2026-02-11 05:15:02] [Step4_Perturbations] INFO —   Round 20 done: 2 new flips, 285/399 total flipped (71.4%), round=153.0s, total=4812s
+[2026-02-11 05:15:03] [Step4_Perturbations] INFO — Round 21/49: 98 queries (114 combos remaining)
+[2026-02-11 05:16:47] [Step4_Perturbations] INFO —   Round 21 done: 5 new flips, 290/399 total flipped (72.7%), round=104.0s, total=4917s
+[2026-02-11 05:16:48] [Step4_Perturbations] INFO — Round 22/49: 93 queries (109 combos remaining)
+[2026-02-11 05:18:22] [Step4_Perturbations] INFO —   Round 22 done: 2 new flips, 292/399 total flipped (73.2%), round=93.7s, total=5012s
+[2026-02-11 05:18:23] [Step4_Perturbations] INFO — Round 23/49: 90 queries (107 combos remaining)
+[2026-02-11 05:20:16] [Step4_Perturbations] INFO —   Round 23 done: 1 new flips, 293/399 total flipped (73.4%), round=112.7s, total=5126s
+[2026-02-11 05:20:16] [Step4_Perturbations] INFO — Round 24/49: 89 queries (106 combos remaining)
+[2026-02-11 05:21:34] [Step4_Perturbations] INFO —   Round 24 done: 0 new flips, 293/399 total flipped (73.4%), round=77.8s, total=5204s
+[2026-02-11 05:21:35] [Step4_Perturbations] INFO — Round 25/49: 89 queries (106 combos remaining)
+[2026-02-11 05:22:47] [Step4_Perturbations] INFO —   Round 25 done: 3 new flips, 296/399 total flipped (74.2%), round=72.5s, total=5277s
+[2026-02-11 05:22:48] [Step4_Perturbations] INFO — Round 26/49: 85 queries (103 combos remaining)
+[2026-02-11 05:24:19] [Step4_Perturbations] INFO —   Round 26 done: 1 new flips, 297/399 total flipped (74.4%), round=91.1s, total=5369s
+[2026-02-11 05:24:20] [Step4_Perturbations] INFO — Round 27/49: 84 queries (102 combos remaining)
+[2026-02-11 05:31:14] [Step4_Perturbations] INFO —   Round 27 done: 3 new flips, 300/399 total flipped (75.2%), round=414.3s, total=5784s
+[2026-02-11 05:31:15] [Step4_Perturbations] INFO — Round 28/49: 81 queries (99 combos remaining)
+[2026-02-11 05:32:55] [Step4_Perturbations] INFO —   Round 28 done: 1 new flips, 301/399 total flipped (75.4%), round=100.2s, total=5885s
+[2026-02-11 05:32:56] [Step4_Perturbations] INFO — Round 29/49: 80 queries (98 combos remaining)
+[2026-02-11 05:34:11] [Step4_Perturbations] INFO —   Round 29 done: 1 new flips, 302/399 total flipped (75.7%), round=74.8s, total=5960s
+[2026-02-11 05:34:11] [Step4_Perturbations] INFO — Round 30/49: 79 queries (97 combos remaining)
+[2026-02-11 05:35:24] [Step4_Perturbations] INFO —   Round 30 done: 3 new flips, 305/399 total flipped (76.4%), round=73.0s, total=6034s
+[2026-02-11 05:35:25] [Step4_Perturbations] INFO — Round 31/49: 75 queries (94 combos remaining)
+[2026-02-11 05:36:36] [Step4_Perturbations] INFO —   Round 31 done: 2 new flips, 307/399 total flipped (76.9%), round=70.9s, total=6106s
+[2026-02-11 05:36:36] [Step4_Perturbations] INFO — Round 32/49: 73 queries (92 combos remaining)
+[2026-02-11 05:38:06] [Step4_Perturbations] INFO —   Round 32 done: 1 new flips, 308/399 total flipped (77.2%), round=90.1s, total=6196s
+[2026-02-11 05:38:07] [Step4_Perturbations] INFO — Round 33/49: 71 queries (91 combos remaining)
+[2026-02-11 05:39:11] [Step4_Perturbations] INFO —   Round 33 done: 3 new flips, 311/399 total flipped (77.9%), round=64.2s, total=6261s
+[2026-02-11 05:39:12] [Step4_Perturbations] INFO — Round 34/49: 68 queries (88 combos remaining)
+[2026-02-11 05:40:13] [Step4_Perturbations] INFO —   Round 34 done: 3 new flips, 314/399 total flipped (78.7%), round=60.7s, total=6322s
+[2026-02-11 05:40:13] [Step4_Perturbations] INFO — Round 35/49: 63 queries (85 combos remaining)
+[2026-02-11 05:41:47] [Step4_Perturbations] INFO —   Round 35 done: 1 new flips, 315/399 total flipped (78.9%), round=94.4s, total=6417s
+[2026-02-11 05:41:48] [Step4_Perturbations] INFO — Round 36/49: 62 queries (84 combos remaining)
+[2026-02-11 05:43:09] [Step4_Perturbations] INFO —   Round 36 done: 1 new flips, 316/399 total flipped (79.2%), round=81.0s, total=6499s
+[2026-02-11 05:43:09] [Step4_Perturbations] INFO — Round 37/49: 59 queries (83 combos remaining)
+[2026-02-11 05:44:11] [Step4_Perturbations] INFO —   Round 37 done: 3 new flips, 319/399 total flipped (79.9%), round=61.6s, total=6561s
+[2026-02-11 05:44:11] [Step4_Perturbations] INFO — Round 38/49: 55 queries (80 combos remaining)
+[2026-02-11 05:45:51] [Step4_Perturbations] INFO —   Round 38 done: 1 new flips, 320/399 total flipped (80.2%), round=99.4s, total=6661s
+[2026-02-11 05:45:51] [Step4_Perturbations] INFO — Round 39/49: 54 queries (79 combos remaining)
+[2026-02-11 05:46:38] [Step4_Perturbations] INFO —   Round 39 done: 1 new flips, 321/399 total flipped (80.5%), round=47.2s, total=6708s
+[2026-02-11 05:46:39] [Step4_Perturbations] INFO — Round 40/49: 52 queries (78 combos remaining)
+[2026-02-11 05:47:32] [Step4_Perturbations] INFO —   Round 40 done: 2 new flips, 323/399 total flipped (81.0%), round=53.7s, total=6762s
+[2026-02-11 05:47:33] [Step4_Perturbations] INFO — Round 41/49: 50 queries (76 combos remaining)
+[2026-02-11 05:48:13] [Step4_Perturbations] INFO —   Round 41 done: 1 new flips, 324/399 total flipped (81.2%), round=40.1s, total=6803s
+[2026-02-11 05:48:14] [Step4_Perturbations] INFO — Round 42/49: 45 queries (75 combos remaining)
+[2026-02-11 05:49:01] [Step4_Perturbations] INFO —   Round 42 done: 0 new flips, 324/399 total flipped (81.2%), round=47.1s, total=6850s
+[2026-02-11 05:49:01] [Step4_Perturbations] INFO — Round 43/49: 44 queries (75 combos remaining)
+[2026-02-11 05:49:40] [Step4_Perturbations] INFO —   Round 43 done: 1 new flips, 325/399 total flipped (81.5%), round=38.8s, total=6890s
+[2026-02-11 05:49:40] [Step4_Perturbations] INFO — Round 44/49: 43 queries (74 combos remaining)
+[2026-02-11 05:50:49] [Step4_Perturbations] INFO —   Round 44 done: 2 new flips, 327/399 total flipped (82.0%), round=68.6s, total=6959s
+[2026-02-11 05:50:49] [Step4_Perturbations] INFO — Round 45/49: 41 queries (72 combos remaining)
+[2026-02-11 05:51:31] [Step4_Perturbations] INFO —   Round 45 done: 0 new flips, 327/399 total flipped (82.0%), round=41.3s, total=7000s
+[2026-02-11 05:51:31] [Step4_Perturbations] INFO — Round 46/49: 40 queries (72 combos remaining)
+[2026-02-11 05:52:11] [Step4_Perturbations] INFO —   Round 46 done: 0 new flips, 327/399 total flipped (82.0%), round=40.2s, total=7041s
+[2026-02-11 05:52:12] [Step4_Perturbations] INFO — Round 47/49: 33 queries (72 combos remaining)
+[2026-02-11 05:52:56] [Step4_Perturbations] INFO —   Round 47 done: 1 new flips, 328/399 total flipped (82.2%), round=44.6s, total=7086s
+[2026-02-11 05:52:57] [Step4_Perturbations] INFO — Round 48/49: 32 queries (71 combos remaining)
+[2026-02-11 05:53:36] [Step4_Perturbations] INFO —   Round 48 done: 1 new flips, 329/399 total flipped (82.5%), round=38.9s, total=7125s
+[2026-02-11 05:53:36] [Step4_Perturbations] INFO — Round 49/49: 31 queries (70 combos remaining)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   Round 49 done: 2 new flips, 331/399 total flipped (83.0%), round=38.7s, total=7164s
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — All rounds complete. Total inference time: 7164.9s (119.4 min)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Building response DataFrame: 5341 rows, ['pair_index', 'is_correct', 'feature', 'step_index', 'increment_label', 'loser_property', 'original_value', 'perturbed_value', 'original_choice', 'new_choice', 'did_flip', 'reason', 'cot_text']
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Saved responses: /home/anshulk/Housing/macro_mapping/data/perturbation_responses_qwen3-4b.csv (5341 rows)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Saved flip results: /home/anshulk/Housing/macro_mapping/data/flip_results_qwen3-4b.csv (399 rows)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — ============================================================
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — PERTURBATION RESULTS SUMMARY
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — ============================================================
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Total queries executed: 5341
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Total time: 7164.9s (119.4 min)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Avg per query: 1.34s
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Flip summary: Flipped=331/399 (83.0%), No flip=68/399 (17.0%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Flip rate by feature:
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   bedrooms    : 98/100 (98.0%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   bathrooms   : 94/100 (94.0%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   yearBuilt   : 69/100 (69.0%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   lot         : 70/99 (70.7%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Flip rate by correctness:
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   correct     : 194/239 (81.2%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   incorrect   : 137/160 (85.6%)
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Average flip step (lower = easier to flip):
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   bedrooms    : 1.14
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   bathrooms   : 1.60
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   yearBuilt   : 14.26
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO —   lot         : 17.51
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Cleaned up checkpoint files
+[2026-02-11 05:54:15] [Step4_Perturbations] INFO — Step 4 complete for qwen3-4b
+
+[Step 5/10] Mapping reasoning stages...
+[2026-02-11 05:54:17] [Step5_ReasoningStages] INFO — Step 5: Map Reasoning Stages for qwen3-4b
+[2026-02-11 05:54:17] [Step5_ReasoningStages] INFO —   Loaded 100 baseline CoTs, 5341 perturbation CoTs
+[2026-02-11 05:54:17] [Step5_ReasoningStages] INFO — 
+Parsing baseline CoT into reasoning stages...
+[2026-02-11 05:54:17] [Step5_ReasoningStages] INFO — 
+Building stage summary (correct vs incorrect)...
+[2026-02-11 05:54:17] [Step5_ReasoningStages] INFO — 
+Analyzing reasoning transitions during perturbation...
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+============================================================
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —   REASONING STAGE ANALYSIS
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — ============================================================
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+  feature_reading:
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     correct     : present in 100% of responses, avg 3.6 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     incorrect   : present in 98% of responses, avg 3.8 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+  pairwise_comparison:
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     correct     : present in 100% of responses, avg 4.4 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     incorrect   : present in 98% of responses, avg 4.1 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+  weighing_aggregation:
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     correct     : present in 100% of responses, avg 4.5 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     incorrect   : present in 100% of responses, avg 4.3 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+  final_decision:
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     correct     : present in 100% of responses, avg 0.0 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     incorrect   : present in 100% of responses, avg 0.0 features
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+  KEY FINDING — Weighing stage presence:
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     Correct predictions:   100%
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     Incorrect predictions:  100%
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+============================================================
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —   TRANSITION PATTERNS (perturbation)
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — ============================================================
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —   non_monotonic  :  138 (34.6%)
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —   sudden         :  106 (26.6%)
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —   gradual        :   87 (21.8%)
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —   no_change      :   68 (17.0%)
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+  Transition patterns by feature:
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     bedrooms    : {'sudden': np.int64(47), 'gradual': np.int64(41), 'non_monotonic': np.int64(10), 'no_change': np.int64(2)}
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     bathrooms   : {'gradual': np.int64(36), 'sudden': np.int64(33), 'non_monotonic': np.int64(25), 'no_change': np.int64(6)}
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     yearBuilt   : {'non_monotonic': np.int64(49), 'no_change': np.int64(31), 'sudden': np.int64(15), 'gradual': np.int64(5)}
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO —     lot         : {'non_monotonic': np.int64(54), 'no_change': np.int64(29), 'sudden': np.int64(11), 'gradual': np.int64(5)}
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — 
+Saved: /home/anshulk/Housing/macro_mapping/data/reasoning_stages_qwen3-4b.csv
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — Saved: /home/anshulk/Housing/macro_mapping/data/stage_summary_qwen3-4b.csv
+[2026-02-11 05:54:18] [Step5_ReasoningStages] INFO — Saved: /home/anshulk/Housing/macro_mapping/data/transition_patterns_qwen3-4b.csv
+
+[Step 6/10] Computing feature exchange rates...
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — Step 6: Compute Exchange Rates for qwen3-4b
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —   Loaded 399 flip results
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+Computing pairwise exchange rates...
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+Comparing correct vs incorrect exchange rates...
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+============================================================
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —   EXCHANGE RATE RESULTS
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — ============================================================
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+  Mean flip increments (all pairs):
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     bedrooms    : 2.14 (no-flip rate: 2%)
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     bathrooms   : 2.60 (no-flip rate: 6%)
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     yearBuilt   : 30.52 (no-flip rate: 31%)
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     lot         : 1851.43 (no-flip rate: 29%)
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+  Pairwise exchange rates (all):
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     1 bathrooms ~ 0.8 bedrooms
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     1 yearBuilt ~ 0.1 bedrooms
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     1 lot ~ 0.0 bedrooms
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     1 yearBuilt ~ 0.1 bathrooms
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     1 lot ~ 0.0 bathrooms
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     1 lot ~ 0.0 yearBuilt
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+  Correct vs Incorrect comparison:
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     bedrooms    : correct flip=2.28, incorrect flip=1.95, divergence=0.14
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     bathrooms   : correct flip=2.91, incorrect flip=2.11, divergence=0.28
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     yearBuilt   : correct flip=32.05, incorrect flip=28.29, divergence=0.12
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     lot         : correct flip=1807.89, incorrect flip=1903.12, divergence=0.05
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+  Normalized behavioral weights:
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     Feature       BW(correct)  BW(incorrect)   Regression  Probe Acc
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     bedrooms            0.539          0.501        0.287      92.9%
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     bathrooms           0.422          0.464        0.555      90.5%
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     yearBuilt           0.038          0.035        0.114      94.9%
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO —     lot                 0.001          0.001        0.044      88.6%
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — 
+Saved: /home/anshulk/Housing/macro_mapping/data/exchange_rates_qwen3-4b.csv
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — Saved: /home/anshulk/Housing/macro_mapping/data/pairwise_exchange_rates_qwen3-4b.csv
+[2026-02-11 05:54:18] [Step6_ExchangeRates] INFO — Saved: /home/anshulk/Housing/macro_mapping/data/exchange_rate_comparison_qwen3-4b.csv
+
+[Step 7/10] Building reasoning graph...
+[2026-02-11 05:54:19] [Step7_ReasoningGraph] INFO — Step 7: Build Reasoning Graph for qwen3-4b
+[2026-02-11 05:54:19] [Step7_ReasoningGraph] INFO —   Loaded data: ['stages', 'exchange', 'comparison', 'transitions', 'probes']
+[2026-02-11 05:54:19] [Step7_ReasoningGraph] INFO —   Saved: /home/anshulk/Housing/macro_mapping/outputs/graphs/reasoning_graph_qwen3-4b_correct.png
+[2026-02-11 05:54:19] [Step7_ReasoningGraph] INFO —   Saved: /home/anshulk/Housing/macro_mapping/outputs/graphs/reasoning_graph_qwen3-4b_incorrect.png
+[2026-02-11 05:54:19] [Step7_ReasoningGraph] INFO —   Saved: /home/anshulk/Housing/macro_mapping/outputs/graphs/reasoning_graph_qwen3-4b_comparison.png
+[2026-02-11 05:54:19] [Step7_ReasoningGraph] INFO —   Step 7 complete for qwen3-4b
+
+[Step 8/10] Building decision boundary map...
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — Step 8: Decision Boundary Map for qwen3-4b
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —   Loaded 399 flip results
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — 
+============================================================
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —   DECISION BOUNDARY STATS
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — ============================================================
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — 
+  bedrooms (stubbornness ratio: 0.86):
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     correct     : mean flip = 2.3 bedrooms, no-flip rate = 3%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     incorrect   : mean flip = 1.9 bedrooms, no-flip rate = 0%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — 
+  bathrooms (stubbornness ratio: 0.72):
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     correct     : mean flip = 2.9 bathrooms, no-flip rate = 5%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     incorrect   : mean flip = 2.1 bathrooms, no-flip rate = 7%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — 
+  yearBuilt (stubbornness ratio: 0.88):
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     correct     : mean flip = 32.0 years newer, no-flip rate = 32%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     incorrect   : mean flip = 28.3 years newer, no-flip rate = 30%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO — 
+  lot (stubbornness ratio: 1.05):
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     correct     : mean flip = 1807.9 sqft added, no-flip rate = 36%
+[2026-02-11 05:54:20] [Step8_DecisionBoundary] INFO —     incorrect   : mean flip = 1903.1 sqft added, no-flip rate = 20%
+[2026-02-11 05:54:21] [Step8_DecisionBoundary] INFO — 
+Saved: /home/anshulk/Housing/macro_mapping/outputs/graphs/decision_boundary_qwen3-4b.png
+[2026-02-11 05:54:21] [Step8_DecisionBoundary] INFO — Saved: /home/anshulk/Housing/macro_mapping/outputs/tables/boundary_stats_qwen3-4b.csv
+[2026-02-11 05:54:21] [Step8_DecisionBoundary] INFO —   Step 8 complete for qwen3-4b
+
+[Step 9/10] Validating against logistic regression...
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — Step 9: Validate Regression Comparison for qwen3-4b
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   Loaded behavioral weights: 4 features
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   Regression coefficients: {'bathrooms': 0.5554501762940853, 'bedrooms': 0.2866156547135805, 'lot': 0.04404729951397871, 'yearBuilt': 0.11388686947835533}
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   Probe accuracies: {'bathrooms': 0.905458089668616, 'bedrooms': 0.928849902534113, 'lot': 0.8859649122807017, 'yearBuilt': 0.949317738791423}
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+============================================================
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   REGRESSION COMPARISON
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — ============================================================
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+  Feature weight comparison:
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   Feature       BW(correct)  BW(incorrect)   Regression    Probe
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   bedrooms            0.539          0.501        0.287    92.9%
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   bathrooms           0.422          0.464        0.555    90.5%
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   yearBuilt           0.038          0.035        0.114    94.9%
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —   lot                 0.001          0.001        0.044    88.6%
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+  Rankings:
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     rank_bw_correct     : bedrooms(1) > bathrooms(2) > yearBuilt(3) > lot(4)
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     rank_regression     : bathrooms(1) > bedrooms(2) > yearBuilt(3) > lot(4)
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     rank_probe          : yearBuilt(1) > bedrooms(2) > bathrooms(3) > lot(4)
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+  Rank comparisons (n=4 features, descriptive):
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     LLM behavioral (correct) vs LLM behavioral (incorrect): rho=1.000, rank matches=4/4, top-1 agrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     LLM behavioral (correct) vs Logistic regression: rho=0.800, rank matches=2/4, top-1 disagrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     LLM behavioral (correct) vs Probe accuracy: rho=0.400, rank matches=1/4, top-1 disagrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     LLM behavioral (incorrect) vs Logistic regression: rho=0.800, rank matches=2/4, top-1 disagrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     LLM behavioral (incorrect) vs Probe accuracy: rho=0.400, rank matches=1/4, top-1 disagrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO —     Logistic regression vs Probe accuracy: rho=0.200, rank matches=2/4, top-1 disagrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+VERDICT: non-linear / context-dependent
+  Rank agreement: 2/4 features match
+  Top-1 feature disagrees. Spearman rho = 0.800 (descriptive, n=4)
+  The LLM uses a substantially different weighting strategy
+  than a linear model — suggesting non-linear or contextual reasoning.
+
+  Weight concentration (CV): LLM=1.08, Regression=0.91
+  → Similar concentration of weights across features
+  Correct/incorrect divergence: mean=0.15, max=0.28
+  → Weights are stable across correct/incorrect predictions
+
+RANK COMPARISONS (n=4 features, descriptive only):
+  LLM behavioral (correct) vs LLM behavioral (incorrect): rho=1.000, rank matches=4/4, top-1 agrees
+  LLM behavioral (correct) vs Logistic regression: rho=0.800, rank matches=2/4, top-1 disagrees
+  LLM behavioral (correct) vs Probe accuracy: rho=0.400, rank matches=1/4, top-1 disagrees
+  LLM behavioral (incorrect) vs Logistic regression: rho=0.800, rank matches=2/4, top-1 disagrees
+  LLM behavioral (incorrect) vs Probe accuracy: rho=0.400, rank matches=1/4, top-1 disagrees
+  Logistic regression vs Probe accuracy: rho=0.200, rank matches=2/4, top-1 disagrees
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+Saved: /home/anshulk/Housing/macro_mapping/outputs/graphs/weight_comparison_qwen3-4b.png
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — Saved: /home/anshulk/Housing/macro_mapping/outputs/tables/regression_comparison_qwen3-4b.csv
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — Saved: /home/anshulk/Housing/macro_mapping/outputs/tables/linearity_verdict_qwen3-4b.txt
+[2026-02-11 05:54:22] [Step9_ValidateRegression] INFO — 
+  Step 9 complete for qwen3-4b
+
+[Step 10/10] Producing final reasoning graph...
+[2026-02-11 05:54:23] [Step10_FinalGraph] INFO — Step 10: Produce Final Reasoning Graph for qwen3-4b
+[2026-02-11 05:54:23] [Step10_FinalGraph] INFO —   Loaded data keys: ['comparison', 'pairwise', 'stages', 'transitions', 'flips', 'regression', 'verdict_text', 'verdict_short', 'probes']
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   Saved: /home/anshulk/Housing/macro_mapping/outputs/graphs/final_reasoning_graph_qwen3-4b.png
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   Saved: /home/anshulk/Housing/macro_mapping/outputs/tables/final_summary_qwen3-4b.csv
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   Saved: /home/anshulk/Housing/macro_mapping/outputs/tables/full_evidence_table_qwen3-4b.csv
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO — 
+============================================================
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   FINAL SUMMARY — qwen3-4b
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO — ============================================================
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO — 
+  Feature         Probe    BW(C)    BW(I)     Regr  Flip(C)  Flip(I)
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   bedrooms          93%    0.539    0.501    0.287      2.3      1.9
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   bathrooms         91%    0.422    0.464    0.555      2.9      2.1
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   yearBuilt         95%    0.038    0.035    0.114     32.0     28.3
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO —   lot               89%    0.001    0.001    0.044   1807.9   1903.1
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO — 
+  Linearity verdict: non-linear / context-dependent
+[2026-02-11 05:54:24] [Step10_FinalGraph] INFO — 
+  Step 10 complete for qwen3-4b
+
+Pipeline complete for qwen3-4b
+
+============================================================
+Job completed
+Exit code: 0
+End time: Wed Feb 11 05:54:24 EST 2026
+Total runtime: 7461 seconds
+============================================================
+
+Final GPU memory state:
+index, memory.used [MiB], memory.total [MiB]
+0, 1 MiB, 49140 MiB
+1, 1 MiB, 49140 MiB
+
+SUCCESS: Macro mapping pipeline complete!
+
+Outputs:
+  - macro_mapping/data/           (intermediate CSVs)
+  - macro_mapping/outputs/graphs/ (reasoning graphs)
+  - macro_mapping/outputs/tables/ (summary tables)
+
+Generated files:
+macro_mapping/outputs/graphs/decision_boundary_llama-3.2-3b.png
+macro_mapping/outputs/graphs/decision_boundary_qwen3-4b.png
+macro_mapping/outputs/graphs/final_reasoning_graph_llama-3.2-3b.png
+macro_mapping/outputs/graphs/final_reasoning_graph_qwen3-4b.png
+macro_mapping/outputs/graphs/reasoning_graph_llama-3.2-3b_comparison.png
+macro_mapping/outputs/graphs/reasoning_graph_llama-3.2-3b_correct.png
+macro_mapping/outputs/graphs/reasoning_graph_llama-3.2-3b_incorrect.png
+macro_mapping/outputs/graphs/reasoning_graph_qwen3-4b_comparison.png
+macro_mapping/outputs/graphs/reasoning_graph_qwen3-4b_correct.png
+macro_mapping/outputs/graphs/reasoning_graph_qwen3-4b_incorrect.png
+macro_mapping/outputs/graphs/weight_comparison_llama-3.2-3b.png
+macro_mapping/outputs/graphs/weight_comparison_qwen3-4b.png
+macro_mapping/outputs/tables/boundary_stats_llama-3.2-3b.csv
+macro_mapping/outputs/tables/boundary_stats_qwen3-4b.csv
+macro_mapping/outputs/tables/final_summary_llama-3.2-3b.csv
+macro_mapping/outputs/tables/final_summary_qwen3-4b.csv
+macro_mapping/outputs/tables/full_evidence_table_llama-3.2-3b.csv
+macro_mapping/outputs/tables/full_evidence_table_qwen3-4b.csv
+macro_mapping/outputs/tables/linearity_verdict_llama-3.2-3b.txt
+macro_mapping/outputs/tables/linearity_verdict_qwen3-4b.txt
+macro_mapping/outputs/tables/regression_comparison_llama-3.2-3b.csv
+macro_mapping/outputs/tables/regression_comparison_qwen3-4b.csv
+============================================================
+Job Ended: Wed Feb 11 05:54:24 EST 2026
+============================================================

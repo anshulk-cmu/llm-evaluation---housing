@@ -1,0 +1,9 @@
+stage_name,group,frequency,avg_features_mentioned,n_samples,top_features
+feature_reading,correct,0.640625,2.15625,64,"[('type', 41), ('parkingType', 24), ('cooling', 19), ('bathrooms', 14), ('heating', 12)]"
+feature_reading,incorrect,0.9722222222222222,4.027777777777778,36,"[('type', 35), ('cooling', 19), ('bathrooms', 18), ('bedrooms', 16), ('heating', 16)]"
+pairwise_comparison,correct,0.5,2.65625,64,"[('bedrooms', 32), ('yearBuilt', 32), ('lot', 31), ('bathrooms', 27), ('cooling', 23)]"
+pairwise_comparison,incorrect,0.5277777777777778,3.25,36,"[('bedrooms', 19), ('lot', 19), ('yearBuilt', 19), ('bathrooms', 17), ('cooling', 16)]"
+weighing_aggregation,correct,1.0,3.65625,64,"[('lot', 58), ('bedrooms', 53), ('bathrooms', 38), ('yearBuilt', 37), ('cooling', 19)]"
+weighing_aggregation,incorrect,1.0,3.7222222222222223,36,"[('lot', 33), ('yearBuilt', 27), ('bathrooms', 18), ('bedrooms', 18), ('heating', 15)]"
+final_decision,correct,1.0,0.0,64,[]
+final_decision,incorrect,1.0,0.0,36,[]

@@ -1,0 +1,400 @@
+pair_index,feature,is_correct,shift_type,did_flip,n_steps,mention_counts
+0,bathrooms,True,gradual,True,3,"[1, 1, 2]"
+0,bedrooms,True,no_change,False,4,"[2, 4, 4, 4]"
+0,lot,True,no_change,False,50,"[1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+0,yearBuilt,True,no_change,False,47,"[2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 4, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+1,bathrooms,True,gradual,True,4,"[2, 2, 2, 3]"
+1,bedrooms,True,gradual,True,4,"[1, 2, 2, 3]"
+1,lot,True,non_monotonic,True,11,"[3, 2, 2, 3, 2, 3, 3, 2, 2, 2, 5]"
+1,yearBuilt,True,no_change,False,38,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 6, 6, 6, 6, 6, 6, 6, 4, 4, 4]"
+2,bathrooms,False,gradual,True,4,"[2, 2, 3, 3]"
+2,bedrooms,False,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+2,lot,False,non_monotonic,True,8,"[4, 4, 4, 5, 4, 4, 5, 4]"
+2,yearBuilt,False,non_monotonic,True,46,"[4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 3, 2, 5, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 4, 2, 5, 5, 3, 5]"
+3,bathrooms,True,non_monotonic,True,3,"[2, 1, 2]"
+3,bedrooms,True,gradual,True,2,"[0, 2]"
+3,lot,True,no_change,False,50,"[0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+3,yearBuilt,True,non_monotonic,True,30,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]"
+4,bathrooms,True,sudden,True,2,"[2, 2]"
+4,bedrooms,True,sudden,True,1,[1]
+4,lot,True,non_monotonic,True,18,"[6, 6, 6, 6, 6, 6, 6, 4, 6, 6, 6, 6, 6, 6, 6, 6, 6, 4]"
+4,yearBuilt,True,non_monotonic,True,16,"[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3]"
+5,bathrooms,True,non_monotonic,True,3,"[2, 1, 1]"
+5,bedrooms,True,gradual,True,4,"[1, 2, 2, 2]"
+5,lot,True,non_monotonic,True,4,"[5, 5, 4, 5]"
+5,yearBuilt,True,no_change,False,37,"[3, 4, 3, 4, 3, 2, 4, 2, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0]"
+6,bathrooms,False,non_monotonic,True,6,"[2, 3, 3, 2, 2, 2]"
+6,bedrooms,False,no_change,False,7,"[2, 1, 2, 2, 2, 2, 2]"
+6,lot,False,sudden,True,49,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3]"
+6,yearBuilt,False,no_change,False,42,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 3, 3, 2, 3, 3, 3]"
+7,bathrooms,True,sudden,True,2,"[3, 2]"
+7,bedrooms,True,no_change,False,6,"[2, 3, 2, 2, 3, 3]"
+7,lot,True,non_monotonic,True,10,"[3, 3, 3, 3, 3, 2, 3, 3, 3, 4]"
+7,yearBuilt,True,non_monotonic,True,29,"[1, 1, 2, 3, 3, 3, 1, 1, 2, 2, 2, 2, 1, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 5, 3, 3, 3, 5]"
+8,bathrooms,True,no_change,False,9,"[2, 2, 2, 2, 2, 2, 2, 2, 2]"
+8,bedrooms,True,no_change,False,8,"[2, 2, 2, 2, 2, 2, 2, 2]"
+8,lot,True,gradual,True,17,"[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4]"
+8,yearBuilt,True,no_change,False,42,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 2, 2]"
+9,bathrooms,False,sudden,True,3,"[3, 3, 2]"
+9,bedrooms,False,sudden,True,1,[2]
+9,lot,False,non_monotonic,True,8,"[4, 4, 5, 5, 4, 4, 4, 4]"
+9,yearBuilt,False,non_monotonic,True,30,"[5, 5, 5, 5, 5, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+10,bathrooms,True,sudden,True,2,"[2, 1]"
+10,bedrooms,True,sudden,True,1,[1]
+10,lot,True,non_monotonic,True,6,"[3, 9, 3, 10, 3, 3]"
+10,yearBuilt,True,gradual,True,24,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2]"
+11,bathrooms,True,sudden,True,1,[1]
+11,bedrooms,True,no_change,False,6,"[2, 2, 2, 2, 2, 2]"
+11,lot,True,non_monotonic,True,14,"[4, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 5, 4, 6]"
+11,yearBuilt,True,no_change,False,29,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4]"
+12,bathrooms,True,sudden,True,1,[4]
+12,bedrooms,True,sudden,True,1,[4]
+12,lot,True,sudden,True,1,[7]
+12,yearBuilt,True,non_monotonic,True,24,"[2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 5, 4, 4]"
+13,bathrooms,True,non_monotonic,True,6,"[1, 3, 1, 2, 2, 3]"
+13,bedrooms,True,no_change,False,7,"[1, 3, 2, 2, 2, 2, 2]"
+13,lot,True,non_monotonic,True,41,"[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 1, 5, 1, 1, 5, 1, 5, 5, 5, 5, 5, 1, 1, 1, 5, 1, 5, 5, 1, 5, 3]"
+13,yearBuilt,True,no_change,False,47,"[0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 0, 0, 0, 0, 2, 2, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 2, 2]"
+14,bathrooms,True,sudden,True,2,"[2, 2]"
+14,bedrooms,True,sudden,True,1,[5]
+14,lot,True,non_monotonic,True,14,"[7, 6, 6, 6, 4, 4, 7, 7, 3, 4, 9, 4, 6, 3]"
+14,yearBuilt,True,non_monotonic,True,36,"[6, 5, 6, 6, 6, 4, 4, 4, 6, 3, 6, 4, 6, 6, 5, 4, 5, 4, 5, 5, 5, 5, 5, 5, 3, 6, 3, 3, 6, 6, 6, 6, 6, 6, 4, 3]"
+15,bathrooms,True,sudden,True,2,"[1, 1]"
+15,bedrooms,True,no_change,False,7,"[1, 1, 1, 1, 1, 1, 2]"
+15,lot,True,no_change,False,50,"[1, 1, 2, 1, 1, 2, 3, 3, 3, 4, 4, 3, 4, 4, 4, 1, 3, 3, 1, 1, 1, 3, 1, 1, 3, 3, 3, 2, 2, 3, 2, 3, 2, 2, 1, 2, 2, 1, 3, 1, 3, 2, 2, 3, 3, 1, 2, 1, 1, 2]"
+15,yearBuilt,True,gradual,True,37,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]"
+16,bathrooms,True,gradual,True,2,"[1, 2]"
+16,bedrooms,True,no_change,False,7,"[2, 2, 3, 3, 2, 2, 2]"
+16,lot,True,gradual,True,4,"[1, 1, 4, 5]"
+16,yearBuilt,True,non_monotonic,True,8,"[3, 4, 3, 3, 2, 4, 4, 3]"
+17,bathrooms,True,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+17,bedrooms,True,no_change,False,6,"[2, 1, 1, 1, 1, 2]"
+17,lot,True,non_monotonic,True,4,"[4, 3, 4, 3]"
+17,yearBuilt,True,non_monotonic,True,20,"[4, 4, 4, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3]"
+18,bathrooms,True,gradual,True,3,"[2, 2, 4]"
+18,bedrooms,True,sudden,True,1,[2]
+18,lot,True,sudden,True,1,[5]
+18,yearBuilt,True,non_monotonic,True,11,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 3]"
+19,bathrooms,True,gradual,True,2,"[1, 2]"
+19,bedrooms,True,no_change,False,7,"[2, 1, 2, 1, 1, 1, 1]"
+19,lot,True,non_monotonic,True,22,"[4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4]"
+19,yearBuilt,True,non_monotonic,True,15,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 5]"
+20,bathrooms,False,non_monotonic,True,5,"[1, 2, 3, 1, 2]"
+20,bedrooms,False,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+20,lot,False,non_monotonic,True,21,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 6, 3]"
+20,yearBuilt,False,no_change,False,47,"[3, 3, 3, 3, 4, 5, 4, 3, 3, 3, 3, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3]"
+21,bathrooms,True,no_change,False,8,"[1, 2, 2, 2, 2, 2, 2, 2]"
+21,bedrooms,True,non_monotonic,True,3,"[2, 1, 1]"
+21,lot,True,non_monotonic,True,48,"[4, 3, 4, 4, 4, 4, 4, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 5, 5, 4, 4, 4, 2, 4, 4, 4, 3]"
+21,yearBuilt,True,no_change,False,15,"[3, 3, 3, 3, 3, 3, 3, 4, 2, 2, 3, 3, 3, 2, 3]"
+22,bathrooms,True,gradual,True,8,"[2, 2, 2, 2, 2, 2, 2, 3]"
+22,bedrooms,True,no_change,False,7,"[3, 3, 3, 3, 3, 2, 3]"
+22,lot,True,gradual,True,15,"[3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+22,yearBuilt,True,no_change,False,34,"[2, 3, 6, 5, 6, 6, 2, 3, 3, 2, 2, 4, 4, 4, 4, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 3, 3, 4, 3, 3]"
+23,bathrooms,True,sudden,True,2,"[4, 4]"
+23,bedrooms,True,sudden,True,1,[3]
+23,lot,True,non_monotonic,True,20,"[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0]"
+23,yearBuilt,True,non_monotonic,True,18,"[1, 1, 0, 1, 1, 1, 1, 1, 0, 2, 0, 0, 0, 2, 0, 2, 2, 1]"
+24,bathrooms,True,gradual,True,6,"[2, 2, 2, 2, 3, 3]"
+24,bedrooms,True,no_change,False,7,"[1, 3, 3, 3, 3, 3, 3]"
+24,lot,True,no_change,False,50,"[5, 4, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 4, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5, 4, 4, 5, 4, 5, 4, 5, 5, 4, 4, 4, 5, 4, 5, 5, 4, 5, 5]"
+24,yearBuilt,True,no_change,False,26,"[2, 2, 2, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2]"
+25,bathrooms,True,gradual,True,9,"[1, 2, 2, 2, 2, 2, 3, 3, 3]"
+25,bedrooms,True,no_change,False,7,"[1, 2, 2, 2, 2, 2, 2]"
+25,lot,True,non_monotonic,True,10,"[4, 5, 4, 4, 4, 5, 4, 4, 4, 4]"
+25,yearBuilt,True,no_change,False,47,"[2, 2, 3, 2, 2, 2, 2, 4, 4, 2, 2, 4, 4, 4, 4, 2, 4, 4, 2, 4, 2, 4, 2, 4, 2, 4, 2, 3, 3, 4, 4, 4, 3, 3, 4, 3, 3, 3, 3, 4, 3, 3, 4, 4, 4, 4, 4]"
+26,bathrooms,True,sudden,True,1,[2]
+26,bedrooms,True,sudden,True,1,[1]
+26,lot,True,non_monotonic,True,33,"[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 4, 5, 4, 4, 5, 4, 5, 4, 5, 5, 6, 6, 5, 4, 5, 6, 5, 4]"
+26,yearBuilt,True,gradual,True,5,"[2, 2, 2, 2, 4]"
+27,bathrooms,True,no_change,False,7,"[2, 3, 3, 2, 2, 3, 3]"
+27,bedrooms,True,no_change,False,6,"[2, 3, 2, 2, 2, 3]"
+27,lot,True,non_monotonic,True,23,"[3, 3, 4, 3, 4, 5, 5, 4, 5, 4, 5, 5, 5, 5, 5, 4, 4, 4, 5, 4, 4, 4, 5]"
+27,yearBuilt,True,no_change,False,47,"[3, 3, 3, 4, 3, 2, 2, 2, 3, 4, 4, 4, 2, 3, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3]"
+28,bathrooms,True,sudden,True,1,[2]
+28,bedrooms,True,sudden,True,1,[2]
+28,lot,True,non_monotonic,True,31,"[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4]"
+28,yearBuilt,True,sudden,True,1,[4]
+29,bathrooms,True,no_change,False,8,"[0, 1, 1, 1, 1, 1, 1, 2]"
+29,bedrooms,True,sudden,True,1,[1]
+29,lot,True,no_change,False,50,"[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+29,yearBuilt,True,no_change,False,42,"[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+30,bathrooms,False,sudden,True,1,[2]
+30,bedrooms,False,sudden,True,1,[3]
+30,lot,False,sudden,True,5,"[4, 4, 4, 4, 4]"
+30,yearBuilt,False,sudden,True,10,"[2, 2, 2, 2, 2, 2, 2, 2, 2, 2]"
+31,bathrooms,True,sudden,True,1,[2]
+31,bedrooms,True,no_change,False,6,"[2, 3, 2, 3, 2, 2]"
+31,lot,True,sudden,True,1,[5]
+31,yearBuilt,True,sudden,True,1,[3]
+32,bathrooms,True,gradual,True,2,"[2, 3]"
+32,bedrooms,True,sudden,True,1,[3]
+32,lot,True,sudden,True,1,[4]
+32,yearBuilt,True,non_monotonic,True,7,"[2, 3, 3, 5, 2, 4, 4]"
+33,bathrooms,True,no_change,False,8,"[2, 3, 4, 3, 3, 3, 3, 2]"
+33,bedrooms,True,no_change,False,8,"[4, 2, 3, 3, 3, 2, 2, 2]"
+33,lot,True,no_change,False,50,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 5, 4, 4, 5, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4]"
+33,yearBuilt,True,no_change,False,42,"[2, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 3, 3, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2]"
+34,bathrooms,True,gradual,True,2,"[2, 3]"
+34,bedrooms,True,sudden,True,1,[2]
+34,yearBuilt,True,no_change,False,32,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]"
+35,bathrooms,True,no_change,False,9,"[4, 4, 4, 4, 4, 4, 4, 4, 4]"
+35,bedrooms,True,sudden,True,2,"[4, 4]"
+35,lot,True,no_change,False,50,"[5, 5, 4, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 4, 5, 4, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5]"
+35,yearBuilt,True,gradual,True,26,"[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4]"
+36,bathrooms,True,no_change,False,8,"[1, 1, 1, 1, 1, 1, 1, 1]"
+36,bedrooms,True,sudden,True,2,"[1, 1]"
+36,lot,True,no_change,False,50,"[3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]"
+36,yearBuilt,True,no_change,False,42,"[0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 4, 4, 4, 4, 1, 3, 3, 4, 4, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 3, 1, 1]"
+37,bathrooms,True,gradual,True,3,"[1, 2, 3]"
+37,bedrooms,True,no_change,False,7,"[3, 4, 3, 3, 3, 3, 3]"
+37,lot,True,non_monotonic,True,9,"[1, 0, 3, 0, 0, 0, 0, 3, 5]"
+37,yearBuilt,True,non_monotonic,True,35,"[2, 4, 3, 3, 3, 3, 3, 5, 4, 4, 3, 5, 5, 5, 5, 5, 5, 5, 5, 4, 3, 3, 4, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]"
+38,bathrooms,True,sudden,True,2,"[2, 2]"
+38,bedrooms,True,sudden,True,1,[2]
+38,lot,True,non_monotonic,True,10,"[5, 4, 4, 3, 4, 4, 4, 4, 4, 5]"
+38,yearBuilt,True,non_monotonic,True,43,"[2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 4, 4, 4, 2, 2, 2, 2, 3, 2, 2, 4, 4, 4, 4, 4, 2, 2, 3, 2, 2, 2, 2, 4, 2, 3, 2, 2, 2, 3, 3, 4]"
+39,bathrooms,True,gradual,True,5,"[1, 1, 3, 3, 3]"
+39,bedrooms,True,gradual,True,6,"[2, 2, 2, 2, 2, 3]"
+39,lot,True,non_monotonic,True,26,"[0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 0, 4, 4, 4, 5, 5]"
+39,yearBuilt,True,no_change,False,37,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+40,bathrooms,True,gradual,True,3,"[1, 2, 2]"
+40,bedrooms,True,gradual,True,3,"[1, 2, 2]"
+40,lot,True,non_monotonic,True,19,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4]"
+40,yearBuilt,True,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+41,bathrooms,False,gradual,True,4,"[2, 2, 2, 3]"
+41,bedrooms,False,non_monotonic,True,3,"[2, 1, 1]"
+41,lot,False,no_change,False,50,"[5, 5, 4, 5, 5, 5, 4, 5, 4, 4, 4, 5, 5, 5, 5, 5, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 4, 5, 4, 5, 5, 5, 5, 4, 5, 4, 5, 5, 5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 4]"
+41,yearBuilt,False,no_change,False,47,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 2, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4]"
+42,bathrooms,True,non_monotonic,True,3,"[3, 2, 3]"
+42,bedrooms,True,non_monotonic,True,4,"[2, 3, 2, 3]"
+42,lot,True,non_monotonic,True,26,"[5, 5, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 5, 5, 5, 7, 5, 5, 5, 5, 5, 6]"
+42,yearBuilt,True,no_change,False,42,"[2, 2, 2, 3, 3, 2, 3, 4, 4, 3, 2, 2, 3, 3, 3, 3, 4, 4, 3, 2, 3, 4, 4, 2, 2, 4, 2, 2, 2, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+43,bathrooms,True,sudden,True,1,[0]
+43,bedrooms,True,gradual,True,2,"[1, 2]"
+43,lot,True,non_monotonic,True,5,"[2, 2, 2, 3, 2]"
+43,yearBuilt,True,gradual,True,4,"[0, 0, 2, 2]"
+44,bathrooms,True,sudden,True,1,[3]
+44,bedrooms,True,sudden,True,1,[2]
+44,lot,True,non_monotonic,True,11,"[5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 5]"
+44,yearBuilt,True,non_monotonic,True,10,"[3, 3, 3, 3, 3, 3, 3, 4, 4, 2]"
+45,bathrooms,True,sudden,True,2,"[3, 3]"
+45,bedrooms,True,sudden,True,1,[3]
+45,lot,True,gradual,True,5,"[2, 2, 2, 2, 3]"
+45,yearBuilt,True,non_monotonic,True,6,"[3, 4, 2, 3, 3, 4]"
+46,bathrooms,True,no_change,False,8,"[2, 1, 3, 2, 2, 2, 2, 3]"
+46,bedrooms,True,no_change,False,8,"[1, 2, 2, 2, 2, 3, 3, 2]"
+46,lot,True,no_change,False,50,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 4, 4, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+46,yearBuilt,True,no_change,False,47,"[2, 2, 5, 5, 3, 3, 4, 3, 3, 4, 3, 3, 3, 3, 3, 4, 3, 5, 3, 5, 5, 5, 5, 4, 5, 5, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 2, 2, 2]"
+47,bathrooms,True,non_monotonic,True,4,"[3, 1, 2, 2]"
+47,bedrooms,True,gradual,True,7,"[1, 2, 2, 2, 2, 2, 2]"
+47,lot,True,non_monotonic,True,12,"[1, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4]"
+47,yearBuilt,True,no_change,False,47,"[3, 3, 3, 3, 3, 3, 2, 2, 3, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 3, 2, 2, 3, 2, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+48,bathrooms,False,sudden,True,2,"[2, 2]"
+48,bedrooms,False,no_change,False,7,"[2, 2, 2, 2, 2, 2, 1]"
+48,lot,False,non_monotonic,True,3,"[6, 3, 4]"
+48,yearBuilt,False,sudden,True,1,[3]
+49,bathrooms,False,gradual,True,8,"[2, 2, 2, 2, 2, 2, 2, 3]"
+49,bedrooms,False,sudden,True,1,[2]
+49,lot,False,non_monotonic,True,8,"[4, 4, 4, 5, 4, 4, 4, 5]"
+49,yearBuilt,False,sudden,True,1,[4]
+50,bathrooms,True,no_change,False,8,"[2, 2, 2, 2, 2, 2, 2, 2]"
+50,bedrooms,True,no_change,False,7,"[1, 1, 1, 1, 1, 1, 1]"
+50,lot,True,non_monotonic,True,21,"[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]"
+50,yearBuilt,True,no_change,False,47,"[1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+51,bathrooms,True,sudden,True,1,[2]
+51,bedrooms,True,non_monotonic,True,6,"[2, 3, 2, 2, 2, 2]"
+51,lot,True,sudden,True,5,"[2, 2, 2, 2, 2]"
+51,yearBuilt,True,no_change,False,47,"[2, 1, 2, 2, 3, 1, 3, 3, 1, 2, 3, 3, 3, 1, 3, 3, 3, 3, 1, 1, 2, 3, 2, 3, 3, 3, 2, 2, 3, 2, 3, 3, 3, 2, 3, 2, 2, 2, 3, 3, 3, 3, 3, 2, 3, 3, 2]"
+52,bathrooms,True,non_monotonic,True,3,"[2, 1, 2]"
+52,bedrooms,True,sudden,True,2,"[2, 2]"
+52,lot,True,sudden,True,4,"[4, 4, 4, 4]"
+52,yearBuilt,True,no_change,False,47,"[4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 4, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 4]"
+53,bathrooms,True,sudden,True,1,[1]
+53,bedrooms,True,sudden,True,1,[2]
+53,lot,True,non_monotonic,True,3,"[4, 5, 4]"
+53,yearBuilt,True,no_change,False,7,"[4, 3, 3, 2, 2, 4, 4]"
+54,bathrooms,True,no_change,False,8,"[3, 2, 2, 2, 2, 2, 2, 2]"
+54,bedrooms,True,no_change,False,7,"[2, 3, 3, 3, 3, 3, 3]"
+54,lot,True,no_change,False,50,"[4, 4, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 5, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+54,yearBuilt,True,no_change,False,40,"[4, 4, 3, 5, 4, 4, 4, 4, 3, 4, 4, 4, 4, 4, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4]"
+55,bathrooms,True,non_monotonic,True,4,"[2, 1, 2, 3]"
+55,bedrooms,True,no_change,False,7,"[2, 3, 3, 3, 3, 3, 3]"
+55,lot,True,non_monotonic,True,27,"[4, 4, 4, 4, 4, 4, 4, 5, 3, 3, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4, 1, 2, 1, 2, 4, 5, 3]"
+55,yearBuilt,True,no_change,False,41,"[3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2]"
+56,bathrooms,True,no_change,False,9,"[1, 2, 1, 2, 2, 2, 2, 2, 2]"
+56,bedrooms,True,sudden,True,1,[1]
+56,lot,True,non_monotonic,True,41,"[2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2]"
+56,yearBuilt,True,no_change,False,36,"[3, 3, 3, 4, 4, 4, 4, 4, 4, 3, 4, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 3, 2, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+57,bathrooms,True,non_monotonic,True,8,"[2, 2, 2, 2, 2, 1, 2, 2]"
+57,bedrooms,True,non_monotonic,True,3,"[3, 2, 3]"
+57,lot,True,non_monotonic,True,6,"[5, 6, 4, 4, 5, 5]"
+57,yearBuilt,True,no_change,False,47,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+58,bathrooms,True,sudden,True,1,[1]
+58,bedrooms,True,sudden,True,1,[1]
+58,lot,True,sudden,True,1,[1]
+58,yearBuilt,True,sudden,True,2,"[2, 1]"
+59,bathrooms,True,sudden,True,1,[2]
+59,bedrooms,True,gradual,True,2,"[1, 2]"
+59,lot,True,non_monotonic,True,34,"[4, 4, 4, 1, 4, 4, 4, 5, 4, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4, 4, 4, 4, 0, 1, 4, 1, 4, 4, 4, 4, 4, 2]"
+59,yearBuilt,True,gradual,True,14,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]"
+60,bathrooms,False,sudden,True,1,[1]
+60,bedrooms,False,sudden,True,1,[1]
+60,lot,False,sudden,True,1,[4]
+60,yearBuilt,False,gradual,True,2,"[3, 4]"
+61,bathrooms,False,gradual,True,4,"[1, 2, 2, 2]"
+61,bedrooms,False,no_change,False,7,"[3, 3, 2, 3, 2, 2, 2]"
+61,lot,False,non_monotonic,True,11,"[1, 1, 1, 6, 1, 1, 1, 1, 1, 1, 1]"
+61,yearBuilt,False,non_monotonic,True,40,"[2, 2, 2, 2, 2, 2, 2, 3, 4, 4, 4, 4, 2, 4, 4, 4, 4, 3, 2, 2, 4, 4, 4, 4, 4, 4, 4, 3, 4, 3, 4, 4, 4, 4, 4, 2, 2, 4, 2, 2]"
+62,bathrooms,False,sudden,True,1,[4]
+62,bedrooms,False,non_monotonic,True,4,"[3, 3, 4, 2]"
+62,lot,False,sudden,True,3,"[6, 6, 6]"
+62,yearBuilt,False,non_monotonic,True,3,"[3, 4, 2]"
+63,bathrooms,False,non_monotonic,True,7,"[2, 2, 2, 3, 2, 2, 1]"
+63,bedrooms,False,non_monotonic,True,5,"[2, 2, 2, 3, 2]"
+63,lot,False,no_change,False,50,"[7, 5, 7, 5, 7, 7, 5, 5, 7, 6, 7, 7, 7, 7, 5, 5, 8, 5, 5, 7, 7, 7, 5, 7, 7, 5, 6, 5, 5, 10, 8, 8, 5, 5, 6, 10, 5, 5, 8, 5, 5, 5, 5, 6, 5, 9, 8, 5, 7, 4]"
+63,yearBuilt,False,non_monotonic,True,19,"[3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 2, 2, 2, 5, 4, 4, 4, 4]"
+64,bathrooms,False,sudden,True,1,[4]
+64,bedrooms,False,sudden,True,1,[4]
+64,lot,False,no_change,False,50,"[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 5, 7, 5, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 5, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]"
+64,yearBuilt,False,sudden,True,1,[4]
+65,bathrooms,False,gradual,True,2,"[2, 3]"
+65,bedrooms,False,sudden,True,2,"[3, 2]"
+65,lot,False,non_monotonic,True,36,"[3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3, 5, 5, 5, 5, 5, 5, 4, 5, 5, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3, 5, 5, 4, 3, 4]"
+65,yearBuilt,False,non_monotonic,True,25,"[4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 5, 5, 5, 3, 3, 5, 5, 5, 5, 5, 3, 3, 3, 2, 3]"
+66,bathrooms,True,sudden,True,1,[0]
+66,bedrooms,True,sudden,True,1,[1]
+66,lot,True,sudden,True,2,"[3, 3]"
+66,yearBuilt,True,sudden,True,25,"[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+67,bathrooms,False,sudden,True,1,[2]
+67,bedrooms,False,sudden,True,1,[3]
+67,lot,False,sudden,True,1,[5]
+67,yearBuilt,False,sudden,True,1,[3]
+68,bathrooms,True,gradual,True,3,"[1, 1, 2]"
+68,bedrooms,True,sudden,True,1,[3]
+68,lot,True,non_monotonic,True,36,"[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 4, 4, 2, 3, 3, 2, 3, 3, 3, 0]"
+68,yearBuilt,True,non_monotonic,True,31,"[1, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2]"
+69,bathrooms,False,non_monotonic,True,4,"[2, 2, 1, 3]"
+69,bedrooms,False,non_monotonic,True,4,"[2, 1, 1, 2]"
+69,lot,False,no_change,False,50,"[4, 4, 5, 5, 4, 5, 4, 7, 4, 4, 4, 3, 3, 3, 4, 3, 4, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 4, 4, 4, 5, 4, 4, 4, 4, 5, 3, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4]"
+69,yearBuilt,False,no_change,False,9,"[4, 3, 3, 3, 3, 3, 3, 3, 3]"
+70,bathrooms,True,sudden,True,1,[4]
+70,bedrooms,True,gradual,True,2,"[2, 3]"
+70,lot,True,non_monotonic,True,15,"[4, 3, 3, 4, 4, 4, 3, 4, 4, 4, 4, 4, 4, 4, 5]"
+70,yearBuilt,True,sudden,True,3,"[3, 3, 2]"
+71,bathrooms,True,gradual,True,4,"[1, 2, 2, 2]"
+71,bedrooms,True,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+71,lot,True,non_monotonic,True,10,"[5, 4, 5, 5, 5, 5, 5, 5, 5, 5]"
+71,yearBuilt,True,non_monotonic,True,18,"[4, 4, 4, 3, 4, 4, 4, 3, 3, 3, 4, 4, 4, 4, 3, 4, 4, 3]"
+72,bathrooms,False,gradual,True,2,"[1, 2]"
+72,bedrooms,False,gradual,True,2,"[1, 2]"
+72,lot,False,no_change,False,50,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 5, 5, 4, 4, 7, 5, 5, 4, 5, 5, 4]"
+72,yearBuilt,False,non_monotonic,True,38,"[2, 3, 3, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3]"
+73,bathrooms,False,sudden,True,1,[2]
+73,bedrooms,False,sudden,True,1,[1]
+73,lot,False,sudden,True,1,[5]
+73,yearBuilt,False,sudden,True,1,[3]
+74,bathrooms,False,sudden,True,1,[3]
+74,bedrooms,False,sudden,True,2,"[2, 2]"
+74,lot,False,sudden,True,2,"[4, 4]"
+74,yearBuilt,False,non_monotonic,True,3,"[2, 3, 2]"
+75,bathrooms,False,gradual,True,4,"[1, 1, 2, 3]"
+75,bedrooms,False,no_change,False,7,"[2, 3, 2, 3, 2, 2, 2]"
+75,lot,False,no_change,False,50,"[5, 5, 5, 5, 4, 5, 5, 5, 5, 8, 5, 5, 5, 4, 4, 5, 8, 4, 5, 5, 5, 5, 5, 4, 4, 5, 8, 4, 5, 4, 8, 4, 4, 6, 7, 4, 4, 5, 4, 6, 4, 4, 4, 8, 4, 5, 5, 4, 4, 4]"
+75,yearBuilt,False,no_change,False,38,"[3, 3, 3, 2, 3, 3, 3, 2, 2, 2, 3, 3, 3, 3, 3, 4, 2, 2, 2, 3, 2, 2, 2, 2, 3, 3, 3, 2, 2, 4, 4, 2, 2, 4, 2, 4, 4, 2]"
+76,bathrooms,False,non_monotonic,True,7,"[2, 3, 2, 2, 2, 3, 3]"
+76,bedrooms,False,no_change,False,7,"[2, 2, 3, 3, 3, 3, 2]"
+76,lot,False,no_change,False,50,"[4, 6, 6, 6, 6, 4, 4, 4, 4, 6, 4, 4, 4, 4, 4, 4, 6, 4, 4, 4, 6, 4, 4, 4, 4, 4, 6, 4, 4, 4, 5, 6, 4, 4, 6, 6, 4, 6, 4, 6, 4, 4, 6, 6, 4, 4, 6, 4, 6, 6]"
+76,yearBuilt,False,no_change,False,37,"[2, 2, 3, 3, 2, 3, 3, 3, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 2, 3, 2, 3, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+77,bathrooms,True,gradual,True,3,"[1, 2, 3]"
+77,bedrooms,True,no_change,False,6,"[3, 3, 2, 2, 2, 3]"
+77,lot,True,gradual,True,4,"[4, 4, 4, 5]"
+77,yearBuilt,True,no_change,False,34,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+78,bathrooms,False,sudden,True,2,"[2, 2]"
+78,bedrooms,False,no_change,False,7,"[2, 2, 2, 2, 3, 3, 3]"
+78,lot,False,non_monotonic,True,10,"[4, 4, 4, 4, 3, 5, 5, 4, 5, 5]"
+78,yearBuilt,False,non_monotonic,True,34,"[4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+79,bathrooms,False,sudden,True,1,[2]
+79,bedrooms,False,gradual,True,2,"[1, 2]"
+79,lot,False,sudden,True,1,[5]
+79,yearBuilt,False,sudden,True,1,[2]
+80,bathrooms,True,gradual,True,7,"[2, 2, 2, 2, 2, 2, 3]"
+80,bedrooms,True,sudden,True,1,[3]
+80,lot,True,sudden,True,1,[4]
+80,yearBuilt,True,sudden,True,1,[2]
+81,bathrooms,False,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+81,bedrooms,False,gradual,True,2,"[1, 2]"
+81,lot,False,sudden,True,2,"[6, 4]"
+81,yearBuilt,False,no_change,False,16,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 1]"
+82,bathrooms,False,sudden,True,1,[1]
+82,bedrooms,False,gradual,True,2,"[1, 2]"
+82,lot,False,gradual,True,5,"[4, 4, 4, 4, 5]"
+82,yearBuilt,False,no_change,False,47,"[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+83,bathrooms,False,gradual,True,2,"[1, 2]"
+83,bedrooms,False,no_change,False,7,"[1, 2, 2, 2, 2, 2, 2]"
+83,lot,False,non_monotonic,True,43,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 4, 4, 4, 4, 4, 5]"
+83,yearBuilt,False,no_change,False,47,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]"
+84,bathrooms,False,sudden,True,1,[2]
+84,bedrooms,False,gradual,True,2,"[1, 2]"
+84,lot,False,sudden,True,4,"[4, 4, 4, 3]"
+84,yearBuilt,False,non_monotonic,True,35,"[4, 4, 4, 4, 2, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 2, 2, 2, 3, 3, 3, 2, 3, 4]"
+85,bathrooms,False,sudden,True,1,[3]
+85,bedrooms,False,gradual,True,2,"[2, 3]"
+85,lot,False,non_monotonic,True,15,"[7, 7, 4, 7, 7, 7, 7, 4, 4, 7, 5, 7, 5, 7, 4]"
+85,yearBuilt,False,non_monotonic,True,14,"[4, 4, 3, 3, 2, 4, 2, 2, 2, 3, 3, 3, 3, 3]"
+86,bathrooms,False,gradual,True,4,"[1, 2, 2, 2]"
+86,bedrooms,False,no_change,False,7,"[2, 2, 2, 2, 2, 2, 2]"
+86,lot,False,non_monotonic,True,37,"[4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 2, 2, 2, 2, 2, 4]"
+86,yearBuilt,False,non_monotonic,True,29,"[0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 2, 2, 0, 0, 2, 2, 2, 2, 3]"
+87,bathrooms,True,sudden,True,2,"[2, 2]"
+87,bedrooms,True,sudden,True,2,"[2, 1]"
+87,lot,True,non_monotonic,True,20,"[5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 4, 5, 5]"
+87,yearBuilt,True,sudden,True,5,"[3, 3, 3, 3, 3]"
+88,bathrooms,False,sudden,True,1,[2]
+88,bedrooms,False,gradual,True,5,"[1, 1, 1, 1, 2]"
+88,lot,False,non_monotonic,True,33,"[5, 4, 3, 2, 3, 4, 3, 4, 4, 4, 4, 4, 2, 2, 3, 3, 2, 4, 1, 4, 2, 1, 1, 1, 1, 1, 4, 5, 5, 5, 1, 4, 4]"
+88,yearBuilt,False,non_monotonic,True,23,"[4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 4]"
+89,bathrooms,True,sudden,True,1,[2]
+89,bedrooms,True,sudden,True,1,[2]
+89,lot,True,gradual,True,2,"[3, 5]"
+89,yearBuilt,True,sudden,True,1,[4]
+90,bathrooms,False,sudden,True,1,[1]
+90,bedrooms,False,sudden,True,1,[3]
+90,lot,False,no_change,False,50,"[5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]"
+90,yearBuilt,False,sudden,True,5,"[3, 3, 3, 3, 3]"
+91,bathrooms,False,sudden,True,1,[3]
+91,bedrooms,False,sudden,True,6,"[4, 4, 4, 4, 4, 3]"
+91,lot,False,non_monotonic,True,9,"[2, 9, 8, 2, 2, 5, 2, 5, 4]"
+91,yearBuilt,False,non_monotonic,True,41,"[2, 1, 2, 3, 3, 3, 3, 3, 3, 4, 3, 2, 3, 2, 2, 2, 4, 3, 3, 4, 3, 3, 3, 3, 4, 3, 4, 3, 4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5]"
+92,bathrooms,True,sudden,True,1,[3]
+92,bedrooms,True,sudden,True,1,[1]
+92,lot,True,non_monotonic,True,14,"[4, 5, 5, 3, 5, 3, 4, 5, 5, 5, 5, 5, 5, 5]"
+92,yearBuilt,True,non_monotonic,True,19,"[4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]"
+93,bathrooms,True,no_change,False,7,"[2, 3, 2, 3, 2, 2, 2]"
+93,bedrooms,True,no_change,False,6,"[1, 1, 1, 3, 1, 1]"
+93,lot,True,non_monotonic,True,13,"[4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 4, 4]"
+93,yearBuilt,True,no_change,False,37,"[2, 3, 3, 3, 3, 3, 5, 5, 5, 3, 3, 3, 5, 5, 3, 3, 5, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+94,bathrooms,True,sudden,True,1,[3]
+94,bedrooms,True,sudden,True,1,[3]
+94,lot,True,sudden,True,13,"[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]"
+94,yearBuilt,True,non_monotonic,True,4,"[5, 5, 2, 2]"
+95,bathrooms,True,sudden,True,1,[1]
+95,bedrooms,True,sudden,True,1,[2]
+95,lot,True,sudden,True,1,[4]
+95,yearBuilt,True,sudden,True,22,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+96,bathrooms,False,sudden,True,5,"[2, 2, 2, 2, 2]"
+96,bedrooms,False,no_change,False,7,"[2, 2, 1, 1, 1, 1, 1]"
+96,lot,False,no_change,False,50,"[5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 8, 5, 5, 5, 5, 5, 5]"
+96,yearBuilt,False,no_change,False,42,"[2, 2, 2, 2, 2, 2, 4, 4, 2, 4, 4, 4, 4, 4, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]"
+97,bathrooms,False,sudden,True,1,[2]
+97,bedrooms,False,no_change,False,7,"[2, 2, 1, 2, 2, 2, 2]"
+97,lot,False,sudden,True,2,"[5, 1]"
+97,yearBuilt,False,non_monotonic,True,27,"[3, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 1, 1, 1, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1]"
+98,bathrooms,False,sudden,True,1,[2]
+98,bedrooms,False,gradual,True,2,"[2, 3]"
+98,lot,False,gradual,True,2,"[6, 7]"
+98,yearBuilt,False,non_monotonic,True,6,"[3, 4, 4, 3, 3, 2]"
+99,bathrooms,False,sudden,True,1,[1]
+99,bedrooms,False,sudden,True,6,"[2, 2, 2, 2, 2, 2]"
+99,lot,False,no_change,False,50,"[5, 5, 5, 5, 5, 5, 4, 4, 5, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 5, 5]"
+99,yearBuilt,False,no_change,False,29,"[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 3, 3, 2, 3, 2, 2, 2, 2, 3, 3, 5]"

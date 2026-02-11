@@ -1,0 +1,42 @@
+Perturbation Plan Summary for qwen3-4b
+==================================================
+
+Total pairs: 100
+  Correct: 60
+  Incorrect: 40
+Total queries: 10165
+
+Queries per feature:
+  bedrooms: 696
+  bathrooms: 785
+  yearBuilt: 3734
+  lot: 4950
+
+Perturbation schedules:
+  bedrooms: [1, 2, 3, 4, 5, 6, 7, 8, 9] (cap: 10)
+  bathrooms: [1, 2, 3, 4, 5, 6, 7, 8, 9] (cap: 10)
+  yearBuilt: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94] (cap: 2025)
+  lot: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400, 4500, 4600, 4700, 4800, 4900, 5000] (cap: 43560)
+
+Example rows (first 20):
+ pair_index   zpid_1   zpid_2  is_correct  pred_choice  loser_property   feature  step_index increment_label  original_value  perturbed_value
+          0 11472360 11509807        True            1               2  bedrooms           0              +1             3.0              4.0
+          0 11472360 11509807        True            1               2  bedrooms           1              +2             3.0              5.0
+          0 11472360 11509807        True            1               2  bedrooms           2              +3             3.0              6.0
+          0 11472360 11509807        True            1               2  bedrooms           3              +4             3.0              7.0
+          0 11472360 11509807        True            1               2  bedrooms           4              +5             3.0              8.0
+          0 11472360 11509807        True            1               2  bedrooms           5              +6             3.0              9.0
+          0 11472360 11509807        True            1               2  bedrooms           6              +7             3.0             10.0
+          0 11472360 11509807        True            1               2 bathrooms           0              +1             3.0              4.0
+          0 11472360 11509807        True            1               2 bathrooms           1              +2             3.0              5.0
+          0 11472360 11509807        True            1               2 bathrooms           2              +3             3.0              6.0
+          0 11472360 11509807        True            1               2 bathrooms           3              +4             3.0              7.0
+          0 11472360 11509807        True            1               2 bathrooms           4              +5             3.0              8.0
+          0 11472360 11509807        True            1               2 bathrooms           5              +6             3.0              9.0
+          0 11472360 11509807        True            1               2 bathrooms           6              +7             3.0             10.0
+          0 11472360 11509807        True            1               2 yearBuilt           0            +2yr          1972.0           1974.0
+          0 11472360 11509807        True            1               2 yearBuilt           1            +4yr          1972.0           1976.0
+          0 11472360 11509807        True            1               2 yearBuilt           2            +6yr          1972.0           1978.0
+          0 11472360 11509807        True            1               2 yearBuilt           3            +8yr          1972.0           1980.0
+          0 11472360 11509807        True            1               2 yearBuilt           4           +10yr          1972.0           1982.0
+          0 11472360 11509807        True            1               2 yearBuilt           5           +12yr          1972.0           1984.0

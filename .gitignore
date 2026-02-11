@@ -3,6 +3,7 @@ data/activations/
 *.npz
 *.npy
 models/
+.claude/
 
 # Python
 __pycache__/

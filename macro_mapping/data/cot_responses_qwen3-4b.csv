@@ -1,0 +1,1536 @@
+pair_index,zpid_1,zpid_2,price_1,price_2,true_choice,new_pred_choice,new_is_correct,old_pred_choice,old_is_correct,reason,full_cot,difficulty,feature_profile
+0,11472360,11509807,690000.0,536000.0,1,1,True,1.0,True,"Despite being older, the superior interior space and modern heating outweigh the age disadvantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 5 vs Property 2's 3 (+2 for P1)
+- Bathrooms: Property 1 has 5 vs Property 2's 3 (+2 for P1)
+- Lot size: Property 1 has 0.65 acres vs Property 2's 0.43 acres (+0.22 acres for P1)
+- Age: Property 1 is 32 years older (1940 vs 1972) — disadvantage for P1
+- Heating: Property 1 has Hot Water + Natural Gas (more efficient and modern) vs Property 2's Forced Air (less efficient, older tech)
+- Cooling: Both have Central Air — equal
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key advantages: Property 1 has significantly more bedrooms, bathrooms, and lot size. The heating system in Property 1 (hot water) is generally more efficient and desirable than forced air. Despite being older, the superior interior space and modern heating outweigh the age disadvantage.
+
+CHOICE: 1",hard,mixed
+1,11510849,11511087,240000.0,190126.0,1,1,True,1.0,True,"Property 1 has a much larger lot (0.7 acres vs 5,401 sqft), which is a significant value driver in this market. Despite being older, the lot size and one more bedroom provide a clear advantage.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Bathrooms: Both have 2 – equal
+- Lot: Property 2 has 5401 sqft (≈0.128 acres) vs Property 1's 0.7 acres (≈7,000 sqft) – Property 1 has a much larger lot (7,000 sqft vs 5,401 sqft)
+- Age: Property 1 is 50 years older (1880 vs 1930) – Property 2 is newer
+- Heating: Both have ""Other"" – equal
+- Cooling: Both have ""unknown"" – no comparative advantage
+
+Key comparison: While Property 2 has one more bedroom, Property 1 has a significantly larger lot (0.7 acres = 7,000 sqft vs 5,401 sqft). In a market where lot size is a strong factor, especially in a historic or older neighborhood, larger lot size can significantly increase value. The age disadvantage of Property 1 is offset by the lot size and bedroom advantage, but the lot size is a major differentiator. However, 0.7 acres is 7,000 sqft, which is substantially larger than 5,401 sqft. This is a major value driver.
+
+REASON: Property 1 has a much larger lot (0.7 acres vs 5,401 sqft), which is a significant value driver in this market. Despite being older, the lot size and one more bedroom provide a clear advantage.  
+CHOICE: 1",hard,bedrooms_dominant
+2,11335477,11570532,191000.0,240000.0,2,2,True,2.0,True,"Despite the older age, the additional bathroom and slightly larger lot give Property 2 a clear edge in market value, especially in a market where bathroom count and lot size are strong indicators.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot size: Property 1 has 5357 sqft vs Property 2's 4948 sqft (+409 sqft for P1)
+- Year built: Property 2 is built 19 years earlier (1920 vs 1939) — older, which generally implies more wear and potential structural concerns, though not always a direct value factor
+- Heating: Both use Natural Gas — equal
+- Cooling: Both have Central Air — equal
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key differentiators:
+- Property 2 has one more bathroom (2 vs 1), which is a significant value driver in residential properties.
+- Property 1 has a slightly larger lot (5357 vs 4948 sqft), a small but positive edge.
+- Property 2 is older, which may imply lower modern amenities or higher maintenance needs, though not directly reflected in features.
+
+Despite the older age, the additional bathroom and slightly larger lot give Property 2 a clear edge in market value, especially in a market where bathroom count and lot size are strong indicators.
+
+CHOICE: 2",hard,bathrooms_dominant
+3,11290461,11344264,270850.0,213000.0,1,2,False,1.0,True,"Property 2 has a much larger lot and superior cooling (Central Air), both of which are strong value drivers in residential real estate. The larger lot increases outdoor space and potential for landscaping or expansion, and Central Air is more reliable and comfortable than electric cooling.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 1 has 0.26 acres (approximately 1,040 sqft) vs Property 2 has 4,114 sqft – Property 2 has a significantly larger lot (+3,074 sqft)
+- Age: Property 2 is built 25 years earlier (1925 vs 1950) – older, which may imply more wear, but not necessarily lower value in this context
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Property 2 has Central Air vs Property 1 has Electric – Central Air is generally more desirable and provides better climate control, especially in a region with variable weather
+- Parking: Both have ""unknown"" – cannot compare
+
+REASON: Property 2 has a much larger lot and superior cooling (Central Air), both of which are strong value drivers in residential real estate. The larger lot increases outdoor space and potential for landscaping or expansion, and Central Air is more reliable and comfortable than electric cooling.  
+CHOICE: 2",hard,year_dominant
+4,11299770,11469737,265000.0,216500.0,1,1,True,1.0,True,"Property 1 has a significantly larger lot and superior cooling options, which are major value drivers in this market. The bedroom and bathroom count advantage of Property 2 is offset by the substantial lot size and better cooling in Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot size: Property 1 has 2.44 acres (≈ 10,500 sqft) vs Property 2's 3162 sqft — Property 1 has a significantly larger lot (+7338 sqft for P1)
+- Age: Property 1 is 19 years older (1930 vs 1949) — Property 2 is newer
+- Heating: Both use Natural Gas — equal
+- Cooling: Property 1 has both Window A/C and Central Air (more modern and efficient), Property 2 has only Central Air — Property 1 has an advantage in cooling options
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key comparison: Property 2 has more bedrooms and bathrooms, which are strong value drivers. However, Property 1 has a much larger lot (over 10,000 sqft vs ~3,160 sqft), which is a major advantage in terms of outdoor space and potential for expansion or use. Additionally, Property 1 has dual cooling (Window A/C and Central Air), which provides greater comfort and flexibility than Property 2’s single central cooling. While Property 2 is newer, the lot size and superior cooling options in Property 1 outweigh the slight age and bedroom/bathroom advantage of Property 2.
+
+REASON: Property 1 has a significantly larger lot and superior cooling options, which are major value drivers in this market. The bedroom and bathroom count advantage of Property 2 is offset by the substantial lot size and better cooling in Property 1.
+CHOICE: 1",hard,lot_dominant
+5,11369702,11408563,168000.0,217575.0,2,2,True,2.0,True,"Key factors: Property 2 has a larger lot (a major value driver), more bedrooms, and is a single-family home (a higher-tier property type). Despite having fewer bathrooms, the structural and spatial advantages outweigh the loss in baths. The age difference (P1 newer) is not enough to offset the type and lot size advantages of P2.","Let's think step by step:
+
+- Type: Property 2 is a Single Family, which typically commands a higher value than a Townhouse in the same market.
+- Bedrooms: Property 2 has 3 vs 2 (+1 for P2)
+- Bathrooms: Property 2 has 1 vs 2 (−1 for P2)
+- Lot size: Property 2 has 4480 sqft vs 1711 sqft (+2769 sqft for P2)
+- Age: Property 1 is 54 years newer (1984 vs 1930), which is a significant advantage for P1
+- Heating: Both use Gas, with Property 1 using ""Other, Gas"" and Property 2 using ""Forced Air, Gas"" — no clear advantage
+- Cooling: Both have Central AC — equal
+- Parking: Both listed as ""unknown"" — cannot compare
+
+Key factors: Property 2 has a larger lot (a major value driver), more bedrooms, and is a single-family home (a higher-tier property type). Despite having fewer bathrooms, the structural and spatial advantages outweigh the loss in baths. The age difference (P1 newer) is not enough to offset the type and lot size advantages of P2.
+
+CHOICE: 2",hard,year_dominant
+6,11412169,11444509,609375.0,499900.0,1,2,False,1.0,True,,"Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Both have 4 – equal
+- Lot size: Property 1 has 0.47 acres (approximately 1960 sqft) vs Property 2's 2661 sqft – Property 2 has a significantly larger lot (+1700 sqft)
+- Year built: Property 1 is 14 years older than Property 2 – Property 2 is newer
+- Heating: Both list ""Other"" and Property 2 adds ""Gas"" – this is a minor advantage for P2, but ""Other"" is not specified, so no clear edge
+- Cooling: Both have Central – equal
+- Parking: Both list ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has one more bedroom, but Property 2 has a much larger lot and is newer. In a market where lot size and newer construction are strong value drivers, especially in a single-family context, the larger lot and newer build year favor Property 2. The bedroom advantage is offset by the significant lot size difference.
+
+CHOICE: 2",hard,bedrooms_dominant
+7,11432469,11510519,550000.0,685000.0,2,2,True,2.0,True,"While Property 1 has better heating (natural gas), the lot size and bathroom count provide substantial value advantages. The larger lot and additional bathroom outweigh the heating disadvantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 4 – equal
+- Bathrooms: Property 2 has 5 vs Property 1's 4 (+1 for P2)
+- Lot: Property 2 has 1.05 acres (approx. 46,000 sqft) vs Property 1's 10,628 sqft – a significant advantage for P2 (+35,000 sqft)
+- Year Built: Property 2 is 9 years newer (1979 vs 1988) – a small advantage for P2
+- Heating: Property 1 has Natural Gas (typically more efficient and preferred) vs Property 2's Electric – a disadvantage for P2
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 2 has more bathrooms and a much larger lot, which are major value drivers in residential real estate. While Property 1 has better heating (natural gas), the lot size and bathroom count provide substantial value advantages. The larger lot and additional bathroom outweigh the heating disadvantage.
+
+CHOICE: 2",hard,bathrooms_dominant
+8,11441967,11617394,264500.0,337000.0,2,2,True,2.0,True,"The key differentiators are bedrooms and lot size. Property 2 has one more bedroom and a lot size that is 37 times larger (0.37 vs 0.01 acres). This is a significant advantage in terms of usable space and market appeal. While age is in favor of Property 1, the sheer size and bedroom count of Property 2 provide stronger value in a residential market.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Both have 3 – equal
+- Lot size: Property 2 has 0.37 acres vs Property 1's 0.01 acres (+0.36 acres for P2) – a massive advantage
+- Year built: Property 2 is built 13 years earlier (1949 vs 1962) – older, which generally implies more historical value and potentially better construction, though age alone is not a direct value driver
+- Heating: Both have Forced Air, Gas – equal
+- Cooling: Both have Central – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+The key differentiators are bedrooms and lot size. Property 2 has one more bedroom and a lot size that is 37 times larger (0.37 vs 0.01 acres). This is a significant advantage in terms of usable space and market appeal. While age is in favor of Property 1, the sheer size and bedroom count of Property 2 provide stronger value in a residential market.
+
+CHOICE: 2",hard,bedrooms_dominant
+9,11393444,11506901,160000.0,205500.0,2,2,True,2.0,True,"Property 2 is a single-family home with an extra bedroom, which is a major value driver in this market, outweighing the slight lot size disadvantage.","Let's think step by step:
+
+- Type: Property 2 is a Single Family Residence, which typically commands a higher value than a Townhouse in the same market, especially in a competitive local context.
+- Bedrooms: Property 2 has 3 beds vs Property 1's 2 beds (+1 for P2)
+- Bathrooms: Both have 2 bathrooms — equal
+- Lot size: Property 2 has 0.26 acres = 1040 sqft (since 1 acre = 43,560 sqft), vs Property 1's 1200 sqft. So Property 1 has a slightly larger lot (1200 vs 1040 sqft) — a small advantage for P1.
+- Age: Property 1 is built in 1984 (37 years newer than 1938) — so Property 1 is newer, which is a positive.
+- Heating and cooling: Both have Forced Air with Natural Gas and Central Air — identical features, no difference.
+- Parking: Both have ""unknown"" — cannot compare, so no advantage.
+
+Key comparison: Despite the slightly larger lot, the type (Single Family vs Townhouse) and the extra bedroom in Property 2 are significant value drivers. Single-family homes generally have higher market value than townhouses, even when age or lot size is slightly less favorable. The extra bedroom adds direct living space and appeal.
+
+REASON: Property 2 is a single-family home with an extra bedroom, which is a major value driver in this market, outweighing the slight lot size disadvantage.  
+CHOICE: 2",hard,bedrooms_dominant
+10,11391142,11393827,149900.0,186050.0,2,2,True,2.0,True,"While Property 1 is newer, the structural and lifestyle advantages of Property 2 outweigh that.","Let's think step by step:
+
+- Type: Property 2 is a Single Family Residence, which typically commands a higher value than a Townhouse due to greater privacy, space, and perceived quality.
+- Bedrooms: Property 2 has 3 beds vs 2 beds (+1 for P2)
+- Bathrooms: Both have 2 bathrooms — equal
+- Lot size: Property 2 has 7000 sqft vs 2336 sqft (+4664 sqft for P2)
+- Age: Property 1 is 44 years newer (1994 vs 1950), which is a significant advantage for P1, but not enough to offset other factors
+- Heating: Both have Forced Air with Natural Gas — equal
+- Cooling: Property 2 has Central Air vs Electric — Central Air is generally more desirable and valuable than Electric cooling
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key advantages for Property 2: Single-family type, more bedrooms, much larger lot, and superior cooling (Central Air). These are major value drivers in residential real estate. While Property 1 is newer, the structural and lifestyle advantages of Property 2 outweigh that.
+
+CHOICE: 2",hard,bedrooms_dominant
+11,11382164,11419030,173500.0,225000.0,2,2,True,2.0,True,"While Property 1 is slightly newer, the substantial gains in bedroom/bathroom count and lot size outweigh the age difference. In a market where space and square footage matter, Property 2's larger lot and higher bedroom/bathroom count strongly favor its value.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 (1940) is 15 years older than Property 1 (1955) – Property 2 has an older structure, which may imply more wear, but older homes can have better craftsmanship or more durable systems
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Property 2 has 3 vs Property 1's 1 (+2 for P2)
+- Lot Size: Property 1 has 9604 sqft; Property 2 has 0.57 acres (≈20,520 sqft) – Property 2 has a significantly larger lot (+10,916 sqft)
+- Heating: Property 2 has Hot Water (often more efficient and modern) vs Forced Air (common but less efficient in some climates)
+- Cooling: Both have Central Air – equal advantage
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key advantages: Property 2 has more bedrooms, more bathrooms, a much larger lot, and more modern heating. While Property 1 is slightly newer, the substantial gains in bedroom/bathroom count and lot size outweigh the age difference. In a market where space and square footage matter, Property 2's larger lot and higher bedroom/bathroom count strongly favor its value.
+
+CHOICE: 2",hard,mixed
+12,11398852,11433579,320500.0,250000.0,1,1,True,1.0,True,"Property 1 has more bathrooms and a significantly larger lot, which are major value drivers. The older age and unspecified heating of Property 2 reduce its appeal.","Let's think step by step:
+
+- Type: Both are Single Family (same category)
+- Bedrooms: Both have 3 beds (equal)
+- Bathrooms: Property 1 has 4 vs Property 2 has 3 (+1 for P1)
+- Lot size: Property 1 has 0.53 acres vs Property 2 has 0.01 acres (+0.52 acres for P1) — this is a massive difference in lot size, indicating significantly more outdoor space and potential for expansion or landscaping
+- Age: Property 1 is built in 1981 vs Property 2 in 1944 — Property 2 is 37 years older, which is a disadvantage in terms of structural integrity and modern updates
+- Heating: Property 1 has ""Other"" (unknown), Property 2 has Forced Air with Natural Gas — Property 2 has a known, standard heating system with fuel source; Property 1 lacks specification, which is a disadvantage
+- Cooling: Both have central cooling (P1: Central, P2: Central Air) — equivalent
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key differentiators: Property 1 has more bathrooms and a vastly larger lot. The lot size difference is substantial and directly impacts market value in residential real estate. The older age of Property 2 (1944) and lack of heating specification reduce its appeal. Even though heating is better specified in Property 2, the lack of clarity in Property 1's heating system is a risk factor.
+
+REASON: Property 1 has more bathrooms and a significantly larger lot, which are major value drivers. The older age and unspecified heating of Property 2 reduce its appeal.
+CHOICE: 1",hard,bathrooms_dominant
+13,11304111,11354033,120000.0,151000.0,2,2,True,2.0,True,"While Property 1 has better heating (Natural Gas), the lack of specificity in Property 2's heating (""Other"") and the clear advantages in bathrooms and lot size outweigh this. The newer age and larger lot are significant in market value.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot size: Property 2 has 3998 sqft vs Property 1's 3001 sqft (+997 sqft for P2)
+- Year built: Property 2 is 20 years newer than Property 1 (1950 vs 1930) — newer = generally more desirable
+- Heating: Property 1 has Natural Gas (typically more efficient and preferred) vs Property 2's ""Other"" (less specific, potentially less desirable)
+- Cooling: Property 1 has Central Air vs Property 2 has ""Central"" (likely central cooling, but less specific — central air is more modern and efficient)
+
+Key advantages: Property 2 has more bathrooms, larger lot, and is newer. While Property 1 has better heating (Natural Gas), the lack of specificity in Property 2's heating (""Other"") and the clear advantages in bathrooms and lot size outweigh this. The newer age and larger lot are significant in market value.
+
+CHOICE: 2",hard,bathrooms_dominant
+14,11354685,11428676,149900.0,189900.0,2,2,True,2.0,True,"Property 2 has more bathrooms and a significantly larger lot, which are key value drivers in this market. The newer construction and better-defined cooling system also provide a slight edge.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot size: Property 2 has 8779 sqft vs Property 1's 6499 sqft (+2300 sqft for P2)
+- Year built: Property 1 is 11 years older (1947 vs 1958) — disadvantage for P1
+- Heating: Property 1 has Forced Air with Natural Gas (more common and reliable) vs Property 2's ""Other"" (less specific, potentially less desirable)
+- Cooling: Property 1 has Central Air vs Property 2 has ""Central"" — likely equivalent, but ""Central Air"" is more specific and typically preferred over generic ""Central""
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key advantages: Property 2 has more bathrooms and a significantly larger lot. While Property 1 has better heating and cooling specification, the lot size and bathroom count are major value drivers in residential real estate. The newer construction of Property 2 (even if only by 11 years) may imply better materials or updates, and the larger lot adds substantial value.
+
+REASON: Property 2 has more bathrooms and a significantly larger lot, which are key value drivers in this market. The newer construction and better-defined cooling system also provide a slight edge.  
+CHOICE: 2",hard,bathrooms_dominant
+15,11485601,11558410,309900.0,240000.0,1,1,True,1.0,True,"Property 1 has two more bedrooms than Property 2, which is a significant value driver in single-family homes. Despite a smaller lot and older construction, the bedroom advantage outweighs the other factors.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 2 (+2 for P1)
+- Bathrooms: Both have 3 – equal
+- Lot size: Property 1 has 0.32 Acres vs Property 2's 0.55 Acres – Property 2 has a larger lot (+0.23 Acres)
+- Age: Property 1 was built in 1964 vs Property 2 in 1950 – Property 2 is 14 years newer
+- Heating: Property 1 has ""Other"" (less specific), Property 2 has Forced Air with Gas – more defined and common system
+- Cooling: Both have Central – equal
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+Key considerations: Property 1 has significantly more bedrooms (4 vs 2), which is a major driver of value in residential properties. While Property 2 has a larger lot and is newer, the bedroom advantage in Property 1 is substantial and directly impacts market value. The heating system in Property 2 is more clearly defined and conventional, but the bedroom count is a stronger differentiator.
+
+REASON: Property 1 has two more bedrooms than Property 2, which is a significant value driver in single-family homes. Despite a smaller lot and older construction, the bedroom advantage outweighs the other factors.  
+CHOICE: 1",hard,bedrooms_dominant
+16,59142692,59158536,660000.0,800000.0,2,2,True,2.0,True,"While Property 1 has more bedrooms, Property 2 has more bathrooms, a larger lot, is newer, and has superior cooling and more modern heating. The cooling difference is significant — central air is a major value driver. The newer age and better heating/cooling systems outweigh the bedroom advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs Property 2's 3 (+1 for P2)
+- Lot size: Property 2 has 6969 sqft vs Property 1's 6098 sqft (+871 sqft for P2)
+- Year built: Property 2 is 9 years newer (1920 vs 1929) — slight advantage for P2
+- Heating: Property 1 uses Hot Water/Oil (less common, less efficient), Property 2 uses Natural Gas/Baseboard (more common, efficient) — advantage for P2
+- Cooling: Property 2 has Central Air vs Property 1's Window Unit(s) — Central Air is more desirable and valuable in most markets — clear advantage for P2
+- Parking: Both listed as ""unknown"" — no comparative advantage
+
+Key considerations: While Property 1 has more bedrooms, Property 2 has more bathrooms, a larger lot, is newer, and has superior cooling and more modern heating. The cooling difference is significant — central air is a major value driver. The newer age and better heating/cooling systems outweigh the bedroom advantage.
+
+CHOICE: 2",hard,mixed
+17,11417583,11534817,181000.0,140000.0,1,1,True,1.0,True,"Property 1 has more bedrooms, more bathrooms, and central air cooling, which are significant value drivers in a residential market. Property 2 has a larger lot and is slightly newer, but these do not outweigh the key interior and comfort advantages of Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs Property 2's 1 (+1 for P1)
+- Lot size: Property 2 has 6952 sqft vs Property 1's 4443 sqft (+2509 for P2)
+- Age: Property 2 is 4 years newer than Property 1 (slight advantage for P2)
+- Heating: Both use Natural Gas – equal
+- Cooling: Property 1 has Central Air vs Property 2's Window A/C – Central Air is more desirable and efficient (advantage for P1)
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key features: Property 1 has more bedrooms and bathrooms, and superior cooling (Central Air). Property 2 has a significantly larger lot and is slightly newer. However, in a residential market, bedroom and bathroom count, and cooling quality are strong value drivers. Central Air is a major upgrade over Window A/C, especially in a climate with high summer temperatures. The lot size advantage of Property 2 is substantial, but the structural and comfort advantages of Property 1 (more rooms, better cooling) outweigh the lot size and age differences.
+
+REASON: Property 1 has more bedrooms, more bathrooms, and central air cooling, which are significant value drivers in a residential market. Property 2 has a larger lot and is slightly newer, but these do not outweigh the key interior and comfort advantages of Property 1.  
+CHOICE: 1",hard,lot_dominant
+18,11479109,11482811,180000.0,150000.0,1,1,True,1.0,True,"Property 1 has significantly more bedrooms, bathrooms, and lot size, which are major drivers of value in single-family homes. Despite having window AC instead of central air, the superior size and layout outweigh this drawback.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 6 vs Property 2's 3 (+3 for P1)
+- Bathrooms: Property 1 has 2 vs Property 2's 1 (+1 for P1)
+- Lot size: Property 1 has 5000 sqft vs Property 2's 3402 sqft (+1600 sqft for P1)
+- Year built: Property 1 is built in 1940 vs Property 2 in 1930 – Property 2 is 10 years older (a disadvantage)
+- Heating: Both use Natural Gas – equal
+- Cooling: Property 1 has Window A/C vs Property 2 has Central Air – Central Air is a significant advantage for Property 2
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 1 has a much larger number of bedrooms and bathrooms, a larger lot, and is only 10 years newer than Property 2. While Property 2 has central air (a major upgrade over window AC), the overwhelming advantage in bedroom count, bathroom count, and lot size strongly favors Property 1. The age difference is minor, and the cooling disadvantage for Property 1 is offset by the structural and spatial advantages.
+
+REASON: Property 1 has significantly more bedrooms, bathrooms, and lot size, which are major drivers of value in single-family homes. Despite having window AC instead of central air, the superior size and layout outweigh this drawback.  
+CHOICE: 1",hard,mixed
+19,11314136,11361891,270000.0,215000.0,1,1,True,1.0,True,"Property 1 has more bathrooms and a larger lot, both of which increase market value. The older age of Property 2 slightly diminishes its appeal despite similar bedroom count.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 4 – equal
+- Bathrooms: Property 1 has 3 vs Property 2 has 2 (+1 for P1)
+- Lot size: Property 1 has 8450 sqft vs Property 2 has 5998 sqft (+2452 sqft for P1)
+- Year built: Property 1 is 1957 vs Property 2 is 1946 – Property 2 is 11 years older (older = less desirable in value)
+- Heating: Property 1 has ""Other, Gas"" vs Property 2 has ""Forced air, Gas"" – ""Other"" may imply less standard or less efficient, but without more detail, this is ambiguous; however, forced air is common and well-understood, so this is a minor edge for P2
+- Cooling: Both have Central – equal
+- Parking: Both have Garage - Attached – equal
+
+Key advantages: Property 1 has more bathrooms and a significantly larger lot. Property 2 is older, which generally reduces value. The heating difference is minor and not clearly favorable. The larger lot and more bathrooms are strong value drivers in residential real estate.
+
+REASON: Property 1 has more bathrooms and a larger lot, both of which increase market value. The older age of Property 2 slightly diminishes its appeal despite similar bedroom count.  
+CHOICE: 1",hard,bathrooms_dominant
+20,59132443,59135218,892000.0,1128500.0,2,2,True,2.0,True,"While the bedroom count favors Property 1, the modern systems and larger lot in Property 2 provide stronger overall market appeal.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Both have 2 — equal
+- Lot size: Property 2 has 6969 sqft vs Property 1's 3920 sqft (+3049 for P2)
+- Year built: Property 1 is 8 years older (1925 vs 1933) — P2 is newer
+- Heating: Property 1 uses Steam and Oil (older, less efficient), Property 2 uses Natural Gas and Steam (more modern, efficient)
+- Cooling: Property 1 has Window Unit(s) (less effective, outdated), Property 2 has Central Air (more desirable, modern)
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key advantages: Property 1 has one more bedroom, which is a significant factor in value. However, Property 2 has a much larger lot, is newer, and has modern central cooling and more efficient heating. The cooling and heating systems are major value drivers in current markets, especially in a 2020 August market where energy efficiency and comfort are prioritized. While the bedroom count favors Property 1, the modern systems and larger lot in Property 2 provide stronger overall market appeal.
+
+CHOICE: 2",hard,bedrooms_dominant
+21,11406854,11440770,260000.0,207000.0,1,1,True,1.0,True,"While Property 2 has a more modern heating system, the cooling and lot size advantages strongly favor Property 1.","Let's think step by step:
+
+- Type: Both are Single Family (Property 2 is labeled as ""Single Family Residence, Residential"" – still single-family type)
+- Bedrooms: Both have 3 beds – equal
+- Bathrooms: Both have 2 baths – equal
+- Lot size: Property 1 has 9060 sqft vs Property 2's 5998 sqft → Property 1 has a significant lot size advantage (+3062 sqft)
+- Year built: Property 1 is built in 1984 vs Property 2 in 1940 → Property 1 is 44 years newer (more modern construction, better materials, updated systems)
+- Heating: Property 1 has ""Other"" (unknown), Property 2 has Hot Water + Natural Gas – both are functional, but Property 2 has a more modern and efficient heating system
+- Cooling: Property 1 has Central Air (better than Window A/C), Property 2 has Window A/C (less efficient, less comfort, especially in heat)
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key advantages: Property 1 has a larger lot, is newer (44 years), and has central air (superior cooling). These are major value drivers in residential real estate. While Property 2 has a more modern heating system, the cooling and lot size advantages strongly favor Property 1.
+
+CHOICE: 1",hard,year_dominant
+22,11524047,164305284,412000.0,342100.0,1,1,True,1.0,True,"While newer, the age difference is not enough to offset the larger lot and more bedrooms/bathrooms.
+- Heating and Cooling: Both have Forced Air with Natural Gas and Central Air — no difference.
+- Parking: Both have ""unknown"" — cannot compare, so no advantage.","Let's think step by step:
+
+- Type: Property 1 is a Single Family Residence, Property 2 is a Townhouse. Single-family homes typically command higher values than townhouses in the same market due to greater privacy, space, and perceived quality.
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Lot Size: Property 1 has 0.29 acres (approximately 12,400 sqft) vs Property 2's 3236 sqft. This is a significant advantage for Property 1 (over 3x larger lot).
+- Age: Property 2 is built in 2015 (25 years newer) vs Property 1 in 1990. While newer, the age difference is not enough to offset the larger lot and more bedrooms/bathrooms.
+- Heating and Cooling: Both have Forced Air with Natural Gas and Central Air — no difference.
+- Parking: Both have ""unknown"" — cannot compare, so no advantage.
+
+The key advantages for Property 1 are more bedrooms, more bathrooms, and a substantially larger lot — all of which directly contribute to higher market value. Although Property 2 is newer, the structural and spatial advantages of Property 1 are more significant in a residential market.
+
+CHOICE: 1",hard,year_dominant
+23,11355827,11453469,149900.0,193700.0,2,2,True,2.0,True,"While the heating detail is more specific in Property 1, the absence of a clear advantage in any other feature means the lot size and age are the most relevant. The larger lot and newer construction give Property 2 a slight edge in market value.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 5248 sqft vs Property 1's 5000 sqft – Property 2 has a 248 sqft advantage
+- Year built: Property 2 (1955) is 5 years newer than Property 1 (1950) – slight advantage for Property 2
+- Heating: Both are ""Other, Gas"" vs ""Other"" – Property 1 has more specific detail (Gas), which may imply better system, but both are ""Other"" so this is not clearly different
+- Cooling: Both have Central – equal
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+The only clear differences are lot size and age. Property 2 has a larger lot and is slightly newer. While the heating detail is more specific in Property 1, the absence of a clear advantage in any other feature means the lot size and age are the most relevant. The larger lot and newer construction give Property 2 a slight edge in market value.
+
+CHOICE: 2",hard,mixed
+24,11333908,11334862,232500.0,182000.0,1,1,True,1.0,True,"While Property 2 has a slightly larger lot, the difference is minimal (only ~200 sqft), and the age disadvantage (10 years older) reduces its appeal. The superior bedroom and bathroom count in Property 1 outweigh the small lot advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 1 (+2 for P1)
+- Lot size: Property 2 has 1999 sqft vs Property 1's 1800 sqft (+199 for P2)
+- Year built: Property 1 is 10 years earlier (1900 vs 1910) — older, which is a disadvantage
+- Heating: Both have Forced Air and Natural Gas — equal
+- Cooling: Both have Central Air — equal
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key differentiators: Property 1 has more bedrooms and bathrooms, which are strong value drivers in residential pricing. While Property 2 has a slightly larger lot, the difference is minimal (only ~200 sqft), and the age disadvantage (10 years older) reduces its appeal. The superior bedroom and bathroom count in Property 1 outweigh the small lot advantage.
+
+CHOICE: 1",hard,mixed
+25,11445609,11570492,280000.0,215000.0,1,1,True,1.0,True,,"Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 4 vs 3 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs 1 (+1 for P1)
+- Lot size: Property 1 has 3497 sqft vs 3049 sqft (+448 sqft for P1)
+- Year built: Property 1 is 2 years older (1910 vs 1912) – P2 is slightly newer, but minimal difference
+- Heating: Property 1 has Hot Water + Natural Gas; Property 2 has Forced Air + Natural Gas – Hot Water is generally considered a premium feature over Forced Air
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key advantages: Property 1 has more bedrooms, more bathrooms, larger lot, and superior heating system (hot water). These are significant value drivers in residential real estate. The slight age difference is negligible.
+
+CHOICE: 1",medium,mixed
+26,11383249,11454888,140000.0,189900.0,2,2,True,2.0,True,"Property 2 has one more bedroom and a larger lot, both of which are significant value drivers in a single-family home market. The age difference is minor and does not outweigh these advantages.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 (1945) is 9 years older than Property 1 (1954) – Property 2 has an earlier build date, meaning it is older, which generally reduces value unless offset by other features
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Both have 2 – equal
+- Lot Size: Property 1 has 7501 sqft vs Property 2's 5675 sqft (+1826 sqft for P1)
+- Heating: Both have Forced Air with Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 2 has one more bedroom, which is a significant factor in value, especially in a market where bedroom count drives demand. However, Property 1 has a larger lot (over 1800 sqft more), which adds value in terms of outdoor space and potential for expansion or landscaping. While the older age of Property 2 is a disadvantage, the extra bedroom and larger lot may compensate.
+
+In a comparable market with similar age and amenities, more bedrooms and larger lot size typically increase value. The bedroom advantage is substantial, and the lot size is a strong positive. The age difference is small (9 years), and both have the same heating and cooling.
+
+REASON: Property 2 has one more bedroom and a larger lot, both of which are significant value drivers in a single-family home market. The age difference is minor and does not outweigh these advantages.
+CHOICE: 2",medium,bedrooms_dominant
+27,11309288,11396648,652000.0,482500.0,1,1,True,1.0,True,"Property 1 has central air cooling, which is more desirable than window A/C, and has a modern heating system. Despite being newer, Property 2 has a larger lot and more bathrooms, but the cooling and heating advantages favor Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 4 – equal
+- Bathrooms: Property 2 has 5 vs Property 1's 4 (+1 for P2)
+- Lot size: Property 2 has 10,058 sqft vs Property 1's 9,452 sqft (+606 sqft for P2)
+- Year built: Property 2 is 34 years older (1930 vs 1964) – older age is a disadvantage
+- Heating: Property 2 has Hot Water (often considered more efficient or modern) vs Forced Air (common but less efficient in some climates) – slight advantage for P2
+- Cooling: Property 1 has Central Air (more desirable than Window A/C) – significant advantage for P1
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 1 has superior cooling (Central Air vs Window A/C), which is a major value driver in residential markets. Property 2 has one more bathroom and a slightly larger lot, but is much older and has less desirable cooling. The cooling advantage and modern heating system in Property 1 outweigh the small lot and bathroom advantage.
+
+REASON: Property 1 has central air cooling, which is more desirable than window A/C, and has a modern heating system. Despite being newer, Property 2 has a larger lot and more bathrooms, but the cooling and heating advantages favor Property 1.  
+CHOICE: 1",medium,bathrooms_dominant
+28,11267315,11369921,205000.0,282000.0,2,2,True,2.0,True,"While Property 1 has more bedrooms, the lot size advantage of Property 2 is substantial and often outweighs bedroom differences when lot size is comparable or larger. In the same market and zip, larger lot size typically increases value more than a single bedroom difference.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 1 vs Property 2's 2 (+1 for P2)
+- Lot size: Property 2 has 7000 sqft vs Property 1's 3040 sqft (+3960 sqft for P2)
+- Year built: Property 2 is built 34 years earlier (1896 vs 1930), so older, which is generally a disadvantage in value unless compensated
+- Heating: Both have ""Other"" – no comparative advantage
+- Cooling: Both have ""unknown"" – no comparative advantage
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has one more bedroom but one fewer bathroom. Property 2 has a much larger lot (over 3x larger), which is a significant value driver in residential real estate. While Property 1 has more bedrooms, the lot size advantage of Property 2 is substantial and often outweighs bedroom differences when lot size is comparable or larger. In the same market and zip, larger lot size typically increases value more than a single bedroom difference.
+
+CHOICE: 2",medium,year_dominant
+29,11354685,11355581,149900.0,221000.0,2,2,True,2.0,True,"Property 2 has a larger lot and is newer, which are significant value drivers in the market. Despite having fewer bedrooms, the lot size and age advantages outweigh the bedroom difference.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 1 vs Property 2's 2 (+1 for P2)
+- Lot size: Property 2 has 9117 sqft vs Property 1's 6499 sqft (+2618 sqft for P2)
+- Year built: Property 2 is 8 years newer than Property 1 (1955 vs 1947)
+- Heating: Both use Natural Gas — equal
+- Cooling: Both have Central Air — equal
+- Parking: Both listed as ""unknown"" — no comparative advantage
+
+Key comparison: Property 1 has one more bedroom but one fewer bathroom. Property 2 has a significantly larger lot and is newer. While the bedroom count favors Property 1, the lot size and newer construction are strong market drivers in value. In a comparable market, larger lot size and newer construction typically increase value more than a single bedroom advantage, especially when bathrooms are fewer.
+
+REASON: Property 2 has a larger lot and is newer, which are significant value drivers in the market. Despite having fewer bedrooms, the lot size and age advantages outweigh the bedroom difference.
+CHOICE: 2",medium,lot_dominant
+30,11275385,11275502,162750.0,235000.0,2,2,True,2.0,True,"Property 2 has a significantly larger lot size, which is a major value driver in residential real estate, outweighing the age disadvantage.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 7623 sqft vs Property 1's 4159 sqft – Property 2 has a significant advantage (+3464 sqft)
+- Year built: Property 2 was built in 1890 vs Property 1 in 1942 – Property 2 is over 50 years older, which is a disadvantage in terms of structural age and modern updates
+- Heating: Property 2 has Forced Air, Gas (a common and reliable system), Property 1 has ""Other"" – less specific and potentially less desirable
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+The key differentiator is lot size. Property 2 has a much larger lot, which is a strong value driver in residential real estate, especially in a market where land area contributes significantly to value. While Property 1 is newer, the age difference is not a major advantage given that both are pre-1950 and the market values land size more than age in this context. The heating system in Property 2 is more clearly defined and likely more reliable than ""Other.""
+
+REASON: Property 2 has a significantly larger lot size, which is a major value driver in residential real estate, outweighing the age disadvantage.  
+CHOICE: 2",medium,year_dominant
+31,11343591,11344062,650000.0,490000.0,1,1,True,1.0,True,"The key advantages for Property 1 are more bedrooms, more bathrooms, larger lot size, and newer construction with superior cooling. These are all significant value drivers in residential real estate. Property 2 has only one fewer bedroom and fewer bathrooms, and worse cooling (Window A/C), despite a smaller lot.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 1 has 5998 sqft vs Property 2's 4199 sqft (+1800 sqft for P1)
+- Year built: Property 1 is 8 years newer (1925 vs 1933) — advantage for P1
+- Heating: Both have Hot Water and Natural Gas — equal
+- Cooling: Property 1 has Central Air (better than Window A/C) — advantage for P1
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+The key advantages for Property 1 are more bedrooms, more bathrooms, larger lot size, and newer construction with superior cooling. These are all significant value drivers in residential real estate. Property 2 has only one fewer bedroom and fewer bathrooms, and worse cooling (Window A/C), despite a smaller lot.
+
+CHOICE: 1",medium,mixed
+32,11642781,11643821,460000.0,346000.0,1,1,True,1.0,True,"Despite P2's better cooling and more bathrooms, the larger lot and extra bedroom in Property 1 provide stronger value in a market where lot size and bedroom count are significant. The age disadvantage of P1 is offset by the size and bedroom advantages.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs Property 2's 3 (+1 for P2) → This is a tie in count, but P2 has more baths (3 vs 2)
+- Lot size: Property 1 has 1.33 acres vs Property 2's 0.72 acres (+0.61 acres for P1) → P1 has significantly larger lot
+- Age: Property 1 is 9 years older (1941 vs 1950) → P2 is newer
+- Heating: Both use Natural Gas; Property 1 has Hot Water, Property 2 has Forced Air → Hot water is generally considered a premium feature, especially in older homes, but both have gas
+- Cooling: Property 1 has Electric only; Property 2 has Central Air (which is superior to electric cooling) → P2 has better cooling
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: 
+- P1 has more bedrooms (4 vs 3) and a much larger lot (1.33 vs 0.72 acres), which is a major value driver in residential real estate.
+- P2 has better cooling (central air) and more bathrooms (3 vs 2), but is newer and has a smaller lot.
+
+Despite P2's better cooling and more bathrooms, the larger lot and extra bedroom in Property 1 provide stronger value in a market where lot size and bedroom count are significant. The age disadvantage of P1 is offset by the size and bedroom advantages.
+
+CHOICE: 1",medium,mixed
+33,11277964,11620016,362765.0,270000.0,1,1,True,1.0,True,"Property 1 has more bedrooms, more bathrooms, and a slightly larger lot, and is a single-family home, which generally commands higher value. Although Property 2 has central air, the structural and spatial advantages of Property 1 are more significant in this market.","Let's think step by step:
+
+- Type: Property 1 is a Single Family Residence, Property 2 is a Townhouse. Single-family homes typically command higher value than townhouses in the same market due to greater privacy, space, and perceived quality.
+- Year Built: Property 2 is 3 years newer than Property 1 (1925 vs 1928), a minor advantage for P2.
+- Bedrooms: Property 1 has 3 vs 2 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs 1 (+1 for P1)
+- Lot Size: Property 1 has 2748 sqft vs 2565 sqft (+183 sqft for P1)
+- Heating: Property 1 has Radiant with Natural Gas; Property 2 has Hot Water with Natural Gas. Radiant heating is less common and may be less desirable than hot water or forced air, though both use natural gas. This is a slight disadvantage for P1.
+- Cooling: Property 1 has Window A/C vs Central Air. Central air is a significant advantage in terms of comfort and value, especially in a climate with hot summers. This is a major disadvantage for P1.
+- Parking: Both have ""unknown"" parking type — no comparative advantage.
+
+Key factors: Property 1 has more bedrooms, more bathrooms, and a slightly larger lot. However, Property 2 has central air cooling, which is a major value driver in residential real estate. Despite being a townhouse, the superior cooling and slightly better heating system (hot water) may offset the type disadvantage. But the single-family status, more bedrooms, and more bathrooms outweigh the cooling disadvantage in this context — especially since central air is a strong differentiator.
+
+REASON: Property 1 has more bedrooms, more bathrooms, and a slightly larger lot, and is a single-family home, which generally commands higher value. Although Property 2 has central air, the structural and spatial advantages of Property 1 are more significant in this market.  
+CHOICE: 1",medium,mixed
+34,11533433,11568209,195000.0,140000.0,1,1,True,1.0,True,"Property 1 has more bedrooms and bathrooms, which are significant value drivers, and both have central cooling. The heating system for Property 1 is less specified and potentially less desirable, but the bedroom and bathroom advantages outweigh this. The lot size difference is negligible.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 2 has 7832 sqft vs Property 1's 7643 sqft (+189 sqft for P2) – a small advantage for P2
+- Year built: Property 1 is 4 years earlier (1963 vs 1967) – P1 is older, which is a disadvantage
+- Heating: Property 1 has ""Other"" vs Property 2's ""Forced Air"" – ""Other"" is less specific and potentially less desirable; Forced Air is a standard, well-known system
+- Cooling: Both have Central – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key advantages: Property 1 has more bedrooms and bathrooms, which are strong drivers of value in residential properties. The lot size difference is minor. The older age of Property 1 is a slight disadvantage, but not offset by the heating type, which is less favorable for P1. The ""Other"" heating system is less clearly defined and less desirable than forced air.
+
+REASON: Property 1 has more bedrooms and bathrooms, which are significant value drivers, and both have central cooling. The heating system for Property 1 is less specified and potentially less desirable, but the bedroom and bathroom advantages outweigh this. The lot size difference is negligible.
+CHOICE: 1",medium,mixed
+35,11557965,11618233,324900.0,435000.0,2,2,True,2.0,True,"Property 2 has a significantly larger lot size, which is a major driver of value in residential real estate, outweighing the one-bedroom advantage of Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 1 (1956) is 1 year older than Property 2 (1957) – negligible difference
+- Bedrooms: Property 1 has 4 vs 3 (+1 for P1)
+- Bathrooms: Both have 3 – equal
+- Lot Size: Property 2 has 1.1 acres vs Property 1's 0.33 acres (+0.77 acres for P2) – significant advantage for P2
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Property 1 has Central Air and Electric; Property 2 has only Central Air – Property 1 has an additional electric cooling option, which may offer more comfort and flexibility
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 1 has one more bedroom, which is a strong value driver. However, Property 2 has a much larger lot (over 2.5 times larger), which significantly increases land value in a residential market. While central air is present in both, Property 1's electric cooling adds a minor edge. Still, lot size is a major factor in home valuation, especially in a market where land is a key component.
+
+REASON: Property 2 has a significantly larger lot size, which is a major driver of value in residential real estate, outweighing the one-bedroom advantage of Property 1.  
+CHOICE: 2",medium,bedrooms_dominant
+36,11429174,11467668,210000.0,145101.0,1,1,True,1.0,True,"Property 1 has more bathrooms and a significantly larger lot, which are strong value drivers. Although Property 2 has newer construction and gas heating, the advantages in bathroom count and lot size outweigh these factors.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 3 beds – equal
+- Bathrooms: Property 1 has 3 vs Property 2 has 2 (+1 for P1)
+- Lot size: Property 1 has 8999 sqft vs Property 2 has 6499 sqft (+2500 sqft for P1)
+- Year built: Property 1 is 25 years older than Property 2 – disadvantage for P1
+- Heating: Property 2 has Gas (which is typically more efficient and desirable) vs Property 1 has ""Other"" – disadvantage for P1
+- Cooling: Both have Central – equal
+- Parking: Both have ""unknown"" – cannot compare, so neutral
+
+Key advantages: Property 1 has more bathrooms and a larger lot. Property 2 has newer construction and better heating (Gas). However, in a market where lot size and bathroom count are strong value drivers, and given that the heating system is a significant upgrade, the advantage of gas heating in Property 2 is notable. But since Property 1 has more bathrooms and a larger lot, and the age difference is not a major disadvantage in a mature market, the structural and functional features favor Property 1.
+
+REASON: Property 1 has more bathrooms and a significantly larger lot, which are strong value drivers. Although Property 2 has newer construction and gas heating, the advantages in bathroom count and lot size outweigh these factors.  
+CHOICE: 1",medium,bathrooms_dominant
+37,11370489,11616581,590000.0,439000.0,1,1,True,1.0,True,"The key differentiators are bedrooms, bathrooms, and lot size. Property 1 has significantly more bedrooms, bathrooms, and a lot size that is over 7 times larger than Property 2. While Property 2 is newer, the structural and spatial advantages of Property 1 far outweigh the age difference.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 5 vs Property 2's 4 (+1 for P1)
+- Bathrooms: Property 1 has 5 vs Property 2's 3 (+2 for P1)
+- Lot size: Property 1 has 3.5 Acres vs Property 2's 0.46 Acres (+3.04 Acres for P1) — a massive advantage
+- Age: Property 1 is 136 years older, Property 2 is 1999 — Property 2 is much newer
+- Heating: Both have Forced Air and Natural Gas — equal
+- Cooling: Both have Central Air — equal
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+The key differentiators are bedrooms, bathrooms, and lot size. Property 1 has significantly more bedrooms, bathrooms, and a lot size that is over 7 times larger than Property 2. While Property 2 is newer, the structural and spatial advantages of Property 1 far outweigh the age difference.
+
+CHOICE: 1",medium,mixed
+38,11394062,11506768,165000.0,228000.0,2,2,True,2.0,True,"Property 2 has more bedrooms and bathrooms, which are major drivers of home value, and is slightly newer. The lot size advantage is minor and outweighed by the bedroom/bathroom benefits.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 1 (1953) is 4 years older than Property 2 (1957) – Property 2 is slightly newer
+- Bedrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot Size: Property 1 has 7440 sqft vs Property 2's 6921 sqft (+519 sqft for P1)
+- Heating: Both use Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+Key advantages: Property 2 has one more bedroom and one more bathroom, which are significant in residential valuation. While Property 1 has a slightly larger lot, the difference is small (only ~500 sqft), and the bedroom/bathroom advantage in Property 2 is more impactful. The newer construction of Property 2 also provides a slight edge in structural condition and efficiency.
+
+REASON: Property 2 has more bedrooms and bathrooms, which are major drivers of home value, and is slightly newer. The lot size advantage is minor and outweighed by the bedroom/bathroom benefits.
+CHOICE: 2",medium,mixed
+39,11395079,11395432,276500.0,372000.0,2,2,True,2.0,True,"The key advantages for Property 2 are more bedrooms, more bathrooms, and significantly larger lot size. These are strong indicators of higher market value in a residential market. While Property 1 has a more detailed heating system, the differences in bedroom count, bathroom count, and lot size are more impactful in valuation.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Both built in 1900 – equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot Size: Property 2 has 1825 sqft vs Property 1's 1058 sqft (+767 sqft for P2)
+- Heating: Property 1 has Forced Air + Natural Gas, Property 2 has only Natural Gas – Property 1 has a slight advantage in heating system (Forced Air is more common and efficient in older homes, but both have Natural Gas)
+- Cooling: Both have Central Air – equal
+- Parking: Both have Open Parking – equal
+
+The key advantages for Property 2 are more bedrooms, more bathrooms, and significantly larger lot size. These are strong indicators of higher market value in a residential market. While Property 1 has a more detailed heating system, the differences in bedroom count, bathroom count, and lot size are more impactful in valuation.
+
+CHOICE: 2",medium,mixed
+40,11429990,11469194,182900.0,140000.0,1,1,True,1.0,True,"Property 1 has a larger lot size, which is a key factor in residential value, and both properties have equivalent bedrooms, bathrooms, heating, and central cooling. The slight age difference and additional electric cooling in Property 2 do not outweigh the lot size advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 — equal
+- Bathrooms: Both have 2 — equal
+- Lot size: Property 1 has 9069 sqft vs Property 2's 7150 sqft — Property 1 has a larger lot (+1919 sqft)
+- Year built: Property 1 (1948) is 6 years older than Property 2 (1954) — Property 2 is newer
+- Heating: Both have Forced Air and Natural Gas — equal
+- Cooling: Property 1 has Central Air only; Property 2 has Central Air and Electric — Property 2 has an additional cooling option (electric), which may offer more flexibility in climate or energy use
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key comparison: Property 1 has a larger lot, which is a significant value driver in residential real estate. While Property 2 is slightly newer and has an additional cooling option (electric), the lot size advantage of Property 1 is more substantial and directly impacts market value. The cooling difference is minor and not a decisive factor when central air is already present.
+
+REASON: Property 1 has a larger lot size, which is a key factor in residential value, and both properties have equivalent bedrooms, bathrooms, heating, and central cooling. The slight age difference and additional electric cooling in Property 2 do not outweigh the lot size advantage.
+CHOICE: 1",medium,mixed
+41,11617295,11643925,390000.0,290000.0,1,1,True,1.0,True,,"Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 4 bedrooms — equal
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot size: Property 1 has 1.08 acres vs Property 2's 0.28 acres (+800 sqft in lot size, which is a significant advantage for P1)
+- Age: Property 1 is 58 years older than Property 2 (built in 1925 vs 1983), so Property 2 is newer — a positive for P2
+- Heating: Both use Natural Gas, with Property 2 adding Forced Air — no clear advantage
+- Cooling: Property 2 has Central Air vs Property 1's Electric cooling — Central Air is generally more desirable and valuable in a market context
+- Parking: Both list ""unknown"" — no comparative advantage
+
+Key comparison: Property 1 has a much larger lot (1.08 vs 0.28 acres), which is a major value driver in residential real estate. Property 2 has better cooling (Central Air) and is newer, but the lot size advantage of Property 1 is substantial and often outweighs age or cooling differences. In the same market, larger lot size typically increases value more than a newer build or better cooling, especially when the home is older but has more outdoor space.
+
+CHOICE: 1",medium,bathrooms_dominant
+42,11452448,11534634,124500.0,177000.0,2,2,True,2.0,True,"Property 2 has a newer construction, more bedrooms, a larger lot, and central air cooling, all of which are significant value drivers in a residential market.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 is 7 years newer than Property 1 (1952 vs 1959) – advantage for Property 2
+- Bedrooms: Property 2 has 3 vs 2 – +1 bedroom for Property 2
+- Bathrooms: Property 1 has 2 vs 1 – +1 bathroom for Property 1
+- Lot Size: Property 2 has 6629 sqft vs 5998 sqft – +631 sqft for Property 2
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Property 2 has Central Air vs Window A/C – Central Air is generally more desirable and valuable than Window A/C
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key differentiators: Property 2 is newer, has more bedrooms, a larger lot, and better cooling (Central Air). Property 1 has one more bathroom, but the advantages in age, bedroom count, lot size, and cooling outweigh that.
+
+REASON: Property 2 has a newer construction, more bedrooms, a larger lot, and central air cooling, all of which are significant value drivers in a residential market.  
+CHOICE: 2",medium,mixed
+43,11311611,11358193,425000.0,310000.0,1,1,True,1.0,True,"Property 1 has more bedrooms, a larger lot, and is only 8 years older than Property 2, giving it a stronger overall value profile despite fewer bathrooms.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 1 (1920) is 8 years older than Property 2 (1928) – Property 2 is newer
+- Bedrooms: Property 1 has 6 vs Property 2's 4 (+2 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 5 (+2 for P2)
+- Lot Size: Property 1 has 0.39 Acres vs Property 2's 0.28 Acres (+0.11 Acres for P1)
+- Heating: Both have Natural Gas and Forced Air (P2 has Forced Air, P1 has Natural Gas only) – both have gas, but P1 has only Natural Gas, which may be more efficient; P2 has both, which is a minor advantage
+- Cooling: Both have Central Air and Electric – equal
+- Parking: Both have ""unknown"" – cannot compare
+
+Key comparison: Property 1 has significantly more bedrooms (6 vs 4), which is a major value driver in residential markets. While Property 2 has more bathrooms (5 vs 3), the bedroom count is typically more impactful in home valuation. Property 1 also has a larger lot (0.39 vs 0.28 acres), which adds value. The age difference is small (8 years), and both have central cooling and gas heating. The parking is unknown in both, so it's not a differentiator.
+
+REASON: Property 1 has more bedrooms, a larger lot, and is only 8 years older than Property 2, giving it a stronger overall value profile despite fewer bathrooms.  
+CHOICE: 1",medium,mixed
+44,11308484,11436909,205000.0,138000.0,1,1,True,1.0,True,"Property 1 has more bedrooms and central air, which are strong value drivers in residential real estate. The larger lot of Property 2 is offset by its older age and inferior cooling.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 4 vs 3 (+1 for P1)
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 4800 sqft vs Property 1's 3484 sqft (+1316 for P2)
+- Year built: Property 1 is 18 years older (1927 vs 1945)
+- Heating: Both have Forced Air with Natural Gas – equal
+- Cooling: Property 1 has Central Air vs Property 2's Window A/C – Central Air is more desirable and efficient
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key differentiators: Property 1 has one more bedroom and central air, which is a significant upgrade over window AC. Property 2 has a larger lot, but the age disadvantage and inferior cooling offset that. Central air provides better comfort and is a major value driver in market pricing.
+
+REASON: Property 1 has more bedrooms and central air, which are strong value drivers in residential real estate. The larger lot of Property 2 is offset by its older age and inferior cooling.  
+CHOICE: 1",medium,bedrooms_dominant
+45,11656278,11658318,285000.0,383000.0,2,1,False,2.0,True,,"Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Both have 2 — equal
+- Lot size: Property 2 has 8084 sqft vs Property 1's 3136 sqft (+4948 for P2)
+- Age: Property 1 is 21 years older (1915 vs 1936) — P2 is newer
+- Heating: Property 1 has Forced Air/Natural Gas vs Property 2's Hot Water — both are functional, but Forced Air is more common and typically more efficient in older homes; no clear advantage
+- Cooling: Property 1 has both Window A/C and Central Air (more modern and desirable) vs Property 2's Central Air only — P1 has superior cooling options
+- Parking: Both have ""unknown"" — cannot compare
+
+Key advantages: Property 1 has more bedrooms (a major value driver), superior cooling (central air plus window), and is not older than P2. Property 2 has a much larger lot and is newer, but lot size is less impactful than bedroom count and cooling quality in a market where homes are comparable in type and age. The extra bedroom and better cooling in Property 1 provide stronger value.
+
+CHOICE: 1",medium,bedrooms_dominant
+46,11590145,11618500,239500.0,180000.0,1,2,False,1.0,True,"The key differentiators are bathrooms and lot size. Property 2 has one more bathroom and a significantly larger lot, which are strong value drivers in residential real estate. The newer age of Property 2 also adds to its market appeal. While Property 1 is older, the substantial improvements in lot size and bathroom count favor Property 2.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 2 bedrooms – equal
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot: Property 2 has 10,875 sqft vs Property 1's 0.49 acres (≈2,450 sqft) – Property 2 has a lot size advantage of over 8,000 sqft (+3.3x larger)
+- Age: Property 1 is 32 years older than Property 2 (1922 vs 1954) – Property 2 is newer
+- Heating: Both use Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – no comparative advantage
+
+The key differentiators are bathrooms and lot size. Property 2 has one more bathroom and a significantly larger lot, which are strong value drivers in residential real estate. The newer age of Property 2 also adds to its market appeal. While Property 1 is older, the substantial improvements in lot size and bathroom count favor Property 2.
+
+CHOICE: 2",medium,bathrooms_dominant
+47,11369409,11369649,127000.0,256981.0,2,2,True,2.0,True,,"Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 (1905) is 26 years older than Property 1 (1931) – Property 2 is older, which may suggest more historical value or potential structural issues, but older homes can have more character and sometimes better craftsmanship
+- Bedrooms: Property 2 has 5 vs Property 1's 3 (+2 for P2)
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot Size: Property 2 has 0.43 acres = 18,480 sqft (since 1 acre = 43,560 sqft) vs Property 1's 4800 sqft – Property 2 has a lot size of over 3.5x larger – significant advantage
+- Heating: Both use Natural Gas, with Property 2 adding Forced Air – a common and efficient system, but not a major differentiator
+- Cooling: Property 2 has Central Air vs Window A/C – Central Air is more desirable and modern, especially in a hot climate, and provides better comfort
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key advantages: Property 2 has significantly more bedrooms, more bathrooms, a much larger lot, and superior cooling (Central Air). The older age of the home is offset by these substantial improvements in size, comfort, and space. The larger lot and more rooms make it more valuable in a market where space and modern amenities matter.
+
+CHOICE: 2",easy,mixed
+48,11415481,11568898,229770.0,127500.0,1,2,False,1.0,True,"While Property 1 has one more bathroom and is slightly older, Property 2 has a much larger lot (over 5,900 sqft vs ~1,100 sqft) and better cooling options (central air + electric). In a market where lot size and cooling flexibility are strong value drivers, Property 2 has significant advantages. The large lot size alone provides substantial value in a residential market.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Year Built: Property 1 (1950) is 2 years older than Property 2 (1952) — Property 2 is slightly newer
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 1 has 3 vs Property 2 has 2 — Property 1 has +1 bathroom
+- Lot Size: Property 1 has 0.27 acres (approximately 1,100 sqft) vs Property 2 has 5998 sqft — Property 2 has a significantly larger lot
+- Heating: Property 1 has Natural Gas; Property 2 has Forced Air and Natural Gas — both have gas, but Property 2 adds Forced Air (common and reliable)
+- Cooling: Property 1 has Central Air; Property 2 has Central Air and Electric — Property 2 has additional cooling option (electric), which may offer flexibility
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key comparison: While Property 1 has one more bathroom and is slightly older, Property 2 has a much larger lot (over 5,900 sqft vs ~1,100 sqft) and better cooling options (central air + electric). In a market where lot size and cooling flexibility are strong value drivers, Property 2 has significant advantages. The large lot size alone provides substantial value in a residential market.
+
+CHOICE: 2",easy,bathrooms_dominant
+49,11556684,11648231,248000.0,154900.0,1,1,True,1.0,True,"Despite being slightly newer, Property 2's cooling and lot size disadvantages outweigh the bedroom advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 2 has 5 vs Property 1's 4 (+1 for P2)
+- Bathrooms: Both have 3 – equal
+- Lot: Property 2 has 5000 sqft (≈0.14 acres) vs Property 1's 0.32 acres (≈10,240 sqft) – Property 1 has a much larger lot (+9240 sqft for P1)
+- Age: Property 1 is built in 1949 vs Property 2 in 1937 – Property 2 is 12 years older (older homes may have more wear, but in this market, age is not a strong positive)
+- Heating: Property 1 has Forced Air, Natural Gas; Property 2 has Hot Water, Natural Gas – Hot Water is generally more efficient and modern, but not a major differentiator
+- Cooling: Property 1 has Electric cooling; Property 2 has Window A/C – Electric cooling is more reliable and modern; Window A/C is less efficient and less desirable
+- Parking: Both have ""unknown"" – cannot compare
+
+Key comparison: Property 1 has a significantly larger lot (0.32 acres vs 5000 sqft ≈ 0.14 acres), which is a major value driver in residential real estate. Property 2 has one more bedroom, but the cooling system is inferior (Window A/C vs Electric), and the lot is much smaller. The larger lot in Property 1 provides more outdoor space and potential for expansion or landscaping, which increases market value. Despite being slightly newer, Property 2's cooling and lot size disadvantages outweigh the bedroom advantage.
+
+CHOICE: 1",easy,bedrooms_dominant
+50,11307757,11474798,305000.0,154000.0,1,1,True,1.0,True,"Despite being older, the size and bedroom/bathroom advantages are substantial. Property 2 has better cooling and is newer, but lacks bedrooms, bathrooms, and lot size. The structural and spatial advantages of Property 1 outweigh the minor cooling and age benefits of Property 2.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs Property 2's 1 (+1 for P1)
+- Lot size: Property 1 has 4800 sqft vs Property 2's 1459 sqft (+3341 sqft for P1)
+- Age: Property 1 is 20 years older than Property 2 (1880 vs 1900) – this is a disadvantage for P1
+- Heating: Property 1 uses Natural Gas and Baseboard; Property 2 uses Hot Water and Natural Gas – both use natural gas, but baseboard is less efficient than hot water in some climates, though no clear advantage
+- Cooling: Property 1 has Window A/C only; Property 2 has Window A/C and Wall Unit(s) – Property 2 has better cooling (additional wall unit), which is a positive
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has more bedrooms, more bathrooms, and a significantly larger lot. Despite being older, the size and bedroom/bathroom advantages are substantial. Property 2 has better cooling and is newer, but lacks bedrooms, bathrooms, and lot size. The structural and spatial advantages of Property 1 outweigh the minor cooling and age benefits of Property 2.
+
+CHOICE: 1",easy,year_dominant
+51,11507979,11641572,375000.0,174500.0,1,1,True,1.0,True,"Property 1 has more bedrooms, more bathrooms, and a much larger lot, which are key drivers of value in a single-family home. Although it is older, the superior lot size and better heating system (hot water) provide significant value advantages. The unknown parking does not create a disadvantage since both are unspecified.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot: Property 1 has 0.32 acres (approx. 13,400 sqft) vs Property 2's 6586 sqft – Property 1 has a significantly larger lot (over 6,800 sqft larger)
+- Age: Property 1 is 16 years older than Property 2 (1940 vs 1956)
+- Heating: Both use Natural Gas; Property 1 has Hot Water (a more efficient and modern system) vs Forced Air (common but less efficient)
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – cannot compare
+
+REASON: Property 1 has more bedrooms, more bathrooms, and a much larger lot, which are key drivers of value in a single-family home. Although it is older, the superior lot size and better heating system (hot water) provide significant value advantages. The unknown parking does not create a disadvantage since both are unspecified.
+
+CHOICE: 1",easy,lot_dominant
+52,11275855,11614859,275000.0,600000.0,2,1,False,2.0,True,"Property 1 has a much larger lot and more bathrooms, which are strong value drivers in the market. The newer construction of Property 2 is offset by the substantial lot size and bathroom advantage of Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 bedrooms – equal
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot size: Property 1 has 6098 sqft vs Property 2's 1576 sqft (+4522 sqft for P1)
+- Year built: Property 1 is 1960, Property 2 is 2020 (P2 is 60 years newer)
+- Heating: Both use Forced Air with Natural Gas – equal
+- Cooling: Property 1 has Central Air; Property 2 has Central Air and Electric – P2 has an additional cooling option (electric), which may offer more flexibility, but central air is already present in both
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has a significantly larger lot (over 4500 sqft more), which is a major value driver in residential real estate. While Property 2 is newer, the large lot size and additional bathroom in Property 1 provide stronger relative value. The cooling system in Property 2 is slightly more modern (includes electric), but central air is already present in both, and the added electric component is not a major differentiator in value. The age difference is significant, but the lot size and bathroom count favor Property 1.
+
+REASON: Property 1 has a much larger lot and more bathrooms, which are strong value drivers in the market. The newer construction of Property 2 is offset by the substantial lot size and bathroom advantage of Property 1.  
+CHOICE: 1",easy,bathrooms_dominant
+53,11299770,11470081,265000.0,149999.0,1,1,True,1.0,True,"While Property 2 has one more bedroom, the lot size and superior cooling outweigh this advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Bathrooms: Both have 2 – equal
+- Lot: Property 2 has 7000 sqft vs Property 1's 2.44 acres (≈ 10,560 sqft) – Property 1 has a larger lot (10,560 vs 7000) (+3560 sqft for P1)
+- Age: Property 1 is built in 1930 vs Property 2 in 1920 – Property 2 is 10 years newer (slight advantage for P2)
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Property 1 has both Window A/C and Central Air; Property 2 has only Central Air – Property 1 has more advanced cooling (dual options)
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 1 has a significantly larger lot (10,560 sqft vs 7000 sqft), which is a major value driver in residential real estate. Additionally, Property 1 offers dual cooling (Window A/C and Central Air), which provides greater comfort and flexibility than Property 2’s single central air. While Property 2 has one more bedroom, the lot size and superior cooling outweigh this advantage.
+
+CHOICE: 1",easy,bedrooms_dominant
+54,11417585,11451689,190000.0,125000.0,1,1,True,1.0,True,"Property 1 has central air, which is more desirable than window A/C, and has modern forced air heating, which is more reliable and efficient than radiant heating. The lot size difference is minor. The superior climate control systems outweigh the lot size advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 5998 sqft vs Property 1's 5523 sqft – Property 2 has a larger lot (+475 sqft)
+- Year built: Property 2 is built in 1910 vs Property 1 in 1950 – Property 2 is 40 years older (older homes often have more structural wear, but in this context, older construction may imply less modern features)
+- Heating: Property 1 has Forced Air, Natural Gas; Property 2 has Radiant Heating, Natural Gas – Forced Air is more common and typically more efficient and easier to maintain than Radiant heating, which is less common and may be less reliable or more costly to operate
+- Cooling: Property 1 has Central Air; Property 2 has Window A/C – Central Air is superior in comfort, efficiency, and reliability compared to Window A/C, especially in a larger or hotter climate
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key advantages: Property 1 has central air (vs window AC), which is a major upgrade in comfort and value. Property 2 has a larger lot, but the cooling and heating systems are less favorable. The older age of Property 2 may imply outdated systems and less modern features.
+
+REASON: Property 1 has central air, which is more desirable than window A/C, and has modern forced air heating, which is more reliable and efficient than radiant heating. The lot size difference is minor. The superior climate control systems outweigh the lot size advantage.
+CHOICE: 1",easy,year_dominant
+55,11277949,11277954,219900.0,110000.0,1,2,False,1.0,True,"Property 2 has a larger lot, more bathrooms, and better cooling (electric vs window A/C), which are key value drivers. Although it has fewer bedrooms, the overall feature set favors higher market value.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot size: Property 2 has 3998 sqft vs Property 1's 3001 sqft (+997 sqft for P2)
+- Year built: Property 2 is 25 years older (1900 vs 1925) — older age is a disadvantage
+- Heating: Both use Natural Gas — equal
+- Cooling: Property 1 has Window A/C vs Property 2's Electric — Window A/C is generally less desirable than electric cooling (especially in a market where central cooling is preferred)
+- Parking: Property 1 has Open Parking vs Property 2's Off Street — Open parking is typically less desirable than off-street (which may imply better access or structure)
+
+Key comparison: Property 1 has one more bedroom and one fewer bathroom, but has a smaller lot and older construction. Property 2 has more bathrooms, larger lot, and newer construction (though actually older — 1900 vs 1925, so P2 is older). However, the larger lot and more bathrooms are significant. Cooling is a major disadvantage for Property 1 (Window A/C is less efficient and less desirable than electric in many markets). Parking is less favorable for Property 1 (open parking vs off-street).
+
+Despite the older age, Property 2 has a larger lot, more bathrooms, and better cooling (electric vs window). The bathroom count is a strong factor in value, and lot size is a major driver. The cooling type is a notable disadvantage for Property 1.
+
+REASON: Property 2 has a larger lot, more bathrooms, and better cooling (electric vs window A/C), which are key value drivers. Although it has fewer bedrooms, the overall feature set favors higher market value.  
+CHOICE: 2",easy,year_dominant
+56,11278513,11282714,260000.0,400000.0,2,2,True,2.0,True,"While age is slightly in favor of Property 1, the larger lot size in Property 2 provides a more significant and measurable benefit in current market value.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 4721 sqft vs Property 1's 3001 sqft – Property 2 has a larger lot (+1720 sqft)
+- Year built: Property 1 (1930) is 3 years older than Property 2 (1933) – Property 1 is slightly older, which may imply more wear, but not a major factor
+- Heating: Both use Natural Gas – equal
+- Cooling: Property 1 has ""Central Air"", Property 2 has ""Other, Central Air"" – both effectively have central air; ""Other"" does not indicate inferior quality
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+The only clear advantage is lot size. A larger lot generally increases value, especially in a market where land is a key differentiator. While age is slightly in favor of Property 1, the larger lot size in Property 2 provides a more significant and measurable benefit in current market value.
+
+CHOICE: 2",easy,mixed
+57,11620181,11620485,425000.0,239000.0,1,1,True,1.0,True,"The key advantages for Property 1 are more bedrooms, more bathrooms, larger lot size, and being newer. While Property 2 is a townhouse, the structural and spatial advantages of Property 1—especially in bedroom count, bathroom count, and lot size—significantly favor its market value in this context.","Let's think step by step:
+
+- Type: Property 1 is a SingleFamily, Property 2 is a Townhouse. Single-family homes typically command higher value than townhouses in the same market due to greater privacy, space, and perceived quality.
+- Bedrooms: Property 1 has 4 vs 3 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs 1 (+1 for P1)
+- Lot size: Property 1 has 4900 sqft vs 2861 sqft (+1039 sqft for P1)
+- Age: Property 1 is 20 years newer than Property 2 (1920 vs 1940)
+- Heating: Both have ""Other, Gas"" – no difference
+- Cooling: Both have ""unknown"" – no comparative advantage
+
+The key advantages for Property 1 are more bedrooms, more bathrooms, larger lot size, and being newer. While Property 2 is a townhouse, the structural and spatial advantages of Property 1—especially in bedroom count, bathroom count, and lot size—significantly favor its market value in this context.
+
+CHOICE: 1",easy,year_dominant
+58,11268355,11268712,174900.0,280000.0,2,2,True,2.0,True,"Property 2 has one more bedroom, is newer, and has better-defined heating with natural gas, which are key value drivers in a single-family home. The larger lot in Property 1 is offset by these structural and functional advantages.","Let's think step by step:
+
+- Type: Both are Single Family (Property 2 is slightly more specific but still same category)
+- Bedrooms: Property 2 has 3 vs 2 (+1 for P2)
+- Bathrooms: Both have 2 — equal
+- Lot size: Property 1 has 7000 sqft vs Property 2's 4800 sqft (+2200 for P1)
+- Age: Property 1 was built in 1940 vs Property 2 in 1925 — Property 2 is 15 years newer
+- Heating: Property 2 has Forced Air with Natural Gas (common, efficient), Property 1 has ""Other"" (less specific, potentially less desirable)
+- Cooling: Both have Central cooling — equal advantage
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key considerations:
+- Property 2 has one more bedroom, which is a significant factor in value.
+- Property 1 has a larger lot (7000 vs 4800), which is a strong advantage in terms of outdoor space and potential for expansion.
+- Property 2 is newer (1925 vs 1940), which may imply better construction and updated systems, though heating is specified as better in P2.
+- ""Other"" heating in P1 is less defined and potentially less desirable than P2's specified Forced Air with Natural Gas.
+
+However, the bedroom advantage in P2 is substantial, and newer construction can add value. But the lot size in P1 is significantly larger, and central cooling is present in both. The heating in P2 is more clearly defined and efficient.
+
+Still, in a market where lot size and bedroom count are key, and both have central cooling, the larger lot and extra bedroom in P2 may balance out the age and heating differences.
+
+But note: P1 has a larger lot (7000 vs 4800), which is a major advantage. P2 has one more bedroom. Both have central cooling. P2 is newer. P2 has better heating specification.
+
+In a residential market, lot size and bedroom count are strong drivers. P1 has a larger lot and same number of bathrooms, but one fewer bedroom. P2 has one more bedroom and a smaller lot.
+
+The bedroom advantage is significant, but lot size is often a major factor in value. In the same ZIP and month, with similar age and cooling, the larger lot in P1 may outweigh the bedroom difference.
+
+However, in many markets, an extra bedroom is more valuable than a smaller lot, especially if the lot is not in a high-demand area. But here, both are in the same zip, so we can't assume neighborhood differences.
+
+Given that P1 has a larger lot (7000 vs 4800), and both have central cooling, and P1 is only 20 years older than P2 (1940 vs 1925), the lot size advantage is substantial.
+
+Also, ""Other"" heating is less desirable than specified Forced Air with Natural Gas.
+
+So: P2 has better heating and more bedrooms, but P1 has a much larger lot.
+
+In real estate, lot size often has a strong impact, especially in suburban or single-family markets.
+
+But in a comparative analysis, the bedroom count is a direct driver of value. P2 has 3 beds vs 2 — a clear advantage.
+
+P1 has 7000 sqft lot — a 2200 sqft advantage.
+
+In many cases, a larger lot is more valuable than an extra bedroom, especially if the home is in a standard single-family zone.
+
+But in this case, the bedroom count is a direct and significant factor.
+
+After careful comparison:
+
+- P2 has one more bedroom (3 vs 2)
+- P2 is newer (1925 vs 1940)
+- P2 has better heating (Forced Air + Natural Gas)
+- P1 has larger lot (7000 vs 4800)
+
+The extra bedroom and newer construction are strong advantages. The heating is better in P2. The lot size is a major advantage for P1.
+
+But in a market where homes are comparable, the bedroom count and newer construction are often more directly tied to value than lot size, especially if the lot is not in a high-demand area.
+
+However, in the same zip, and with similar age, the larger lot in P1 may be more valuable.
+
+But the bedroom count is a more direct driver of value — a home with 3 bedrooms is typically more desirable than one with 2, even with a smaller lot.
+
+Also, P2 has central cooling, which is equal.
+
+Final decision:
+
+The extra bedroom and newer construction in P2 provide clear value advantages. The heating is better specified. The lot is smaller, but not a decisive disadvantage.
+
+In a market where bedroom count is a key factor, P2 wins.
+
+CHOICE: 2
+
+REASON: Property 2 has one more bedroom, is newer, and has better-defined heating with natural gas, which are key value drivers in a single-family home. The larger lot in Property 1 is offset by these structural and functional advantages.  
+CHOICE: 2",easy,bedrooms_dominant
+59,11312006,11312421,385000.0,227700.0,1,1,True,1.0,True,"Property 1 has more bathrooms, a larger lot, and is newer, which are significant value drivers in a residential market. Despite having window A/C instead of central air, the structural and functional advantages favor Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 1 has 4 vs Property 2's 2 (+2 for P1)
+- Lot size: Property 1 has 7200 sqft vs Property 2's 5749 sqft (+1451 sqft for P1)
+- Year built: Property 1 is 6 years newer (1930 vs 1924) — P2 is older
+- Heating: Both use Natural Gas; Property 1 has Hot Water (which is often more efficient and desirable than Forced Air)
+- Cooling: Property 1 has Window A/C (less efficient and less desirable than Central Air) vs Property 2's Central Air (better cooling comfort and value)
+- Parking: Both have ""unknown"" — cannot compare
+
+Key advantages: Property 1 has more bathrooms, larger lot, and newer construction. While Property 2 has better cooling (Central Air), Property 1's superior bathroom count, larger lot, and newer age outweigh this. The heating system in Property 1 (Hot Water) is also more modern and efficient than Forced Air.
+
+REASON: Property 1 has more bathrooms, a larger lot, and is newer, which are significant value drivers in a residential market. Despite having window A/C instead of central air, the structural and functional advantages favor Property 1.
+CHOICE: 1",easy,bathrooms_dominant
+60,11326093,11369430,170000.0,140500.0,1,1,True,,False,"Key factors: Property 1 has significantly more bedrooms (4 vs 2), which is a major driver of value in residential properties. While Property 2 has a much larger lot, the age disadvantage of Property 1 (over 100 years old) and the lack of modern features (like updated systems or energy efficiency) reduce its appeal. In the same market, more bedrooms and a newer construction typically command higher value. The bedroom advantage outweighs the lot size advantage.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 2 (+2 for P1)
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 7104 sqft vs Property 1's 3049 sqft (+4055 for P2)
+- Year built: Property 1 is 46 years older (1913 vs 1959)
+- Heating: Both have Forced Air, Gas – equal
+- Cooling: Both have Central – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key factors: Property 1 has significantly more bedrooms (4 vs 2), which is a major driver of value in residential properties. While Property 2 has a much larger lot, the age disadvantage of Property 1 (over 100 years old) and the lack of modern features (like updated systems or energy efficiency) reduce its appeal. In the same market, more bedrooms and a newer construction typically command higher value. The bedroom advantage outweighs the lot size advantage.
+
+CHOICE: 1",hard,bedrooms_dominant
+61,11361895,11399030,209000.0,164000.0,1,2,False,2.0,False,"Property 2 has one more bathroom and is newer, with a slightly larger lot, which are significant value drivers in a comparable market. The heating and cooling details are less decisive due to lack of specificity.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot size: Property 2 has 6250 sqft vs Property 1's 6000 sqft (+250 sqft for P2)
+- Year built: Property 1 is 6 years older (1948 vs 1954) — P2 is newer
+- Heating: Property 1 has Forced Air with Natural Gas (more common and reliable) vs Property 2's ""Other"" (less specific, potentially less desirable)
+- Cooling: Property 1 has Central Air vs Property 2 has ""Central"" (same type, but less specific — ""Central"" is likely equivalent, but ""Central Air"" is more precise and typically preferred)
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key differentiators: Property 2 has one more bathroom and a slightly larger lot, and is newer. Property 1 has better-defined cooling (Central Air) and better heating (Forced Air with Natural Gas). However, the bathroom and age advantages favor Property 2, and the heating/cooling specifications are not decisive due to the ""Other"" and ""Central"" ambiguity. Still, the extra bathroom and newer construction provide tangible value improvements.
+
+REASON: Property 2 has one more bathroom and is newer, with a slightly larger lot, which are significant value drivers in a comparable market. The heating and cooling details are less decisive due to lack of specificity.  
+CHOICE: 2",hard,bathrooms_dominant
+62,11567668,11569017,155500.0,125000.0,1,1,True,2.0,False,"While Property 2 has more bedrooms, the additional bedroom is offset by fewer bathrooms and a smaller lot. The larger lot and better bathroom count (2 vs 1) favor Property 1. The age difference is not a significant disadvantage since both have central cooling and modern heating (though ""Other"" is vague). Since lot size and bathroom count are strong value drivers in residential markets, and Property 1 has both, it is more likely to be valued higher.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Property 1 has 2 vs Property 2's 1 (+1 for P1)
+- Lot size: Property 1 has 6507 sqft vs Property 2's 5100 sqft (+1407 for P1)
+- Age: Property 1 is 17 years older than Property 2 (1960 vs 1977)
+- Heating and Cooling: Both have ""Other"" for heating and ""Central"" for cooling – equal
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 2 has one more bedroom, but Property 1 has more bathrooms and a larger lot. While Property 2 has more bedrooms, the additional bedroom is offset by fewer bathrooms and a smaller lot. The larger lot and better bathroom count (2 vs 1) favor Property 1. The age difference is not a significant disadvantage since both have central cooling and modern heating (though ""Other"" is vague). Since lot size and bathroom count are strong value drivers in residential markets, and Property 1 has both, it is more likely to be valued higher.
+
+CHOICE: 1",hard,mixed
+63,11546969,59837033,170500.0,205000.0,2,1,False,1.0,False,"The key differentiators are property type, bedroom count, lot size, and bathroom count. While Property 2 has more bathrooms, Property 1 has more bedrooms and a vastly larger lot, and is a single-family home — which is generally more valuable in the market. The lot size difference alone is substantial and highly favorable for Property 1.","Let's think step by step:
+
+- Type: Property 1 is a Single Family Residence, Property 2 is a Townhouse. Single-family homes typically command higher values than townhouses in the same market due to greater privacy, space, and perceived quality.
+- Beds: Property 1 has 3 bedrooms vs Property 2's 2 bedrooms (+1 for P1)
+- Baths: Property 1 has 2 bathrooms vs Property 2's 3 bathrooms (+1 for P2)
+- Lot: Property 1 has 9792 sqft vs Property 2's 1306 sqft (+8486 sqft for P1) — a massive advantage in lot size
+- Age: Property 2 is built 53 years newer (2002 vs 1949), which is a positive, but not enough to offset the size and type differences
+- Heating and Cooling: Both have Forced Air with Natural Gas and Central Air — equal in value
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+The key differentiators are property type, bedroom count, lot size, and bathroom count. While Property 2 has more bathrooms, Property 1 has more bedrooms and a vastly larger lot, and is a single-family home — which is generally more valuable in the market. The lot size difference alone is substantial and highly favorable for Property 1.
+
+CHOICE: 1",hard,year_dominant
+64,11454560,11456336,113000.0,145000.0,2,1,False,1.0,False,"Property 1 has a significantly larger lot size, which is a major value driver in residential real estate. The age difference is minor, and other features are equal or less favorable for Property 2.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 2 – equal
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 1 has 8580 sqft vs Property 2's 4199 sqft – Property 1 has a significant advantage (+4381 sqft)
+- Year built: Property 1 is 13 years older (1940 vs 1953) – Property 2 is newer, which may indicate better maintenance or modern updates
+- Heating: Both have Forced Air with Natural Gas – equal
+- Cooling: Property 1 has Central Air, Electric; Property 2 has only Central Air – Property 1 has electric as a backup or additional option, but both have central cooling
+- Parking: Both have ""unknown"" – cannot compare
+
+The key differentiator is lot size. Property 1 has a much larger lot, which significantly increases value in a market where land area is a major factor. While Property 2 is newer, the lot size advantage of Property 1 outweighs the age difference. Cooling is comparable, and parking is unknown, so no advantage can be assigned.
+
+REASON: Property 1 has a significantly larger lot size, which is a major value driver in residential real estate. The age difference is minor, and other features are equal or less favorable for Property 2.
+CHOICE: 1",hard,lot_dominant
+65,11355250,11390795,214000.0,270000.0,2,1,False,1.0,False,"While Property 1 has a larger lot, Property 2 has better cooling and more bathrooms — both of which are significant in market value. However, lot size is a primary factor in single-family homes, especially in a market where land value is high.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot: Property 2 has 8141 sqft vs Property 1's 0.56 acres (≈20,000 sqft) – wait, let's calculate: 0.56 acres × 43,560 sqft/acre = 24,393.6 sqft. So Property 1 has ~24,394 sqft vs Property 2's 8,141 sqft → Property 1 has a much larger lot (+16,253 sqft)
+- Age: Property 1 (1935) is 7 years older than Property 2 (1942)
+- Heating: Both use Natural Gas and Forced Air (Property 2 has Forced Air + Natural Gas, Property 1 only Natural Gas) – Property 2 has a more modern heating system
+- Cooling: Property 2 has Central Air vs Property 1's Window A/C – Central Air is a significant upgrade in comfort and value
+- Parking: Both have ""unknown"" – cannot compare
+
+Key advantages:  
+Property 1 has a much larger lot (24,394 sqft vs 8,141 sqft), which is a major value driver in residential real estate. It is also older (which may imply more wear, but not necessarily lower value in a stable market). However, Property 2 has more bathrooms (3 vs 2), central air (vs window AC), and a more modern heating system (Forced Air). Central air is a major upgrade in comfort and market appeal.  
+
+In the same ZIP and month, central air and larger lot size are strong value drivers. While Property 1 has a larger lot, Property 2 has better cooling and more bathrooms — both of which are significant in market value. However, lot size is a primary factor in single-family homes, especially in a market where land value is high.  
+
+But: 0.56 acres is 24,394 sqft — that is significantly larger than 8,141 sqft. So Property 1 has a lot size advantage of over 16,000 sqft. That is a major factor. Central air and more bathrooms are important, but lot size and cooling are both strong.  
+
+In a market where land is valuable, a larger lot is a major advantage. Even though Property 2 has central air and more baths, the lot size advantage of Property 1 is substantial and likely outweighs the other features.
+
+CHOICE: 1",hard,bathrooms_dominant
+66,11309985,11398032,289000.0,349900.0,2,1,False,1.0,False,"Property 1 has more bathrooms, a larger lot, and was built more recently with more efficient heating. The cooling system in Property 2 includes electric, which is less desirable than central air with natural gas. These features favor Property 1 in market value.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Property 1 has 3 vs Property 2 has 2 (+1 for P1)
+- Lot size: Property 1 has 6821 sqft vs Property 2 has 6067 sqft (+754 sqft for P1)
+- Year built: Property 1 was built in 1952 vs Property 2 in 1945 — Property 2 is 7 years older (older = less desirable in value, so P2 has a disadvantage)
+- Heating: Property 1 has Natural Gas; Property 2 has Forced Air and Natural Gas — both have gas, but P2 adds Forced Air (which is less efficient and less modern than natural gas heating in some markets)
+- Cooling: Property 1 has Central Air; Property 2 has Central Air and Electric — both have central air, but P2 adds electric cooling (which is less efficient and less desirable than central air with natural gas or dedicated systems)
+- Parking: Both have ""unknown"" — cannot compare
+
+Key advantages: Property 1 has more bathrooms, larger lot, and was built later (more modern), with better heating (natural gas only). Property 2 has older construction and less efficient cooling (electric). Even though both have central air, the addition of electric cooling in P2 is a disadvantage due to inefficiency and higher operating costs.
+
+REASON: Property 1 has more bathrooms, a larger lot, and was built more recently with more efficient heating. The cooling system in Property 2 includes electric, which is less desirable than central air with natural gas. These features favor Property 1 in market value.
+CHOICE: 1",hard,bathrooms_dominant
+67,11421226,11454801,180000.0,222500.0,2,1,False,1.0,False,"while Property 2 has both Forced Air and Natural Gas. This suggests Property 2 has a more traditional heating system, which may be less efficient or less modern than natural gas heating (though not clearly superior)
+- Cooling: Both have Central Air — equal
+- Parking: Both have Attached Garage — equal","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Both have 2 bathrooms — equal
+- Lot size: Property 1 has 6499 sqft vs Property 2's 5998 sqft — Property 1 has a larger lot (+501 sqft)
+- Year built: Property 1 was built in 1957 vs Property 2 in 1948 — Property 2 is 9 years older (older homes may have more wear, but in this context, newer construction often implies better materials and systems)
+- Heating: Property 1 uses Natural Gas; Property 2 uses Forced Air + Natural Gas — both have natural gas, but Property 1 has only Natural Gas, while Property 2 has both Forced Air and Natural Gas. This suggests Property 2 has a more traditional heating system, which may be less efficient or less modern than natural gas heating (though not clearly superior)
+- Cooling: Both have Central Air — equal
+- Parking: Both have Attached Garage — equal
+
+The key differentiator is lot size: Property 1 has a larger lot (6499 vs 5998 sqft). While Property 2 is slightly older, the age difference is minimal and does not outweigh the advantage in lot size. In a market where lot size is a significant factor (especially in single-family homes), a larger lot increases perceived value. No other features provide a clear advantage to either side.
+
+CHOICE: 1",hard,mixed
+68,11353799,11391496,215000.0,175000.0,1,2,False,2.0,False,"Despite having a smaller lot, the improvements in living space and climate control outweigh the lot size difference and age disadvantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot size: Property 1 has 10,606 sqft vs Property 2's 7,100 sqft (+3,506 for P1)
+- Age: Property 1 is 11 years older (1952 vs 1963) – P1 is older, which is a disadvantage
+- Heating: Property 2 has Hot Water + Natural Gas (more modern and efficient) vs Property 1's Natural Gas only – P2 has an advantage
+- Cooling: Property 2 has Central Air (more desirable than Electric) – P2 has a clear advantage
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key advantages: Property 2 has more bedrooms, more bathrooms, better cooling (central air), and more modern heating. Despite having a smaller lot, the improvements in living space and climate control outweigh the lot size difference and age disadvantage.
+
+CHOICE: 2",hard,lot_dominant
+69,11562056,11650292,211000.0,169000.0,1,1,True,,False,"Property 1 has a larger lot and is significantly newer, which generally increases value. Although Property 2 has more bathrooms, the structural and spatial advantages of Property 1 are more impactful in a residential market.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 bedrooms – equal
+- Bathrooms: Property 2 has 2 vs Property 1's 1 (+1 for P2)
+- Lot size: Property 1 has 4499 sqft vs Property 2's 3171 sqft (+1328 sqft for P1)
+- Year built: Property 1 is 1955 vs Property 2's 1920 – Property 1 is 35 years newer
+- Heating: Both use Natural Gas and Forced Air (P2 has Forced Air + Natural Gas, P1 has only Natural Gas) – P2 has more heating options, but both have gas
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 2 has more bathrooms (2 vs 1), which is a significant value driver in residential properties. However, Property 1 has a larger lot (4499 vs 3171 sqft) and is built 35 years later, which generally indicates better construction and updated systems. While the newer age of Property 1 is a positive, the bathroom count is a strong feature in value, and the larger lot size also adds value. However, the bathroom advantage in Property 2 is substantial, and the newer construction of Property 1 may offset the smaller lot. Still, in a market where bathrooms and lot size are key, Property 1's larger lot and newer construction outweigh the bathroom advantage.
+
+REASON: Property 1 has a larger lot and is significantly newer, which generally increases value. Although Property 2 has more bathrooms, the structural and spatial advantages of Property 1 are more impactful in a residential market.  
+CHOICE: 1",hard,bathrooms_dominant
+70,11306740,11306997,133900.0,164900.0,2,1,False,1.0,False,"Property 1 has more bedrooms, a larger lot, and central cooling, which are key value drivers in single-family homes. The heating type advantage of Property 2 is minor compared to the structural and spatial advantages of Property 1.","Let's think step by step:
+
+- Type: Both are Single Family (same category)
+- Bedrooms: Property 1 has 3 vs Property 2 has 2 (+1 for P1)
+- Bathrooms: Property 1 has 1 vs Property 2 has 2 (+1 for P2)
+- Lot size: Property 1 has 7638 sqft vs Property 2 has 6600 sqft (+1038 for P1)
+- Year built: Property 1 is 5 years older (1945 vs 1950)
+- Heating: Property 1 has ""Other"" (less specified) vs Property 2 has Natural Gas (more standard and reliable)
+- Cooling: Both have Central (same advantage)
+- Parking: Both listed as ""unknown"" — no comparative advantage
+
+Key comparison: Property 1 has more bedrooms (3 vs 2), larger lot (7638 vs 6600), and is slightly older (but not significantly). Property 2 has more bathrooms (2 vs 1), better heating (Natural Gas), and is only 5 years newer. However, in a market where bedroom count and lot size are strong drivers, and given that central cooling is present in both, the bedroom and lot size advantages of Property 1 outweigh the bathroom and heating differences.
+
+REASON: Property 1 has more bedrooms, a larger lot, and central cooling, which are key value drivers in single-family homes. The heating type advantage of Property 2 is minor compared to the structural and spatial advantages of Property 1.
+CHOICE: 1",hard,mixed
+71,59157128,59161565,880000.0,715000.0,1,1,True,2.0,False,"Despite the older age, Property 2 has better cooling and heating, and a much larger lot. But the bedroom/bathroom advantage in Property 1 is substantial and directly impacts market value.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 2 has 10,018 sqft vs Property 1's 6,534 sqft (+3,484 sqft for P2)
+- Age: Property 2 is built 20 years earlier (1940 vs 1960), so it is older — a disadvantage for P2
+- Heating: Property 2 has Forced Air, Electric Baseboard, and Natural Gas (more modern and versatile) vs Property 1's Baseboard only — P2 has superior heating system
+- Cooling: Property 2 has Central Air vs Property 1's Window Unit(s) — Central Air is more desirable and efficient, especially in a hot market
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key advantages:  
+Property 1 has more bedrooms and bathrooms, which are strong value drivers.  
+Property 2 has a much larger lot and superior heating and cooling systems.  
+
+However, in a market where home size and modern amenities matter, the larger lot and better cooling/heating in Property 2 are significant. But the bedroom and bathroom count are critical — 4 beds and 3 baths vs 3 beds and 2 baths. In a single-family home, more bedrooms and bathrooms generally increase value, especially when combined with modern systems.  
+
+Despite the older age, Property 2 has better cooling and heating, and a much larger lot. But the bedroom/bathroom advantage in Property 1 is substantial and directly impacts market value.  
+
+After weighing all features, Property 1 has a stronger overall profile in key interior and spatial features, and the cooling system is inferior in P1. However, the larger lot in P2 is a major plus.  
+
+But in the same market, with same zip and month, the number of bedrooms and bathrooms is a primary driver. Property 1 has 4 beds and 3 baths — a clear advantage. The cooling in P2 is superior, but the lot size is large, yet the bedroom/bathroom count is more directly tied to value.  
+
+Final decision: Property 1 has more bedrooms and bathrooms, which are key value drivers in single-family homes. The heating and cooling are less decisive than bedroom/bathroom count.  
+
+CHOICE: 1",hard,year_dominant
+72,11649968,11653739,190000.0,154000.0,1,2,False,2.0,False,"Property 2 has a significantly larger lot (double the size), which is a major value driver in single-family homes, and despite having fewer bedrooms and bathrooms, the lot size and modern cooling system (central air) provide a net advantage. Property 1's age and fewer bathrooms offset its bedroom advantage.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 1 vs Property 2's 2 (+1 for P2)
+- Lot size: Property 2 has 7200 sqft vs Property 1's 3600 sqft (+3600 for P2)
+- Year built: Property 1 is 35 years older than Property 2 (1910 vs 1945)
+- Heating: Both have Forced Air and Natural Gas — equal
+- Cooling: Property 1 has Central Air and Electric; Property 2 has Central Air only — Property 1 has an additional electric cooling advantage
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key comparison: Property 1 has one more bedroom but one fewer bathroom. Property 2 has a much larger lot (double the size) and better cooling (central air only, but Property 1 has both central and electric — actually, Property 1 has more advanced cooling). However, the lot size is a major value driver in residential real estate, especially in a single-family context. While Property 1 has more bedrooms and better cooling, Property 2's significantly larger lot (7200 vs 3600 sqft) provides substantial value, and the 35-year age difference is a notable disadvantage for Property 1. The cooling advantage of Property 1 is marginal compared to the lot size advantage of Property 2.
+
+REASON: Property 2 has a significantly larger lot (double the size), which is a major value driver in single-family homes, and despite having fewer bedrooms and bathrooms, the lot size and modern cooling system (central air) provide a net advantage. Property 1's age and fewer bathrooms offset its bedroom advantage.
+CHOICE: 2",hard,year_dominant
+73,11483882,11590703,284900.0,235000.0,1,2,False,2.0,False,"Property 2 has a much larger lot (0.49 acres vs 9099 sqft), which significantly increases land value, and despite being older, the larger lot and more outdoor space outweigh the fewer bedrooms and bathrooms.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 1 has 9099 sqft vs Property 2's 0.49 acres (≈23,400 sqft) – Property 2 has a much larger lot (+23,400 sqft for P2)
+- Age: Property 2 is built in 1949 (15 years earlier than P1's 1964) – P2 is older, which may imply more wear, but in a market where newer homes are valued for modern features, this is a disadvantage
+- Heating: Both list ""Other"" and Property 2 adds ""Gas"" – this is a minor advantage for P2, but not significant without context
+- Cooling: Both have Central – equal
+- Parking: Both list ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 1 has more bedrooms and bathrooms, which are strong value drivers. However, Property 2 has a significantly larger lot (23,400 sqft vs 9,099 sqft), which is a major advantage in terms of land value and potential for outdoor space. Despite being older, the larger lot and more rooms may outweigh the age difference. In a market where lot size and square footage are key, the larger lot of Property 2 provides a substantial edge.
+
+REASON: Property 2 has a much larger lot (0.49 acres vs 9099 sqft), which significantly increases land value, and despite being older, the larger lot and more outdoor space outweigh the fewer bedrooms and bathrooms.  
+CHOICE: 2",hard,lot_dominant
+74,11312417,11359516,449900.0,550000.0,2,1,False,1.0,False,,"Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 6 vs Property 2's 3 (+3 for P1)
+- Bathrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Lot size: Property 1 has 5549 sqft vs Property 2's 1292 sqft (+4257 sqft for P1)
+- Age: Property 1 is 24 years older than Property 2 (1917 vs 1941) — older age is a disadvantage
+- Heating: Both have Forced Air with Natural Gas — equal
+- Cooling: Property 1 has Central Air; Property 2 has Central Air and Electric — both have central cooling, but Property 1 has only Central Air (no electric), which is slightly less modern, but both have central cooling
+- Parking: Both have ""unknown"" — cannot compare
+
+Key advantages: Property 1 has significantly more bedrooms, bathrooms, and lot size — all major drivers of value in residential real estate. The age disadvantage is offset by the substantial size and space advantages. The cooling difference is minor and does not outweigh the size and bedroom benefits.
+
+CHOICE: 1",hard,mixed
+75,11484848,11521595,325000.0,270000.0,1,2,False,2.0,False,"Property 1 has more bedrooms and bathrooms, but Property 2 has a much larger lot and is newer, which significantly increases its market value in a residential market where land and recent construction matter.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 2 has 1.02 acres vs Property 1's 0.28 acres (+0.74 acres for P2)
+- Year built: Property 2 is 8 years newer than Property 1
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+Key considerations: Property 1 has more bedrooms and bathrooms, which are strong drivers of value in single-family homes. However, Property 2 has a significantly larger lot (over 3 times larger in acres), which is a major value driver in residential real estate, especially in a market where land is a key factor. While Property 1 has a slight edge in interior space, the lot size advantage of Property 2 is substantial and often outweighs bedroom differences when land value is high.
+
+REASON: Property 1 has more bedrooms and bathrooms, but Property 2 has a much larger lot and is newer, which significantly increases its market value in a residential market where land and recent construction matter.  
+CHOICE: 2",hard,mixed
+76,11514124,11514650,229000.0,287500.0,2,1,False,1.0,False,"Property 1 has more bathrooms and a significantly larger lot size, both of which are strong value drivers in residential property valuation. The older age of Property 2 is offset by these structural advantages.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 2 – equal
+- Bathrooms: Property 1 has 2 vs Property 2 has 1 – +1 bath for Property 1
+- Lot size: Property 1 has 3898 sqft vs Property 2 has 1999 sqft – +1900 sqft for Property 1
+- Year built: Property 2 is built 30 years earlier (1890 vs 1920) – older, which generally implies more wear and less modern features
+- Heating: Property 1 has ""Other"" vs Property 2 has ""Forced air"" – ""Other"" is less specific and potentially less desirable; forced air is a standard, known system
+- Cooling: Both have ""unknown"" – no comparative advantage
+
+The key advantages go to Property 1: more bathrooms and larger lot size. While Property 2 is older, the lack of cooling and parking details makes those features neutral. The presence of a full bathroom (vs 1) and larger lot size are significant in residential valuation. The heating system is less favorable for Property 1 due to ""Other,"" but without cooling data, it's not a decisive disadvantage.
+
+REASON: Property 1 has more bathrooms and a significantly larger lot size, both of which are strong value drivers in residential property valuation. The older age of Property 2 is offset by these structural advantages.  
+CHOICE: 1",hard,bathrooms_dominant
+77,11404834,11405320,310000.0,227000.0,1,1,True,2.0,False,"despite having central cooling. Property 1 has better heating and more bathrooms, which are strong value drivers. The lot size is a major advantage for Property 2, but the age and cooling disadvantage are significant.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 4 – equal
+- Bathrooms: Property 1 has 3 vs Property 2 has 2 (+1 for P1)
+- Lot size: Property 2 has 10,349 sqft vs Property 1 has 6,225 sqft (+4,124 sqft for P2)
+- Year built: Property 2 is 30 years older (1897 vs 1927) – this is a disadvantage for P2
+- Heating: Property 1 has Radiant, Gas (more modern and efficient than ""Other"") – advantage for P1
+- Cooling: Property 1 has Wall AC (less desirable than Central AC) – disadvantage for P1
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has one more bathroom and better heating, but worse cooling. Property 2 has a much larger lot and is older, which is a disadvantage in terms of structural age and modern features. However, in a market where lot size is a significant factor, and both are in the same zip, the larger lot of Property 2 may offset age and cooling disadvantages. But heating and bathrooms are key interior features. Radiant heating with gas is more efficient and modern than ""Other"", and 3 bathrooms are more desirable than 2. The lot size is a major advantage for Property 2, but the age disadvantage (30 years older) and inferior cooling (wall vs central) reduce its value. Still, in a market where lot size is a strong driver, and both are single-family, the larger lot may outweigh the other disadvantages.
+
+However, in real estate valuation, newer homes often command higher prices due to updated systems and construction quality. Property 2 is older (1897), which may imply outdated systems despite having central cooling. Property 1 has better heating and more bathrooms, which are strong value drivers. The lot size is a major advantage for Property 2, but the age and cooling disadvantage are significant.
+
+After careful comparison: Property 1 has better heating, more bathrooms, and is not as old. The cooling is a drawback, but central cooling is better than wall. The lot size is larger for Property 2, but the age and heating system are critical. In a market where modern systems and updated features matter, Property 1 has a stronger feature set.
+
+CHOICE: 1",medium,bathrooms_dominant
+78,11561836,11653749,148500.0,205000.0,2,1,False,,False,"Property 1 has one more bedroom and is only 10 years older than Property 2, giving it a stronger advantage in livable space and appeal. The larger lot of Property 2 is offset by the bedroom advantage and comparable age.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 2 has 4965 sqft vs Property 1's 3149 sqft (+1816 sqft for P2)
+- Year built: Property 1 is 10 years earlier (1930 vs 1940) – P2 is newer
+- Heating: Both have Forced Air with Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 1 has one more bedroom, which is a significant factor in value. Property 2 has a much larger lot (over 1800 sqft larger), which is also valuable. However, in a market where bedroom count and lot size are both important, the extra bedroom in Property 1 provides a direct increase in livable space and appeal. While lot size favors Property 2, the bedroom advantage and the fact that Property 1 is only 10 years older (not significantly older) make the bedroom benefit more impactful in a residential context.
+
+REASON: Property 1 has one more bedroom and is only 10 years older than Property 2, giving it a stronger advantage in livable space and appeal. The larger lot of Property 2 is offset by the bedroom advantage and comparable age.  
+CHOICE: 1",medium,bedrooms_dominant
+79,59156376,59158535,1660000.0,1260000.0,1,1,True,2.0,False,"Property 1 has more bedrooms and bathrooms, which are major value drivers, despite being older and having outdated cooling and heating. Property 2 has modern, efficient systems and a larger lot, but the bedroom and bathroom count advantages in Property 1 outweigh these factors in a typical market.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 6 vs Property 2's 4 (+2 for P1)
+- Bathrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Lot: Property 1 has 0.39 acres (≈2000 sqft) vs Property 2's 6534 sqft (+4500 sqft for P2)
+- Age: Property 2 is built in 2016 (36 years newer) vs Property 1 in 1880 — P2 is modern and newer
+- Heating: Property 1 has Steam and Electric Baseboard (outdated, less efficient) vs Property 2 has Forced Air with Natural Gas and ENERGY STAR Qualified Equipment (modern, efficient)
+- Cooling: Property 1 has Window Units (less efficient, limited capacity) vs Property 2 has Central Air with ENERGY STAR Qualified Equipment (more effective, reliable)
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key considerations: Property 1 has significantly more bedrooms and bathrooms, which are major value drivers in residential real estate. However, Property 2 has a much larger lot, modern heating and cooling systems, and is built in a modern era with energy-efficient equipment. Despite the age disadvantage, modern systems and larger lot size are strong market differentiators. Still, the number of bedrooms and bathrooms in Property 1 (6 beds, 4 baths) far exceed those in Property 2 (4 beds, 3 baths), and these are primary drivers of value in single-family homes.
+
+REASON: Property 1 has more bedrooms and bathrooms, which are major value drivers, despite being older and having outdated cooling and heating. Property 2 has modern, efficient systems and a larger lot, but the bedroom and bathroom count advantages in Property 1 outweigh these factors in a typical market.  
+CHOICE: 1",medium,mixed
+80,11483974,11484635,286000.0,406000.0,2,1,False,,False,"Despite being older, Property 1 has more bedrooms and a larger lot — both key drivers of value. The age disadvantage is offset by superior bedroom count and lot size.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 4 (+1 for P2)
+- Lot size: Property 1 has 0.43 Acres vs Property 2's 0.33 Acres (+0.10 Acres for P1)
+- Year built: Property 1 is 25 years older than Property 2 (1950 vs 1975)
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has one more bedroom, one fewer bathroom, but a larger lot (0.10 acres more). The age difference is significant — Property 2 is newer, which may imply better maintenance or modern updates. However, in a market where newer homes are valued for updates, the bedroom count and lot size are strong advantages for Property 1. The bathroom count is slightly better for Property 2, but bedrooms are generally more impactful in valuation than bathrooms, especially in a single-family home. The larger lot size also adds value.
+
+Despite being older, Property 1 has more bedrooms and a larger lot — both key drivers of value. The age disadvantage is offset by superior bedroom count and lot size.
+
+CHOICE: 1",medium,year_dominant
+81,59124864,59161144,975000.0,715000.0,1,2,False,2.0,False,"While Property 1 has more bathrooms, Property 2 has more bedrooms — bedrooms are often more valuable than bathrooms in single-family homes.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 1 has 8712 sqft vs Property 2's 6098 sqft (+2614 sqft for P1)
+- Year built: Property 1 is 17 years older than Property 2 (1950 vs 1967)
+- Heating: Property 2 has Natural Gas + Baseboard (more modern and efficient) vs Property 1's Baseboard only (less efficient)
+- Cooling: Both have Window Unit(s) — equal
+- Parking: Both have ""unknown"" — no comparative advantage
+
+Key considerations:
+- Property 2 has one more bedroom, which is a strong value driver.
+- Property 1 has more lot size, which is valuable in many markets.
+- Property 2 has better heating (Natural Gas), which is a significant upgrade over baseboard alone, especially in colder climates.
+- Property 1 is older, which may imply lower efficiency and higher maintenance costs.
+- While Property 1 has more bathrooms, Property 2 has more bedrooms — bedrooms are often more valuable than bathrooms in single-family homes.
+
+Despite the larger lot, the advantages in bedroom count, better heating, and modern construction (newer year built) favor Property 2.
+
+CHOICE: 2",medium,lot_dominant
+82,11335906,11571133,220000.0,155000.0,1,2,False,2.0,False,"Property 2 has one more bathroom and gas heating, both of which are strong value drivers in a market where central cooling and single-family type are shared. The heating advantage is particularly important for comfort and efficiency.","Let's think step by step:
+
+- Type: Both are Single Family – equal
+- Bedrooms: Both have 3 – equal
+- Bathrooms: Property 2 has 3 vs Property 1's 2 (+1 for P2)
+- Lot size: Property 2 has 3497 sqft vs Property 1's 3449 sqft (+48 sqft for P2) – very slight advantage for P2
+- Year Built: Property 2 is 1915 vs Property 1's 1951 – Property 2 is 36 years older, so older structure (a disadvantage)
+- Heating: Property 2 has ""Other, Gas"" vs Property 1's ""Other"" – gas heating is generally more efficient and desirable than ""Other"" (which is less specified), so P2 has a clear advantage
+- Cooling: Both have Central – equal
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+Key differentiators: Property 2 has one more bathroom and better heating (gas), which are significant value drivers in residential real estate. The slight lot size advantage is negligible. The older age of Property 2 is a disadvantage, but the heating and bathroom improvements outweigh it.
+
+REASON: Property 2 has one more bathroom and gas heating, both of which are strong value drivers in a market where central cooling and single-family type are shared. The heating advantage is particularly important for comfort and efficiency.  
+CHOICE: 2",medium,bathrooms_dominant
+83,11549475,11609449,270000.0,379000.0,2,1,False,1.0,False,"Property 1 has more bedrooms and a larger lot, which are key drivers of value in single-family homes. The cooling advantage of Property 2 is minor compared to these structural benefits.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 1 has 4 vs 3 (+1 for P1)
+- Bathrooms: Both have 3 — equal
+- Lot size: Property 1 has 0.39 Acres vs 0.31 Acres (+0.08 Acres for P1)
+- Year built: Property 1 is 21 years older (1966 vs 1987) — P2 is newer
+- Heating: Both use Forced Air with Natural Gas — equal
+- Cooling: Property 1 has Central Air only; Property 2 has Central Air and Electric — P2 has an additional cooling option
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key comparison: Property 1 has one more bedroom and a larger lot, which are significant value drivers in residential real estate. While Property 2 has a modern cooling option (electric), the absence of a clear advantage in heating or parking, combined with the structural advantages in bedroom count and lot size, favors Property 1. The age disadvantage of Property 1 is offset by its larger lot and more bedrooms.
+
+REASON: Property 1 has more bedrooms and a larger lot, which are key drivers of value in single-family homes. The cooling advantage of Property 2 is minor compared to these structural benefits.  
+CHOICE: 1",medium,bedrooms_dominant
+84,11286333,11287142,520000.0,350000.0,1,2,False,2.0,False,"The key advantages for Property 2 are one more bedroom, one more bathroom, and a significantly larger lot. Although Property 1 is newer, the additional square footage and more bedrooms/bathrooms provide stronger value in a market where space and finished living areas matter. The larger lot and higher bedroom/bathroom count outweigh the age difference.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 (1930) is 25 years older than Property 1 (1955) – Property 1 is newer
+- Bedrooms: Property 2 has 5 vs Property 1's 4 (+1 for P2)
+- Bathrooms: Property 2 has 5 vs Property 1's 4 (+1 for P2)
+- Lot Size: Property 2 has 8176 sqft vs Property 1's 6060 sqft (+2116 sqft for P2)
+- Heating: Both have Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both have ""unknown"" – no comparative advantage
+
+The key advantages for Property 2 are one more bedroom, one more bathroom, and a significantly larger lot. Although Property 1 is newer, the additional square footage and more bedrooms/bathrooms provide stronger value in a market where space and finished living areas matter. The larger lot and higher bedroom/bathroom count outweigh the age difference.
+
+CHOICE: 2",medium,year_dominant
+85,11451173,11533224,128000.0,175000.0,2,1,False,1.0,False,"Property 1 has a larger lot and includes electric cooling, both of which increase market value in a comparable market.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Both built in 1955 – equal
+- Bedrooms: Both have 3 bedrooms – equal
+- Bathrooms: Both have 2 bathrooms – equal
+- Lot Size: Property 1 has 8820 sqft vs Property 2's 6067 sqft – Property 1 has a larger lot (+2753 sqft)
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Property 1 has Central Air and Electric; Property 2 has only Central Air – Property 1 has electric cooling as an added feature
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+The key differentiators are lot size and cooling. Property 1 has a significantly larger lot and includes electric cooling, which adds value in a market where energy efficiency and modern comfort are valued. Property 2 lacks electric cooling and has a smaller lot.
+
+REASON: Property 1 has a larger lot and includes electric cooling, both of which increase market value in a comparable market.  
+CHOICE: 1",medium,lot_dominant
+86,11470364,11547114,205000.0,285000.0,2,1,False,1.0,False,"Property 1 has a much larger lot size, which significantly increases value in this market, outweighing the age difference and less specific heating information.","Let's think step by step:
+
+- Type: Both are Single Family (same category)
+- Bedrooms: Both have 3 bedrooms (equal)
+- Bathrooms: Both have 2 bathrooms (equal)
+- Lot size: Property 1 has 7152 sqft vs Property 2's 2877 sqft (+4275 sqft for Property 1)
+- Year built: Property 1 is 27 years older (1952 vs 1979)
+- Heating: Property 1 has ""Other, Gas"" vs Property 2 has ""Forced Air, Natural Gas"" — both use gas, but Property 2 specifies ""Forced Air"" which is common and reliable; Property 1's ""Other"" is less specific and potentially less desirable
+- Cooling: Property 1 has ""Central"" vs Property 2 has ""Central Air"" — both are central cooling, so equivalent
+- Parking: Both have ""unknown"" — no comparative advantage
+
+The key differentiator is lot size: Property 1 has a significantly larger lot (over double), which is a major value driver in residential real estate. While Property 2 is newer, the age difference is not substantial enough to offset the large lot advantage. The heating type is not clearly superior in either, and cooling is equivalent.
+
+REASON: Property 1 has a much larger lot size, which significantly increases value in this market, outweighing the age difference and less specific heating information.  
+CHOICE: 1",medium,year_dominant
+87,11654967,11655166,226000.0,170000.0,1,2,False,2.0,False,"Property 2 has one more bedroom, which is a key driver of value in single-family homes, despite having fewer bathrooms. The lot size and age are nearly identical, and other features are equal.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Both built in 1920 – equal
+- Bedrooms: Property 1 has 4 vs Property 2 has 5 (+1 for P2)
+- Bathrooms: Property 1 has 2 vs Property 2 has 1 (+1 for P1)
+- Lot Size: Both have approximately 3000 sqft (P1: 3001, P2: 3000) – nearly identical
+- Heating: Both have Forced Air with Natural Gas – equal
+- Cooling: Both have Central Air with Electric – equal
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key comparison: Property 2 has one more bedroom, which is a significant factor in home value. While Property 1 has one more bathroom, the bedroom count is generally more impactful in residential valuation, especially in a market where space and living areas are valued. The lot size difference is negligible. The age and heating/cooling are identical.
+
+REASON: Property 2 has one more bedroom, which is a key driver of value in single-family homes, despite having fewer bathrooms. The lot size and age are nearly identical, and other features are equal.  
+CHOICE: 2",medium,mixed
+88,11284179,11284236,351500.0,477500.0,2,1,False,1.0,False,"Property 1 has a larger lot and central air, which are significant value drivers in this market. Property 2 has more bedrooms but a smaller lot and less effective cooling. The structural and comfort advantages favor Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Both have 2 – equal
+- Lot size: Property 1 has 6751 sqft vs Property 2's 3898 sqft (+2853 for P1)
+- Age: Property 1 is built in 1951 vs Property 2 in 1925 – Property 2 is 26 years older (older homes may have more wear, but in this market, age is not a direct value driver unless it affects systems)
+- Heating: Property 1 has Forced Air, Natural Gas; Property 2 has Hot Water, Natural Gas – Hot Water is less common and may have higher maintenance, but both use natural gas
+- Cooling: Property 1 has Central Air; Property 2 has Wall Unit(s) – Central Air is more efficient and desirable than wall units, especially in a warm climate
+- Parking: Both have ""unknown"" – cannot compare
+
+Key advantages:  
+Property 2 has one more bedroom, which is a significant factor in value. However, Property 1 has a much larger lot (over 2800 sqft larger), which adds value in a market where outdoor space matters. Central air in Property 1 is a major upgrade over wall units, which are less effective and less desirable. While Property 2 is older, the cooling system and bedroom count are strong points. However, the larger lot and superior cooling in Property 1 provide more tangible value.
+
+REASON: Property 1 has a larger lot and central air, which are significant value drivers in this market. Property 2 has more bedrooms but a smaller lot and less effective cooling. The structural and comfort advantages favor Property 1.  
+CHOICE: 1",medium,bedrooms_dominant
+89,11354025,11354209,140000.0,195000.0,2,1,False,1.0,False,"Property 1 has Central Air, a major comfort and efficiency advantage over Window A/C, while Property 2 has more bedrooms and a much larger lot. However, the cooling system is a critical differentiator in value, especially in a market where climate and indoor comfort are prioritized.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Both have 2 — equal
+- Lot size: Property 1 has 0.31 acres (≈1300 sqft) vs Property 2's 4499 sqft — Property 2 has significantly more lot area (+3199 sqft)
+- Age: Property 2 is 5 years newer (1945 vs 1950) — slight advantage for P2
+- Heating: Both use Natural Gas — equal
+- Cooling: Property 1 has Central Air vs Property 2's Window A/C — Central Air is a major advantage for P1 in comfort and efficiency
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+Key comparison: Property 2 has more bedrooms and a much larger lot, which are strong value drivers. However, Property 1 has Central Air, which is a significant upgrade over Window A/C, especially in a market where climate and comfort matter. While lot size and bedroom count favor Property 2, the cooling system advantage of Property 1 provides a notable structural and comfort-based edge.
+
+REASON: Property 1 has Central Air, a major comfort and efficiency advantage over Window A/C, while Property 2 has more bedrooms and a much larger lot. However, the cooling system is a critical differentiator in value, especially in a market where climate and indoor comfort are prioritized.  
+CHOICE: 1",medium,bedrooms_dominant
+90,11617445,11643265,438000.0,328000.0,1,2,False,2.0,False,"Property 2 has more bedrooms, a vastly larger lot, and central air cooling, which are major value drivers in the market. The lot size advantage is particularly significant given the 90x difference.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Property 2 has 4 vs Property 1's 3 (+1 for P2)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 2 has 0.9 acres vs Property 1's 0.01 acres — this is a massive advantage for P2 (90x larger lot)
+- Age: Property 1 is 12 years older than Property 2 (1938 vs 1950) — P2 is newer
+- Heating: Both use Natural Gas; Property 1 has Hot Water, Property 2 has Forced Air — Hot Water is generally more efficient and modern, but both are acceptable; no clear advantage
+- Cooling: Property 2 has Central Air vs Property 1's Electric — Central Air is more desirable and effective in summer, especially in a region with hot summers
+- Parking: Both have ""unknown"" — cannot compare
+
+Key advantages: Property 2 has more bedrooms (4 vs 3), a much larger lot (90x), and central air (more desirable cooling). Property 1 has more bathrooms (3 vs 2), but this is less impactful than lot size and cooling. The lot size and cooling are significant value drivers in residential real estate.
+
+REASON: Property 2 has more bedrooms, a vastly larger lot, and central air cooling, which are major value drivers in the market. The lot size advantage is particularly significant given the 90x difference.  
+CHOICE: 2",medium,mixed
+91,11439929,11656362,152500.0,219900.0,2,1,False,1.0,False,"Both properties have the same number of bedrooms and bathrooms, and both are single-family homes. Property 1 has a significantly larger lot (9000 sqft vs 5087 sqft), which is a key value driver in home valuation. Although Property 2 is newer, the lot size advantage and the presence of radiant heating (which may offer better efficiency or comfort) in Property 1 provide a stronger relative value. Cooling and parking details are unknown for both, so they are not factored in.","REASON: Both properties have the same number of bedrooms and bathrooms, and both are single-family homes. Property 1 has a significantly larger lot (9000 sqft vs 5087 sqft), which is a key value driver in home valuation. Although Property 2 is newer, the lot size advantage and the presence of radiant heating (which may offer better efficiency or comfort) in Property 1 provide a stronger relative value. Cooling and parking details are unknown for both, so they are not factored in.
+
+CHOICE: 1",medium,lot_dominant
+92,11513765,123271271,140000.0,307500.0,2,1,False,1.0,False,"Property 1 is a single-family home with a much larger lot, which provides greater living space and value potential. Although Property 2 is slightly newer, the type and lot size advantages strongly favor Property 1.","Let's think step by step:
+
+- Type: Property 1 is a Single Family Residence, Property 2 is a Townhouse. Single-family homes typically command higher values than townhouses in the same market due to greater privacy, space, and perceived quality.
+- Year Built: Property 1 was built in 1900, Property 2 in 1919. Property 2 is 19 years newer, which is a minor advantage, but not enough to offset the type difference.
+- Bedrooms: Both have 3 bedrooms — equal.
+- Bathrooms: Both have 3 bathrooms — equal.
+- Lot Size: Property 1 has 2617 sqft vs Property 2's 988 sqft — Property 1 has a significantly larger lot (over 2.6x bigger), which is a major value driver in residential real estate.
+- Heating and Cooling: Both have Forced Air with Natural Gas and Central Air — equal.
+- Parking: Both have Open Parking — equal.
+
+REASON: Property 1 is a single-family home with a much larger lot, which provides greater living space and value potential. Although Property 2 is slightly newer, the type and lot size advantages strongly favor Property 1.
+
+CHOICE: 1",easy,mixed
+93,11306307,11354115,130000.0,200500.0,2,1,False,1.0,False,,"Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Both have 3 bedrooms – equal
+- Bathrooms: Property 1 has 2 vs Property 2 has 1 – +1 bath for Property 1
+- Lot size: Property 1 has 10,598 sqft vs Property 2 has 4,399 sqft – +6,199 sqft for Property 1
+- Year built: Property 1 is 1956 vs Property 2 is 1940 – Property 2 is 16 years older (older = less desirable in value)
+- Heating: Property 1 has Natural Gas (common and efficient) vs Property 2 has Hot Water (less common, potentially less efficient and more costly to maintain)
+- Cooling: Property 1 has Central Air (more desirable than Window A/C) – significant advantage for Property 1
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key advantages: Property 1 has more bathrooms, significantly larger lot, better cooling (central air), and modern heating (natural gas). Property 2 is older and has window AC, which is less desirable. The structural and comfort features favor Property 1.
+
+CHOICE: 1",easy,bathrooms_dominant
+94,11306307,11392669,130000.0,207500.0,2,1,False,1.0,False,"Property 1 has one more bedroom and a much larger lot, which are significant value drivers in a single-family home. The slight age advantage of Property 2 is outweighed by these structural and spatial benefits.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 (1953) is 3 years newer than Property 1 (1956) – slight advantage for P2
+- Bedrooms: Property 1 has 3 vs 2 – +1 bedroom for P1
+- Bathrooms: Both have 2 – equal
+- Lot Size: Property 1 has 10,598 sqft vs Property 2's 8,123 sqft – +2,475 sqft for P1
+- Heating: Both use Natural Gas – equal
+- Cooling: Both have Central Air – equal
+- Parking: Both listed as ""unknown"" – no comparative advantage
+
+Key advantages: Property 1 has more bedrooms and a significantly larger lot. While Property 2 is slightly newer, the bedroom and lot size advantages are substantial in residential valuation. The lack of parking information neutralizes any parking comparison.
+
+REASON: Property 1 has one more bedroom and a much larger lot, which are significant value drivers in a single-family home. The slight age advantage of Property 2 is outweighed by these structural and spatial benefits.
+CHOICE: 1",easy,bedrooms_dominant
+95,11622311,11622932,180000.0,325000.0,2,1,False,1.0,False,"While Property 2 has more bedrooms, the lot size and bathroom count are significant in residential valuation. Steam heating in Property 2 is a disadvantage in modern markets due to inefficiency and maintenance issues. The larger lot and better bathroom count favor Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Year Built: Property 2 (1885) is 35 years older than Property 1 (1920) — Property 2 is older, which may indicate more wear, but older homes can have unique features or historical value; however, in modern market value, newer construction often has better efficiency and maintenance
+- Bedrooms: Property 2 has 5 vs Property 1's 4 (+1 for P2)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot Size: Property 1 has 3990 sqft vs Property 2's 2330 sqft (+1660 sqft for P1)
+- Heating: Both use Natural Gas; Property 2 adds Steam heating — steam heating is outdated and less efficient, potentially reducing value
+- Cooling: Both listed as ""unknown"" — cannot compare, so neutral
+
+Key comparison: Property 2 has one more bedroom but fewer bathrooms and a smaller lot. Property 1 has a larger lot and more bathrooms. While Property 2 has more bedrooms, the lot size and bathroom count are significant in residential valuation. Steam heating in Property 2 is a disadvantage in modern markets due to inefficiency and maintenance issues. The larger lot and better bathroom count favor Property 1.
+
+CHOICE: 1",easy,year_dominant
+96,11450777,11492375,122000.0,189900.0,2,1,False,1.0,False,"The key differentiators are lot size and heating system. Property 1 has a much larger lot, which is a significant value driver in residential real estate, and a more modern heating system (Forced Air with Natural Gas) compared to Property 2's simpler Natural Gas heating. While Property 2 is newer, the advantages in lot size and heating outweigh the age difference.","Let's think step by step:
+
+- Type: Both are Single Family Residences — equal
+- Bedrooms: Both have 3 bedrooms — equal
+- Bathrooms: Both have 2 bathrooms — equal
+- Lot size: Property 1 has 10,362 sqft vs Property 2's 7,165 sqft — Property 1 has a significantly larger lot (+3,197 sqft)
+- Year built: Property 1 was built in 1953 vs Property 2 in 1960 — Property 1 is 7 years older (so Property 2 is newer)
+- Heating: Property 1 has Forced Air + Natural Gas; Property 2 has only Natural Gas — Property 1 has a more modern and efficient heating system (Forced Air is generally more common and efficient than basic natural gas furnaces)
+- Cooling: Both have Central Air — equal
+- Parking: Both have ""unknown"" — cannot compare, so no advantage
+
+The key differentiators are lot size and heating system. Property 1 has a much larger lot, which is a significant value driver in residential real estate, and a more modern heating system (Forced Air with Natural Gas) compared to Property 2's simpler Natural Gas heating. While Property 2 is newer, the advantages in lot size and heating outweigh the age difference.
+
+CHOICE: 1",easy,lot_dominant
+97,11405788,11409003,147000.0,230000.0,2,1,False,1.0,False,"Property 1 has more bedrooms, more bathrooms, and superior cooling (central air with electric), which are strong value drivers in a market where modern amenities and space matter. The lot size and newer age of Property 2 are minor advantages that do not outweigh the interior and comfort features of Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Bedrooms: Property 1 has 4 vs Property 2's 3 (+1 for P1)
+- Bathrooms: Property 1 has 3 vs Property 2's 2 (+1 for P1)
+- Lot size: Property 2 has 3600 sqft vs Property 1's 3301 sqft (+300 sqft for P2)
+- Year built: Property 1 is 9 years older (1911 vs 1920) – P2 is newer
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Property 1 has Central Air and Electric; Property 2 has only Central Air – Property 1 has an additional electric cooling advantage
+- Parking: Both have ""unknown"" – cannot compare, so no advantage
+
+Key advantages: Property 1 has more bedrooms, more bathrooms, and better cooling (electric central air). Property 2 has a slightly larger lot and is newer. However, the bedroom and bathroom count are significant in valuation, and central air with electric backup is a premium feature. The age disadvantage of Property 1 is offset by superior interior space and modern cooling.
+
+REASON: Property 1 has more bedrooms, more bathrooms, and superior cooling (central air with electric), which are strong value drivers in a market where modern amenities and space matter. The lot size and newer age of Property 2 are minor advantages that do not outweigh the interior and comfort features of Property 1.  
+CHOICE: 1",easy,mixed
+98,11417114,11417554,117500.0,199900.0,2,1,False,1.0,False,"Property 1 has a much larger lot size, which significantly increases value in single-family homes, despite having fewer bedrooms and bathrooms. The lot size advantage outweighs the bedroom and bathroom differences.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 is built one year later (1940 vs 1941) – minimal difference, favors Property 2 slightly
+- Bedrooms: Property 2 has 4 vs 3 (+1 for P2)
+- Bathrooms: Property 2 has 2 vs 1 (+1 for P2)
+- Lot Size: Property 1 has 9535 sqft vs Property 2's 5179 sqft (+4356 sqft for P1)
+- Heating: Both have Forced Air and Natural Gas – equal
+- Cooling: Both listed as ""unknown"" – cannot compare, so no advantage
+- Parking: Both listed as ""unknown"" – cannot compare, so no advantage
+
+Key features: Property 2 has more bedrooms and bathrooms, which are strong indicators of value in residential properties. However, Property 1 has a significantly larger lot (over 4300 sqft more), which is a major value driver in single-family homes, especially in a market where land size matters. While the bedroom and bathroom count is higher in Property 2, the lot size advantage in Property 1 is substantial and often outweighs a smaller bedroom/bathroom difference in comparable homes.
+
+REASON: Property 1 has a much larger lot size, which significantly increases value in single-family homes, despite having fewer bedrooms and bathrooms. The lot size advantage outweighs the bedroom and bathroom differences.
+CHOICE: 1",easy,lot_dominant
+99,11356651,11356944,215000.0,139400.0,1,1,True,2.0,False,"Property 1 has more bedrooms, more bathrooms, and superior heating (hot water), while Property 2 has central air, which is valuable, but the structural and interior space advantages favor Property 1.","Let's think step by step:
+
+- Type: Both are Single Family Residences – equal
+- Year Built: Property 2 is 1 year newer than Property 1 – slight advantage to P2
+- Bedrooms: Property 1 has 4 vs 3 (+1 for P1)
+- Bathrooms: Property 1 has 2 vs 1 (+1 for P1)
+- Lot Size: Property 2 has 1.5 acres (≈6,480 sqft) vs Property 1’s 6,900 sqft – Property 1 has slightly larger lot (6,900 vs 6,480)
+- Heating: Both use Natural Gas; Property 1 has Hot Water, Property 2 has Forced Air – Hot Water is generally considered a premium feature, especially in older homes, so P1 has a slight edge
+- Cooling: Property 2 has Central Air vs Wall Unit(s) – Central Air is a significant upgrade in comfort and value, especially in a historic neighborhood with older construction
+- Parking: Both have ""unknown"" – no comparative advantage
+
+Key comparison: Property 1 has more bedrooms and bathrooms, and a slightly larger lot. Property 2 has central air, which is a major value driver in residential real estate, especially in a 1920s home where older cooling systems are less desirable. However, the bedroom and bathroom count advantages in Property 1 are substantial, and central air in Property 2 is a strong positive, but not enough to outweigh the bedroom/bathroom and heating advantages in Property 1.
+
+REASON: Property 1 has more bedrooms, more bathrooms, and superior heating (hot water), while Property 2 has central air, which is valuable, but the structural and interior space advantages favor Property 1.  
+CHOICE: 1",easy,lot_dominant

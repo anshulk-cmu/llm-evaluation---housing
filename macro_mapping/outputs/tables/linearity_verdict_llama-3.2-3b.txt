@@ -1,0 +1,18 @@
+VERDICT: non-linear / context-dependent
+  Rank agreement: 2/4 features match
+  Top-1 feature disagrees. Spearman rho = 0.800 (descriptive, n=4)
+  The LLM uses a substantially different weighting strategy
+  than a linear model — suggesting non-linear or contextual reasoning.
+
+  Weight concentration (CV): LLM=1.11, Regression=0.91
+  → Similar concentration of weights across features
+  Correct/incorrect divergence: mean=0.12, max=0.26
+  → Weights are stable across correct/incorrect predictions
+
+RANK COMPARISONS (n=4 features, descriptive only):
+  LLM behavioral (correct) vs LLM behavioral (incorrect): rho=1.000, rank matches=4/4, top-1 agrees
+  LLM behavioral (correct) vs Logistic regression: rho=0.800, rank matches=2/4, top-1 disagrees
+  LLM behavioral (correct) vs Probe accuracy: rho=0.400, rank matches=1/4, top-1 disagrees
+  LLM behavioral (incorrect) vs Logistic regression: rho=0.800, rank matches=2/4, top-1 disagrees
+  LLM behavioral (incorrect) vs Probe accuracy: rho=0.400, rank matches=1/4, top-1 disagrees
+  Logistic regression vs Probe accuracy: rho=0.200, rank matches=2/4, top-1 disagrees

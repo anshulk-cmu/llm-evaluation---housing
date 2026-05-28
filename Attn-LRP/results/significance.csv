@@ -1,0 +1,7 @@
+test,detail,stat,p,p_fdr
+friedman,single_logit omnibus,1400.4784,5.443091227613769e-302,
+wilcoxon,single_logit: lot vs year_built,45974.0,2.585529324437133e-07,2.585529324437133e-07
+wilcoxon,single_logit: bedrooms vs bathrooms,29076.0,3.083160506001405e-25,6.16632101200281e-25
+friedman,logit_diff omnibus,946.1122336701013,1.6989029978302735e-203,
+wilcoxon,logit_diff: lot vs year_built,41440.0,5.597775695894609e-11,5.597775695894609e-11
+wilcoxon,logit_diff: bedrooms vs bathrooms,38374.0,1.442262964488309e-13,2.884525928976618e-13

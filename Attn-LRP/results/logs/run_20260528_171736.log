@@ -1,0 +1,40 @@
+2026-05-28 17:17:36 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_171736.log
+2026-05-28 17:17:37 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:17:37 | INFO    | attnlrp | Attn-LRP Phase 1 - Llama-3.2-3B (open discovery of feature drivers)
+2026-05-28 17:17:37 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:17:40 | INFO    | attnlrp.attribution | loading meta-llama/Llama-3.2-3B-Instruct dtype=bfloat16 cpu_threads=24
+2026-05-28 17:17:44 | INFO    | attnlrp.attribution | device=cuda layers=28 method=attnlrp
+2026-05-28 17:19:22 | INFO    | attnlrp | 25/500 valid (median conservation 0.454)
+2026-05-28 17:19:37 | INFO    | attnlrp | 50/500 valid (median conservation 0.451)
+2026-05-28 17:19:52 | INFO    | attnlrp | 75/500 valid (median conservation 0.450)
+2026-05-28 17:20:07 | INFO    | attnlrp | 100/500 valid (median conservation 0.451)
+2026-05-28 17:20:25 | INFO    | attnlrp | 125/500 valid (median conservation 0.452)
+2026-05-28 17:20:40 | INFO    | attnlrp | 150/500 valid (median conservation 0.452)
+2026-05-28 17:20:55 | INFO    | attnlrp | 175/500 valid (median conservation 0.452)
+2026-05-28 17:21:10 | INFO    | attnlrp | 200/500 valid (median conservation 0.453)
+2026-05-28 17:21:27 | INFO    | attnlrp | 225/500 valid (median conservation 0.453)
+2026-05-28 17:21:42 | INFO    | attnlrp | 250/500 valid (median conservation 0.453)
+2026-05-28 17:21:56 | INFO    | attnlrp | 275/500 valid (median conservation 0.453)
+2026-05-28 17:22:43 | INFO    | attnlrp | 300/500 valid (median conservation 0.453)
+2026-05-28 17:23:29 | INFO    | attnlrp | 325/500 valid (median conservation 0.453)
+2026-05-28 17:23:43 | INFO    | attnlrp | 350/500 valid (median conservation 0.452)
+2026-05-28 17:23:58 | INFO    | attnlrp | 375/500 valid (median conservation 0.452)
+2026-05-28 17:25:10 | INFO    | attnlrp | 400/500 valid (median conservation 0.452)
+2026-05-28 17:25:59 | INFO    | attnlrp | 425/500 valid (median conservation 0.452)
+2026-05-28 17:26:15 | INFO    | attnlrp | 450/500 valid (median conservation 0.452)
+2026-05-28 17:26:30 | INFO    | attnlrp | 475/500 valid (median conservation 0.452)
+2026-05-28 17:26:44 | INFO    | attnlrp | 500/500 valid (median conservation 0.452)
+2026-05-28 17:26:44 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:26:44 | INFO    | attnlrp | Phase 1 collected 500 valid samples - writing results
+2026-05-28 17:26:44 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote attnlrp_single.csv (5 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote attnlrp_logitdiff.csv (5 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote significance.csv (6 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote signed_relevance.csv (10 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote layer_feature_relevance.csv (336 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote cross_method_correlation.csv (5 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote per_sample_relevance.csv (5000 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote conservation_and_sanity.csv (12 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | wrote deletion_curve.csv (11 rows)
+2026-05-28 17:26:44 | INFO    | attnlrp | Adebayo model-randomization sanity check
+2026-05-28 17:28:01 | INFO    | attnlrp | randomization mean abs delta-relevance = 0.142 (should be clearly > 0)

@@ -1,0 +1,63 @@
+2026-05-28 15:58:48 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_155848.log
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | ATTN-LRP SMOKE TEST (no GPU, no model)
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | SMOKE 1/6 — prompt build + value spans + token mapping
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | sample prompt:
+Property 1:
+zpid: 11360401
+lot: 7956.0 sqft
+bathrooms: 3
+bedrooms: 3
+year built: 1955
+property type: Single Family Residence, Residential
+
+Property 2:
+zpid: 11360882
+lot: 7200.0 sqft
+bathrooms: 2
+bedrooms: 3
+year built: 1953
+property type: Single Family Residence, Residential
+
+CHOICE:
+2026-05-28 15:58:48 | INFO    | attnlrp | OK: 12 spans mapped; all 5 features have tokens in both slots
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | SMOKE 2/6 — aggregation + simplex normalisation + fraction
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | normalized relevance: {'lot': 0.221, 'bathrooms': 0.222, 'bedrooms': 0.312, 'year_built': 0.145, 'property_type': 0.1}
+2026-05-28 15:58:48 | INFO    | attnlrp | attribution fraction=0.435  token counts={'lot': 4, 'bathrooms': 2, 'bedrooms': 2, 'year_built': 2, 'property_type': 8}
+2026-05-28 15:58:48 | INFO    | attnlrp | OK: simplex sums to 1; zpid present=True
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | SMOKE 3/6 — 120 permutations + complete positional coverage
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | OK: 5! = 120 permutations, every (feature,position) appears 24x
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | SMOKE 4/6 — statistics (bootstrap, friedman, wilcoxon, ranks, cross)
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | friedman stat=546.5 p=5.83e-117
+2026-05-28 15:58:48 | INFO    | attnlrp | wilcoxon: [('lot vs year_built', 0.0), ('bedrooms vs bathrooms', 0.0)]
+2026-05-28 15:58:48 | INFO    | attnlrp | cross-method rows=4 (cross_model flagged=True)
+2026-05-28 15:58:48 | INFO    | attnlrp | cross-target rho=-1.000
+2026-05-28 15:58:48 | INFO    | attnlrp | OK: stats layer runs end-to-end
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | SMOKE 5/6 — sanity helpers (conservation, neutrality, deletion AUC)
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | conservation median=0.0090 pass=True
+2026-05-28 15:58:48 | INFO    | attnlrp | neutrality rho=1.000 ; deletion AUC=0.400
+2026-05-28 15:58:48 | INFO    | attnlrp | OK: sanity helpers run
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:48 | INFO    | attnlrp | SMOKE 6/6 — synthetic result CSVs + figure generation
+2026-05-28 15:58:48 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:49 | INFO    | attnlrp.plots | [plots] wrote fig1_feature_importance_ci.pdf / .png
+2026-05-28 15:58:49 | INFO    | attnlrp.plots | [plots] wrote fig2_layer_feature_heatmap.pdf / .png
+2026-05-28 15:58:49 | INFO    | attnlrp.plots | [plots] wrote fig3_signed_relevance.pdf / .png
+2026-05-28 15:58:49 | INFO    | attnlrp.plots | [plots] wrote fig4_permutation_rank_stability.pdf / .png
+2026-05-28 15:58:49 | INFO    | attnlrp.plots | [plots] wrote diag_deletion_insertion_curve.pdf / .png
+2026-05-28 15:58:49 | INFO    | attnlrp.plots | [plots] done: ['fig1_feature_importance', 'fig2_layer_heatmap', 'fig3_signed', 'fig4_perm_stability']
+2026-05-28 15:58:49 | INFO    | attnlrp | OK: figures written to D:\LLM_Product_Valuation\Attn-LRP\figures\_smoke -> ['diag_deletion_insertion_curve.pdf', 'fig1_feature_importance_ci.pdf', 'fig2_layer_feature_heatmap.pdf', 'fig3_signed_relevance.pdf', 'fig4_permutation_rank_stability.pdf']
+2026-05-28 15:58:49 | INFO    | attnlrp | ==============================================================================
+2026-05-28 15:58:49 | INFO    | attnlrp | SMOKE TEST PASSED ✅  (LXT backward is the only untested piece — needs the GPU box)
+2026-05-28 15:58:49 | INFO    | attnlrp | ==============================================================================

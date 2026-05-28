@@ -1,0 +1,7 @@
+2026-05-28 17:49:12 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_174912.log
+2026-05-28 17:49:12 | INFO    | attnlrp | wrote fig1_feature_importance_ci.png
+2026-05-28 17:49:12 | INFO    | attnlrp | wrote fig2_layer_feature_heatmap.png
+2026-05-28 17:49:12 | INFO    | attnlrp | wrote fig3_signed_relevance.png
+2026-05-28 17:49:13 | INFO    | attnlrp | wrote fig4_permutation_rank_stability.png
+2026-05-28 17:49:13 | INFO    | attnlrp | wrote diag_deletion_insertion_curve.png
+2026-05-28 17:49:13 | INFO    | attnlrp | [plots] done: ['fig1_feature_importance', 'fig2_layer_heatmap', 'fig3_signed', 'fig4_perm_stability']

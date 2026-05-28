@@ -1,0 +1,18 @@
+# Attn-LRP housing study — Python dependencies.
+#
+# IMPORTANT (RTX 5070 Ti / Blackwell, sm_120): install a CUDA 12.8 PyTorch build
+# FIRST, separately, so you get Blackwell kernels — do NOT let the line below pull
+# a default CPU/old-CUDA wheel:
+#     pip install --index-url https://download.pytorch.org/whl/cu128 torch
+# Then verify:  python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+#
+# The rest can go into the existing `housing` conda/venv env:
+
+lxt>=2.1            # LRP-eXplains-Transformers (AttnLRP). Confirm v2.1 efficient API.
+transformers>=4.45  # must support Llama-3.2; verify compatibility with the lxt monkey_patch
+accelerate>=0.34
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10          # Friedman / Wilcoxon / Spearman
+matplotlib>=3.7      # figures (PDF + PNG)
+# torch is intentionally NOT pinned here — install the cu128 build manually (see above).

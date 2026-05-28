@@ -1,0 +1,33 @@
+2026-05-28 17:28:03 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_172803.log
+2026-05-28 17:28:05 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:28:05 | INFO    | attnlrp | Attn-LRP Phase 2 - full 120-permutation position control
+2026-05-28 17:28:05 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:28:07 | INFO    | attnlrp.attribution | loading meta-llama/Llama-3.2-3B-Instruct dtype=bfloat16 cpu_threads=24
+2026-05-28 17:28:11 | INFO    | attnlrp.attribution | device=cuda layers=28 method=attnlrp
+2026-05-28 17:29:16 | INFO    | attnlrp | 25/500 valid
+2026-05-28 17:30:15 | INFO    | attnlrp | 50/500 valid
+2026-05-28 17:31:14 | INFO    | attnlrp | 75/500 valid
+2026-05-28 17:32:13 | INFO    | attnlrp | 100/500 valid
+2026-05-28 17:33:12 | INFO    | attnlrp | 125/500 valid
+2026-05-28 17:34:11 | INFO    | attnlrp | 150/500 valid
+2026-05-28 17:35:10 | INFO    | attnlrp | 175/500 valid
+2026-05-28 17:36:09 | INFO    | attnlrp | 200/500 valid
+2026-05-28 17:37:28 | INFO    | attnlrp | 225/500 valid
+2026-05-28 17:38:27 | INFO    | attnlrp | 250/500 valid
+2026-05-28 17:39:30 | INFO    | attnlrp | 275/500 valid
+2026-05-28 17:40:20 | INFO    | attnlrp | 300/500 valid
+2026-05-28 17:41:19 | INFO    | attnlrp | 325/500 valid
+2026-05-28 17:42:18 | INFO    | attnlrp | 350/500 valid
+2026-05-28 17:43:18 | INFO    | attnlrp | 375/500 valid
+2026-05-28 17:44:51 | INFO    | attnlrp | 400/500 valid
+2026-05-28 17:46:10 | INFO    | attnlrp | 425/500 valid
+2026-05-28 17:47:09 | INFO    | attnlrp | 450/500 valid
+2026-05-28 17:48:08 | INFO    | attnlrp | 475/500 valid
+2026-05-28 17:49:10 | INFO    | attnlrp | 500/500 valid
+2026-05-28 17:49:10 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:49:10 | INFO    | attnlrp | Phase 2 collected 500 valid - writing stability + position sensitivity
+2026-05-28 17:49:10 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:49:10 | INFO    | attnlrp | single_logit: fixed-vs-permuted Spearman rho=0.900 (p=0.0374)
+2026-05-28 17:49:10 | INFO    | attnlrp | logit_diff: fixed-vs-permuted Spearman rho=0.700 (p=0.188)
+2026-05-28 17:49:10 | INFO    | attnlrp | wrote permutation_stability.csv (10 rows)
+2026-05-28 17:49:10 | INFO    | attnlrp | wrote position_sensitivity.csv (50 rows)

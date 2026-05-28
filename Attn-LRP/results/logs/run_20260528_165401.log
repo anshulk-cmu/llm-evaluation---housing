@@ -1,0 +1,33 @@
+2026-05-28 16:54:01 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_165401.log
+2026-05-28 16:54:01 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:54:01 | INFO    | attnlrp | ATTN-LRP PREFLIGHT (dtype=bfloat16, model=meta-llama/Llama-3.2-3B-Instruct)
+2026-05-28 16:54:01 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:54:01 | INFO    | attnlrp | [PASS] python                       3.10.19 on Windows
+2026-05-28 16:54:01 | INFO    | attnlrp | [PASS] python>=3.9                  3.10.19
+2026-05-28 16:54:01 | INFO    | attnlrp | [PASS] import numpy                 2.2.6
+2026-05-28 16:54:01 | INFO    | attnlrp | [PASS] import pandas                2.3.3
+2026-05-28 16:54:01 | INFO    | attnlrp | [PASS] import scipy                 1.15.3
+2026-05-28 16:54:01 | INFO    | attnlrp | [PASS] import matplotlib            3.10.9
+2026-05-28 16:54:03 | INFO    | attnlrp | [PASS] import torch                 2.11.0.dev20260120+cu128
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] import transformers          4.57.6
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] import lxt                   ?
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] cuda available               
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] gpu                          NVIDIA GeForce RTX 5070 Ti Laptop GPU | capability sm_120 | 12.8 GB
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] torch arch_list              sm_75,sm_80,sm_86,sm_90,sm_100,sm_120
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] kernels for this GPU         sm_120 present
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] vram >= 11 GB                12.8 GB
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] cuda kernel exec             bf16 matmul ran
+2026-05-28 16:54:04 | INFO    | attnlrp | [PASS] data file                    5130 rows
+2026-05-28 16:54:05 | INFO    | attnlrp | [FAIL] model access                 no local dir; HF_TOKEN NOT set; OSError('You are trying to access a gated repo.\nMake sure t
+2026-05-28 16:54:06 | INFO    | attnlrp | [PASS] lxt.efficient API            monkey_patch importable
+2026-05-28 16:54:06 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:54:06 | INFO    | attnlrp | FULL preflight — loading Llama and running ONE AttnLRP attribution
+2026-05-28 16:54:06 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:54:06 | INFO    | attnlrp.attribution | loading meta-llama/Llama-3.2-3B-Instruct dtype=bfloat16 cpu_threads=24
+2026-05-28 16:54:06 | INFO    | attnlrp | [FAIL] full attribution             OSError('You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Lla
+2026-05-28 16:54:06 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:54:06 | INFO    | attnlrp | PREFLIGHT SUMMARY
+2026-05-28 16:54:06 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:54:06 | ERROR   | attnlrp | REQUIRED FAILED: model access — no local dir; HF_TOKEN NOT set; OSError('You are trying to access a gated repo.\nMake sure t
+2026-05-28 16:54:06 | ERROR   | attnlrp | REQUIRED FAILED: full attribution — OSError('You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Lla
+2026-05-28 16:54:06 | ERROR   | attnlrp | PREFLIGHT FAILED: 2 required check(s) failed. Fix before launching.

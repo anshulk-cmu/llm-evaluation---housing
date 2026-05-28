@@ -1,0 +1,7 @@
+2026-05-28 17:12:20 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_171220.log
+2026-05-28 17:12:21 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:12:21 | INFO    | attnlrp | Attn-LRP Phase 2 - full 120-permutation position control
+2026-05-28 17:12:21 | INFO    | attnlrp | ==============================================================================
+2026-05-28 17:12:24 | INFO    | attnlrp.attribution | loading meta-llama/Llama-3.2-3B-Instruct dtype=bfloat16 cpu_threads=24
+2026-05-28 17:12:28 | INFO    | attnlrp.attribution | device=cuda layers=28 method=attnlrp
+2026-05-28 17:14:09 | INFO    | attnlrp | 25/500 valid

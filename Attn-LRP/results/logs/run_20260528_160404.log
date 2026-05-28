@@ -1,0 +1,21 @@
+2026-05-28 16:04:04 | INFO    | attnlrp | logging initialised -> D:\LLM_Product_Valuation\Attn-LRP\results\logs\run_20260528_160404.log
+2026-05-28 16:04:04 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:04:04 | INFO    | attnlrp | ATTN-LRP PREFLIGHT (dtype=bfloat16, model=meta-llama/Llama-3.2-3B-Instruct)
+2026-05-28 16:04:04 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] python                       3.13.12 on Windows
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] python>=3.9                  3.13.12
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] import numpy                 2.4.4
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] import pandas                3.0.3
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] import scipy                 1.17.1
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] import matplotlib            3.10.8
+2026-05-28 16:04:04 | INFO    | attnlrp | [FAIL] import torch                 ModuleNotFoundError("No module named 'torch'")
+2026-05-28 16:04:04 | INFO    | attnlrp | [FAIL] import transformers          ModuleNotFoundError("No module named 'transformers'")
+2026-05-28 16:04:04 | INFO    | attnlrp | [FAIL] import lxt                   ModuleNotFoundError("No module named 'lxt'")
+2026-05-28 16:04:04 | INFO    | attnlrp | [FAIL] cuda available               torch not importable
+2026-05-28 16:04:04 | INFO    | attnlrp | [PASS] data file                    5130 rows
+2026-05-28 16:04:04 | INFO    | attnlrp | [FAIL] model access                 no local dir; HF_TOKEN NOT set; ModuleNotFoundError("No module named 'transformers'")
+2026-05-28 16:04:04 | INFO    | attnlrp | [FAIL] lxt.efficient API            ModuleNotFoundError("No module named 'lxt'")
+2026-05-28 16:04:04 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:04:04 | INFO    | attnlrp | PREFLIGHT SUMMARY
+2026-05-28 16:04:04 | INFO    | attnlrp | ==============================================================================
+2026-05-28 16:04:04 | INFO    | attnlrp | PREFLIGHT OK: required checks passed (analysis-only; add --full for GPU).

@@ -1,0 +1,14 @@
+key,value
+method,attnlrp
+n_valid,500
+conservation_median_rel[single_logit],0.4522100638999079
+conservation_pass[single_logit],False
+attribution_fraction_mean[single_logit],0.020279538358699924
+tokencount_neutrality_rho[single_logit],0.6509665177694673
+tokencount_neutrality_p[single_logit],2.4288196003586947e-301
+conservation_median_rel[logit_diff],0.37943035978864775
+conservation_pass[logit_diff],False
+attribution_fraction_mean[logit_diff],0.04125729806158913
+tokencount_neutrality_rho[logit_diff],0.11298405669853351
+tokencount_neutrality_p[logit_diff],1.474337149536381e-08
+model_randomization_mean_abs_delta,0.14246753570264875
